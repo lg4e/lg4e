@@ -22,6 +22,10 @@ def tutorials():
 def login():
     return render_template('login.html')
 
+@app.route('/logic-study-guide')
+def logic_study_guide():
+    return render_template('logic_study_guide.html', title="Logic Study Guide")
+
 if __name__ == '__main__':
     app.run(debug=True)
 

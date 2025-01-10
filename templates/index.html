@@ -1,17 +1,18 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="container" style="margin-top: -2rem;">
+<div class="container" style="margin-top: 0rem;">
    
     <!-- 引用1984的段落 -->
-    <div class="mt-2">
-        <h3 class="text-start">Doublethink</h3>
-        <p class="text-justify">
-            "The power of holding two contradictory beliefs in one's mind simultaneously, and accepting both of them. 
-            To tell deliberate lies while genuinely believing in them, to forget any fact that has become inconvenient, 
-            and then, when it becomes necessary again, to draw it back from oblivion for just so long as it is needed, 
-            to deny the existence of objective reality and all the while to take account of the reality which one denies—all this is indispensably necessary."
+    <div class="mt-5">
+        <blockquote class="text-justify">
+            <p><em>"WAR IS PEACE"</em></p>
+            <p><em>"FREEDOM IS SLAVERY"</em></p>
+            <p><em>"IGNORANCE IS STRENGTH"</em></p>
+	<p class="text-muted" style="font-size: 0.85rem; margin-left: 17rem; font-style: italic;">
+            Source: <em>1984</em> by George Orwell, slogans from the Ministry of Truth
         </p>
+        </blockquote >
     </div>
     
     <!-- 表格内容 -->
@@ -20,10 +21,10 @@
         <table class="table table-bordered text-start" style="width: 55%; table-layout: fixed; margin-left: 0;">
             <thead class="text-center">
                 <tr>
-                    <th style="width: 10%;">Step</th>
+                    <th style="width: 8%;">Step</th>
                     <th style="width: 20%;">Proposition</th>
                     <th style="width: 38%;">Derivation</th>
-                    <th style="width: 32%;">Annotations</th>
+                    <th style="width: 34%;">Annotations</th>
                 </tr>
             </thead>
             <tbody>
@@ -31,7 +32,7 @@
                     <td>1</td>
                     <td>\(P \land \neg P\)</td>
                     <td>Premise</td>
-                    <td>Both \(P\) and \(\neg P\) are true.</td>
+                    <td>Both \(P\) and \(\neg P\) hold true.</td>
                 </tr>
                 <tr>
                     <td>2</td>
@@ -59,6 +60,9 @@
                 </tr>
             </tbody>
         </table>
+	<p class="text-muted" style="font-size: 0.85rem; margin-left: 27rem; font-style: italic;">
+            Source: Wikipedia, <a href="https://en.wikipedia.org/wiki/Principle_of_explosion" target="_blank">Principle of Explosion</a>
+        </p>
     </div>
 
 </div>

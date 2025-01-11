@@ -57,9 +57,3 @@
     transform: translateY(-5px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
-.card-title i {
-    margin-right: 8px; /* 图标和文字之间的间距 */
-    color: #007bff;    /* 图标颜色 */
-}
-

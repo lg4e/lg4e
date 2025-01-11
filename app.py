@@ -1,4 +1,8 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
+from markupsafe import Markup
+import os
+import markdown
+from config import CARDS
 
 app = Flask(__name__)
 
@@ -7,53 +11,103 @@ SITE_TITLE = "⇒ LG4E - Logic For Everybody"
 
 # 将全局变量传递给所有模板
 @app.context_processor
-def inject_site_title():
-    return dict(site_title=SITE_TITLE)
+def inject_globals():
+    return {
+        "site_title": SITE_TITLE,
+        "cards": CARDS,  # 传递所有卡片数据，用于动态导航
+    }
 
+# 自定义 404 错误页面
+@app.errorhandler(404)
+def not_found(e):
+    return render_template('404.html', title="404 - Page Not Found"), 404
+
+# 首页
 @app.route('/')
 def home():
     return render_template('index.html')
 
+# Tutorials 页面
 @app.route('/tutorials')
 def tutorials():
-    return render_template('tutorials.html')
+    return render_template('tutorials.html', cards=CARDS)
 
-@app.route('/login')
-def login():
-    return render_template('login.html')
-
-@app.route('/set-theory-and-logic')
-def set_theory_and_logic():
-    return render_template('set_theory_and_logic.html', title="Set theory and logic")
-
-@app.route('/set-theory-and-logic/chapter/<int:chapter_id>')
-def chapter(chapter_id):
-    # 章节信息
-    chapters = {
-        1: "Fundamental Concepts",
-        2: "Functions",
-        3: "Relations",
-        4: "The Integers and the Real Numbers",
-        5: "Cartesian Products",
-        6: "Finite Sets",
-        7: "Countable and Uncountable Sets",
-        8: "The Principle of Recursive Definition",
-        9: "Infinite Sets and the Axiom of Choice",
-        10: "Well-Ordered Sets",
-        11: "The Maximum Principle",
-    }
-
-    # 获取章节标题
-    chapter_title = chapters.get(chapter_id, "Chapter not found")
-    if chapter_title == "Chapter not found":
+# 卡片页面（显示章节列表）
+@app.route('/tutorials/<card_slug>')
+def card(card_slug):
+    # 获取卡片数据
+    card_data = CARDS.get(card_slug)
+    if not card_data:
         return render_template('404.html', title="404 - Not Found"), 404
 
-    # 渲染章节页面
-    return render_template('chapter.html', chapter_title=chapter_title, chapter_id=chapter_id)
+    # 渲染卡片页面，显示章节列表
+    return render_template(
+        'card.html',
+        title=card_data["title"],
+        chapters=card_data["chapters"],
+        card_slug=card_slug,  # 传递 card_slug 用于生成章节链接
+    )
 
-@app.route('/logic-study-guide')
-def logic_study_guide():
-    return render_template('logic_study_guide.html', title="Logic Study Guide")
+# 章节页面（显示 Markdown 内容）
+@app.route('/tutorials/<card_slug>/chapter/<int:chapter_id>')
+def chapter(card_slug, chapter_id):
+    # 获取卡片数据
+    card_data = CARDS.get(card_slug)
+    if not card_data:
+        return render_template('404.html', title="404 - Not Found"), 404
+
+    # 获取章节数据
+    chapter_title = card_data["chapters"].get(chapter_id)
+    if not chapter_title:
+        return render_template('404.html', title="404 - Not Found"), 404
+
+    # 确保路径安全
+    safe_card_slug = card_slug.replace("/", "").replace("\\", "")
+    markdown_file = os.path.join("content", f"{safe_card_slug}_chapter_{chapter_id}.md")
+
+    # 加载 Markdown 文件
+    if os.path.exists(markdown_file):
+        with open(markdown_file, 'r', encoding='utf-8') as file:
+            md_content = file.read()
+        html_content = markdown.markdown(md_content)
+    else:
+        html_content = "<p>Content not available yet. Stay tuned!</p>"
+
+    # 渲染章节页面
+    return render_template(
+        'chapter.html',
+        title=f"{card_data['title']} - {chapter_title}",
+        chapter_title=chapter_title,
+        chapter_id=chapter_id,
+        content=Markup(html_content),
+    )
+
+@app.route('/tutorials/<card_slug>/references')
+def references(card_slug):
+    # 获取卡片数据
+    card_data = CARDS.get(card_slug)
+    if not card_data:
+        return render_template('404.html', title="404 - Not Found"), 404
+
+    # 确保路径安全
+    safe_card_slug = card_slug.replace("/", "").replace("\\", "")
+    markdown_file = os.path.join("content", f"{safe_card_slug}_references.md")
+
+    # 加载 Markdown 文件
+    if os.path.exists(markdown_file):
+        with open(markdown_file, 'r', encoding='utf-8') as file:
+            md_content = file.read()
+        html_content = markdown.markdown(md_content)
+    else:
+        html_content = "<p>参考书籍内容尚未添加。</p>"
+
+    # 渲染参考书籍页面
+    return render_template(
+        'references.html',
+        title=f"{card_data['title']} - 参考书籍",
+        content=Markup(html_content),
+    )
+
 
 if __name__ == '__main__':
     app.run(debug=True)

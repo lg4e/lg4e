@@ -1,7 +1,8 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template
 from markupsafe import Markup
 import os
 import markdown
+from markdown.extensions import fenced_code, tables
 from config import CARDS
 
 app = Flask(__name__)
@@ -69,7 +70,14 @@ def chapter(card_slug, chapter_id):
     if os.path.exists(markdown_file):
         with open(markdown_file, 'r', encoding='utf-8') as file:
             md_content = file.read()
-        html_content = markdown.markdown(md_content)
+        # 使用 markdown 渲染内容，并支持其他扩展
+        html_content = markdown.markdown(
+            md_content,
+            extensions=[
+                fenced_code.FencedCodeExtension(),  # 支持代码块
+                tables.TableExtension()           # 支持表格
+            ]
+        )
     else:
         html_content = "<p>Content not available yet. Stay tuned!</p>"
 
@@ -97,7 +105,13 @@ def references(card_slug):
     if os.path.exists(markdown_file):
         with open(markdown_file, 'r', encoding='utf-8') as file:
             md_content = file.read()
-        html_content = markdown.markdown(md_content)
+        html_content = markdown.markdown(
+            md_content,
+            extensions=[
+                fenced_code.FencedCodeExtension(),
+                tables.TableExtension()
+            ]
+        )
     else:
         html_content = "<p>参考书籍内容尚未添加。</p>"
 
@@ -107,7 +121,6 @@ def references(card_slug):
         title=f"{card_data['title']} - 参考书籍",
         content=Markup(html_content),
     )
-
 
 if __name__ == '__main__':
     app.run(debug=True)

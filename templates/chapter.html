@@ -2,12 +2,30 @@
 
 {% block content %}
 <div class="container">
-    <!-- 显示章节标题 -->
-    <h1 class="chapter-title" style="font-weight:700;">{{ chapter_title }}</h1>
+    <div class="row">
+        <!-- 左侧内容容器 -->
+        <div class="col-md-8">
+            <!-- 显示章节标题 -->
+            <h1 class="chapter-title" style="font-weight:700;">{{ chapter_title }}</h1>
 
-    <!-- 显示 Markdown 渲染后的内容 -->
-    <div class="markdown-content" style="margin-top: 3rem; margin-left: 0rem">
-        {{ content|safe }}
+            <!-- 显示 Markdown 渲染后的内容 -->
+            <div class="markdown-content" style="margin-top: 3rem; margin-left: 0rem">
+                {{ content|safe }}
+            </div>
+        </div>
+
+        <!-- 右侧引用容器 -->
+        <div class="col-md-4">
+            <div class="references" style="margin-top: 3rem;">
+                <h2>References</h2>
+                <ul>
+                    <li><a href="https://plato.stanford.edu/index.html" target="_blank">Stanford Encyclopedia</a></li>
+                    <li><a href="https://ncatlab.org/nlab/show/HomePage" target="_blank">nLab</a></li>
+                    <li><a href="https://mathworld.wolfram.com/" target="_blank">MathWorld</a></li>
+                    <li><a href="https://us.metamath.org/" target="_blank">Metamath</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
 </div>
 {% endblock %}

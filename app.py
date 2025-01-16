@@ -17,7 +17,7 @@ logging.basicConfig(
 )
 
 # 全局标题变量
-SITE_TITLE = "\u21D2 LG4E - Logic For Everybody"
+SITE_TITLE = "(\u2200) LG4E - Logic For Everybody"
 
 # 将全局变量传递给所有模板
 @app.context_processor

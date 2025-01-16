@@ -19,3 +19,5 @@ Session.vim
 .DS_Store
 Thumbs.db
 
+# log file
+*.log

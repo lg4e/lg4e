@@ -21,3 +21,6 @@ Thumbs.db
 
 # log file
 *.log
+
+# 雑
+zatsu/

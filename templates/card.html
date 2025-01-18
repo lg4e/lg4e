@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="container" >
+<div class="container">
     <h1 class="chapter" style="font-weight:700;">{{ title }}</h1>
     <ul class="section-list">
         {% for chapter_id, chapter_title in chapters.items() %}
@@ -12,10 +12,6 @@
         </li>
         {% endfor %}
     </ul>
-    <!-- 添加参考书籍链接 -->
-    <div style="margin-top: 2rem;">
-        <a href="{{ url_for('references', card_slug=card_slug) }}" style="text-decoration: underline; color: #007bff;">查看参考书籍</a>
-    </div>
 </div>
 {% endblock %}
 

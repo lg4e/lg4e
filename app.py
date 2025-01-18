@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 from markupsafe import Markup
 import os
 import markdown
@@ -16,8 +16,14 @@ logging.basicConfig(
     format='%(asctime)s %(levelname)s: %(message)s'
 )
 
-# 全局标题变量
-SITE_TITLE = "(\u2200) LG4E - Logic For Everybody"
+# 全局常量
+SITE_TITLE = "(∀) LG4E - Logic For Everybody"
+DEFAULT_404_TEMPLATE = "404.html"
+DEFAULT_500_TEMPLATE = "500.html"
+MARKDOWN_EXTENSIONS = [
+    fenced_code.FencedCodeExtension(),
+    tables.TableExtension()
+]
 
 # 将全局变量传递给所有模板
 @app.context_processor
@@ -29,73 +35,85 @@ def inject_globals():
 
 # 通用函数：渲染 Markdown 文件
 def render_markdown_file(file_path):
-    """渲染 Markdown 文件为 HTML"""
     if os.path.exists(file_path):
-        with open(file_path, 'r', encoding='utf-8') as file:
-            md_content = file.read()
-        return markdown.markdown(
-            md_content,
-            extensions=[
-                fenced_code.FencedCodeExtension(),  # 支持代码块
-                tables.TableExtension()            # 支持表格
-            ]
-        )
+        logging.info(f"Rendering Markdown file: {file_path}")
+        try:
+            with open(file_path, 'r', encoding='utf-8') as file:
+                md_content = file.read()
+            return markdown.markdown(md_content, extensions=MARKDOWN_EXTENSIONS)
+        except Exception as e:
+            logging.error(f"Failed to render Markdown file {file_path}: {e}")
+            return "<p>Failed to load content. Please try again later.</p>"
+    logging.warning(f"Markdown file not found: {file_path}")
     return "<p>Content not available yet. Stay tuned!</p>"
 
 # 通用函数：获取卡片数据或返回 404
 def get_card_or_404(card_slug):
-    """获取卡片数据或返回 404"""
     card_data = CARDS.get(card_slug)
     if not card_data:
-        return render_template('404.html', title="404 - Not Found"), 404
+        logging.warning(f"Card not found: {card_slug}")
+        return render_template(DEFAULT_404_TEMPLATE, title="404 - Not Found"), 404
     return card_data
 
 # 自定义 404 错误页面
 @app.errorhandler(404)
 def not_found(e):
-    return render_template('404.html', title="404 - Page Not Found"), 404
+    logging.warning(f"404 error occurred: {request.path}")
+    return render_template(DEFAULT_404_TEMPLATE, title="404 - Page Not Found"), 404
 
 # 自定义 500 错误页面
 @app.errorhandler(Exception)
 def handle_exception(e):
-    logging.error(f"Error: {str(e)}")
-    return render_template('500.html', title="500 - Internal Server Error"), 500
+    logging.error(f"500 error occurred: {str(e)}")
+    return render_template(DEFAULT_500_TEMPLATE, title="500 - Internal Server Error"), 500
 
 # 首页
 @app.route('/')
 def home():
+    logging.info("Home page accessed.")
     return render_template('index.html')
 
 # Tutorials 页面
 @app.route('/tutorials')
 def tutorials():
+    logging.info("Tutorials page accessed.")
     return render_template('tutorials.html', cards=CARDS)
 
 # 卡片页面（显示章节列表）
 @app.route('/tutorials/<card_slug>')
 def card(card_slug):
+    logging.info(f"Card page accessed: {card_slug}")
     card_data = get_card_or_404(card_slug)
-    if isinstance(card_data, tuple):  # 如果返回了 404 页面
+    if isinstance(card_data, tuple):
         return card_data
 
-    # 渲染卡片页面，显示章节列表
+    # 动态传递章节信息
+    chapters = card_data["chapters"]
+    template_path = f'{card_slug}.html'
+    if not os.path.exists(os.path.join("templates", template_path)):
+        logging.warning(f"Template for card not found: {template_path}")
+        return render_template('404.html', title="404 - Not Found"), 404
+
+    # 渲染卡片目录页面
     return render_template(
-        'card.html',
+        template_path,
         title=card_data["title"],
-        chapters=card_data["chapters"],
-        card_slug=card_slug,  # 传递 card_slug 用于生成章节链接
+        card_slug=card_slug,
+        chapters=chapters,
     )
 
 # 章节页面（显示 Markdown 内容）
 @app.route('/tutorials/<card_slug>/chapter/<int:chapter_id>')
 def chapter(card_slug, chapter_id):
+    logging.info(f"Chapter page accessed: {card_slug} - Chapter {chapter_id}")
     card_data = get_card_or_404(card_slug)
     if isinstance(card_data, tuple):
         return card_data
 
     chapter_title = card_data["chapters"].get(chapter_id)
     if not chapter_title:
-        return render_template('404.html', title="404 - Not Found"), 404
+        logging.warning(f"Chapter not found: {chapter_id} in card {card_slug}")
+        return render_template(DEFAULT_404_TEMPLATE, title="404 - Not Found"), 404
 
     markdown_file = os.path.join("content", f"{card_slug}_chapter_{chapter_id}.md")
     html_content = render_markdown_file(markdown_file)
@@ -107,21 +125,7 @@ def chapter(card_slug, chapter_id):
         content=Markup(html_content),
     )
 
-# 参考书籍页面
-@app.route('/tutorials/<card_slug>/references')
-def references(card_slug):
-    card_data = get_card_or_404(card_slug)
-    if isinstance(card_data, tuple):
-        return card_data
-
-    markdown_file = os.path.join("content", f"{card_slug}_references.md")
-    html_content = render_markdown_file(markdown_file)
-
-    return render_template(
-        'references.html',
-        title=f"{card_data['title']} - 参考书籍",
-        content=Markup(html_content),
-    )
-
 if __name__ == '__main__':
+    logging.info("Starting Flask application.")
     app.run(debug=True)
+

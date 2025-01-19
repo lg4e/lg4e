@@ -142,7 +142,7 @@ BOOKS = {
                 "II": {
                     "title": "Truth-functional Logic",
                     "chapters": {
-                        1: {
+                        4: {
                             "title": "Logical Operators",
                             "sections": {
                                 1: "Negation",
@@ -152,7 +152,7 @@ BOOKS = {
                                 5: "Biconditional Statements",
                             },
                         },
-                        2: {
+                        5: {
                             "title": "Truth Tables for Operators",
                             "sections": {
                                 1: "Constructing Truth Tables",
@@ -166,7 +166,7 @@ BOOKS = {
                 "III": {
                     "title": "Truth-tables",
                     "chapters": {
-                        1: {
+                        6: {
                             "title": "Basics of Truth-tables",
                             "sections": {
                                 1: "Truth-table Setup",
@@ -174,7 +174,7 @@ BOOKS = {
                                 3: "Validating Arguments",
                             },
                         },
-                        2: {
+                        7: {
                             "title": "Applications of Truth-tables",
                             "sections": {
                                 1: "Solving Logical Puzzles",

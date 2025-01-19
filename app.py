@@ -96,7 +96,7 @@ def card(card_slug):
 
     # 渲染通用模板
     return render_template(
-        'card_template.html',
+        'content_template.html',
         title=card_data["title"],
         card_slug=card_slug,
         parts=card_data.get("parts", {})

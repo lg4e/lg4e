@@ -18,9 +18,8 @@
                     <ul class="mt-2">
                         {% for section_id, section_title in chapter_data.sections.items() %}
                         <li style="list-style: none;">
-                            <!-- 修改小节链接，去掉锚点，只附加 data-section 属性 -->
-                            <a href="{{ url_for('chapter', card_slug=card_slug, chapter_id=chapter_id) }}?section=section-{{ section_id }}" data-section="section-{{ section_id }}">
-                            □ {{ chapter_id }}.{{ section_id }}: {{ section_title }}
+                            <a href="{{ url_for('chapter', card_slug=card_slug, chapter_id=chapter_id) }}?section=section-{{ section_id }}" >
+                                □ {{ chapter_id }}.{{ section_id }}: {{ section_title }}
                             </a>
                         </li>
                         {% endfor %}

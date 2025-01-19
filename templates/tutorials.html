@@ -6,15 +6,15 @@
     <h1 class="text-start" style="font-weight: 700;">Logic for Everybody (LG4E)</h1>
     <p class="mt-4">This site is primarily aimed at readers whose native language is Simplified Chinese. To overcome language barriers, we begin by translating some classic books on logic...</p>
 
-    <!-- 网格布局 -->
+    <!-- 分类卡片网格布局 -->
     <div class="row mt-4 g-2">
-        {% for card_slug, card_data in cards.items() %}
+        {% for category_slug, category_data in categories.items() %}
         <div class="col-lg-3 col-md-4 col-sm-6">
-            <a href="{{ url_for('card', card_slug=card_slug) }}" style="text-decoration: none; color: inherit;">
+            <a href="{{ url_for('category', category_slug=category_slug) }}" style="text-decoration: none; color: inherit;">
                 <div class="card h-100">
                     <div class="card-body">
-                        <h6 class="card-title">{{ loop.index }}: {{ card_data.title }}</h6>
-                        <p class="card-text" style="margin-top: 1rem;">{{ card_data.description }}</p>
+                        <h6 class="card-title">{{ loop.index }}: {{ category_data.title }}</h6>
+                        <p class="card-text" style="margin-top: 1rem;">{{ category_data.description }}</p>
                     </div>
                 </div>
             </a>

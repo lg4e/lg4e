@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row g-0">
+    <!-- 左侧书籍卡片部分 -->
+    <div class="col-lg-8 col-md-7">
+        <div class="row g-3">
+            {% for book in books %}
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <a href="#" class="text-decoration-none" onclick="loadBookContent('{{ book.slug }}')">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ book.title }}</h5>
+                            <p class="card-text">Explore the chapters and topics in this book.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <!-- 右侧目录 -->
+    <div class="col-lg-4 col-md-5" style="position: fixed; right: 0; top: 3.6rem; bottom: 0; width: 33%; overflow-y: auto; background-color: #f9f9f9; border-left: 1px solid #ccc; padding: 20px;">
+        <div id="book-content">
+            <p class="text-muted">Select a book to view its contents here.</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    function loadBookContent(bookSlug) {
+        // 动态获取书籍内容
+        fetch(`/api/category/{{ request.view_args.category_slug }}/book/${bookSlug}`)
+            .then(response => response.json())
+            .then(data => {
+                const contentDiv = document.getElementById('book-content');
+                if (data.error) {
+                    contentDiv.innerHTML = `<p class="text-danger">Error: ${data.error}</p>`;
+                } else {
+                    let content = `<h2>${data.title}</h2><ul>`;
+                    for (const [partId, partData] of Object.entries(data.parts || {})) {
+                        content += `<li style="list-style: none; margin-bottom: 10px;">
+                                        <strong>■ Part ${partId}: ${partData.title}</strong>
+                                        <ul style="padding-left: 20px;">`;
+                        for (const [chapterId, chapterData] of Object.entries(partData.chapters || {})) {
+                            content += `<li style="list-style: none; margin-bottom: 5px;">
+                                            <a href="#" style="text-decoration: none; color: #007bff;">
+                                                ◆ Chapter ${chapterId}: ${chapterData.title}
+                                            </a>
+                                            <ul style="padding-left: 20px;">`;
+                            for (const [sectionId, sectionTitle] of Object.entries(chapterData.sections || {})) {
+                                content += `<li style="list-style: none; margin-bottom: 3px;">
+                                                <a href="#" style="text-decoration: none; color: #007bff;">
+                                                    □ ${chapterId}.${sectionId}: ${sectionTitle}
+                                                </a>
+                                            </li>`;
+                            }
+                            content += `</ul></li>`;
+                        }
+                        content += `</ul></li>`;
+                    }
+                    content += `</ul>`;
+                    contentDiv.innerHTML = content;
+                }
+            })
+            .catch(error => {
+                document.getElementById('book-content').innerHTML = `<p class="text-danger">Failed to load book content. Please try again later.</p>`;
+                console.error('Error fetching book content:', error);
+            });
+    }
+</script>
+{% endblock %}
+

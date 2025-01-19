@@ -10,214 +10,182 @@ MARKDOWN_EXTENSIONS = [
 DEFAULT_404_TEMPLATE = "404.html"
 DEFAULT_500_TEMPLATE = "500.html"
 
-CARDS = {
-    # Set Theory and Logic Card
+# 分类数据
+CATEGORIES = {
     "set_theory_and_logic": {
         "title": "Set Theory and Logic",
-        "description": "This card is an introduction to Set Theory, aimed especially at ...",
-        "parts": {
-            "I": {
-                "title": "General Topology",
-                "chapters": {
-                    1: {
-                        "title": "Foundations of Set Theory",
-                        "sections": {
-                            1: "Fundamental Concepts",
-                            2: "Functions",
-                            3: "Relations",
-                        },
-                    },
-                },
-            },
-            "II": {
-                "title": "Algebraic Topology",
-                "chapters": {
-                    2: {
-                        "title": "Number Systems and Cartesian Products",
-                        "sections": {
-                            1: "The Integers and the Real Numbers",
-                            2: "Cartesian Products",
-                        },
-                    },
-                    3: {
-                        "title": "Advanced Topics in Set Theory",
-                        "sections": {
-                            1: "Finite Sets",
-                            2: "Countable and Uncountable Sets",
-                            3: "The Principle of Recursive Definition",
-                            4: "Infinite Sets and the Axiom of Choice",
-                            5: "Well-Ordered Sets",
-                        },
-                    },
-                },
-            },
-        },
+        "description": "An introduction to Set Theory and Logic",
     },
-
-"formal_logic": {
-    "title": "Formal Logic",
-    "description": "An Introduction to Formal Logic",
-    "parts": {
-        "I": {
-            "title": "Key notions of logic",
-            "chapters": {
-                1: {
-                    "title": "Arguments",
-                    "sections": {
-                        1: "The Foundations of Logical Reasoning",
-                        2: "Principles of Deductive and Inductive Logic",
-                        3: "Logical Fallacies: Identifying Errors in Arguments",
-                        4: "Symbolic Logic and Its Applications",
-                        5: "Truth, Validity, and Soundness in Argumentation",
-                    },
-                },
-                2: {
-                    "title": "The scope of logic",
-                    "sections": {
-                        1: "Consequence and validity",
-                        2: "Cases and types of validity",
-                        3: "Formal validity",
-                        4: "Sound arguments",
-                        5: "Inductive arguments",
-                    },
-                },
-                3: {
-                    "title": "Other logical notions",
-                    "sections": {},  # 无小节
-                },
-            },
-        },
-        "II": {
-            "title": "Truth-functional logic",
-            "chapters": {
-                4: {
-                    "title": "Logical Structures",
-                    "sections": {},  # 无小节
-                },
-                5: {
-                    "title": "Connectives",
-                    "sections": {},  # 无小节
-                },
-                6: {
-                    "title": "Ambiguity",
-                    "sections": {},  # 无小节
-                },
-            },
-        },
-        "III": {
-            "title": "Truth tables",
-            "chapters": {
-                7: {
-                    "title": "Truth-functional Analysis",
-                    "sections": {},  # 无小节
-                },
-            },
-        },
+    "formal_logic": {
+        "title": "Formal Logic",
+        "description": "An Introduction to Formal Logic",
     },
-},
-
-    # Linear Algebra Card
     "linear_algebra": {
         "title": "Linear Algebra",
         "description": "This card explores the foundational concepts of linear algebra.",
-        "chapters": {
-            1: {"title": "Vectors and Matrices"},
-            2: {"title": "Determinants"},
-            3: {"title": "Eigenvalues and Eigenvectors"},
-            4: {"title": "Vector Spaces"},
-            5: {"title": "Linear Transformations"},
-        },
     },
-
-    # Calculus Card
     "calculus": {
         "title": "Calculus",
         "description": "This card focuses on the essential topics in calculus.",
-        "chapters": {
-            1: {"title": "Limits and Continuity"},
-            2: {"title": "Differentiation"},
-            3: {"title": "Integration"},
-            4: {"title": "Applications of Derivatives"},
-            5: {"title": "Series and Sequences"},
-        },
     },
-
-    # Discrete Mathematics Card
     "discrete_math": {
         "title": "Discrete Mathematics",
         "description": "This card covers fundamental topics in discrete math.",
-        "chapters": {
-            1: {"title": "Propositional Logic"},
-            2: {"title": "Combinatorics"},
-            3: {"title": "Graph Theory"},
-            4: {"title": "Recursion and Recurrence Relations"},
-            5: {"title": "Boolean Algebra"},
-        },
     },
-
-    # Abstract Algebra Card
     "abstract_algebra": {
         "title": "Abstract Algebra",
         "description": "This card delves into groups, rings, and fields.",
-        "chapters": {
-            1: {"title": "Groups"},
-            2: {"title": "Rings"},
-            3: {"title": "Fields"},
-            4: {"title": "Modules and Vector Spaces"},
-            5: {"title": "Homomorphisms"},
-        },
     },
-
-    # Probability Theory Card
     "probability_theory": {
         "title": "Probability Theory",
         "description": "This card introduces key concepts in probability.",
-        "chapters": {
-            1: {"title": "Random Variables"},
-            2: {"title": "Probability Distributions"},
-            3: {"title": "Expected Value and Variance"},
-            4: {"title": "Conditional Probability"},
-            5: {"title": "The Law of Large Numbers"},
-        },
     },
-
-    # Real Analysis Card
     "real_analysis": {
         "title": "Real Analysis",
         "description": "This card explores rigorous calculus topics.",
-        "chapters": {
-            1: {"title": "Real Numbers and Sequences"},
-            2: {"title": "Limits and Continuity"},
-            3: {"title": "Differentiation"},
-            4: {"title": "Integration"},
-            5: {"title": "Metric Spaces"},
-        },
     },
-
-    # Computer Science Basics Card
     "computer_science_basics": {
         "title": "Computer Science Basics",
         "description": "This card introduces fundamental concepts in computer science.",
-        "chapters": {
-            1: {"title": "Algorithms"},
-            2: {"title": "Data Structures"},
-            3: {"title": "Complexity Theory"},
-            4: {"title": "Operating Systems"},
-            5: {"title": "Networks"},
-        },
     },
-
-    # Graph Theory Card
     "graph_theory": {
         "title": "Graph Theory",
         "description": "This card dives into the structure and properties of graphs.",
-        "chapters": {
-            1: {"title": "Graphs and Subgraphs"},
-            2: {"title": "Paths and Cycles"},
-            3: {"title": "Connectivity"},
-            4: {"title": "Graph Coloring"},
-            5: {"title": "Planar Graphs"},
-        },
     },
+}
+
+# 书籍数据
+BOOKS = {
+    "set_theory_and_logic": [
+        {
+            "slug": "general_topology",
+            "title": "General Topology",
+            "parts": {
+                "I": {
+                    "title": "Introduction to Topology",
+                    "chapters": {
+                        1: {
+                            "title": "Foundations of Set Theory",
+                            "sections": {
+                                1: "Fundamental Concepts",
+                                2: "Functions",
+                                3: "Relations",
+                            },
+                        },
+                    },
+                },
+            },
+        },
+        {
+            "slug": "algebraic_topology",
+            "title": "Algebraic Topology",
+            "parts": {
+                "I": {
+                    "title": "Introduction to Algebraic Structures",
+                    "chapters": {
+                        2: {
+                            "title": "Number Systems and Cartesian Products",
+                            "sections": {
+                                1: "The Integers and the Real Numbers",
+                                2: "Cartesian Products",
+                            },
+                        },
+                        3: {
+                            "title": "Advanced Topics in Set Theory",
+                            "sections": {
+                                1: "Finite Sets",
+                                2: "Countable and Uncountable Sets",
+                                3: "The Principle of Recursive Definition",
+                                4: "Infinite Sets and the Axiom of Choice",
+                                5: "Well-Ordered Sets",
+                            },
+                        },
+                    },
+                },
+            },
+        },
+    ],
+    "formal_logic": [
+        {
+            "slug": "forallxyyc",
+            "title": "forallxyyc",
+            "parts": {
+                "I": {
+                    "title": "Key Notions of Logic",
+                    "chapters": {
+                        1: {
+                            "title": "Arguments",
+                            "sections": {
+                                1: "The Foundations of Logical Reasoning",
+                                2: "Principles of Deductive and Inductive Logic",
+                                3: "Logical Fallacies: Identifying Errors in Arguments",
+                                4: "Symbolic Logic and Its Applications",
+                                5: "Truth, Validity, and Soundness in Argumentation",
+                            },
+                        },
+                        2: {
+                            "title": "The Scope of Logic",
+                            "sections": {
+                                1: "Consequence and Validity",
+                                2: "Cases and Types of Validity",
+                                3: "Formal Validity",
+                                4: "Sound Arguments",
+                                5: "Inductive Arguments",
+                            },
+                        },
+                        3: {
+                            "title": "Other Logical Notions",
+                            "sections": {},
+                        },
+                    },
+                },
+                "II": {
+                    "title": "Truth-functional Logic",
+                    "chapters": {
+                        1: {
+                            "title": "Logical Operators",
+                            "sections": {
+                                1: "Negation",
+                                2: "Conjunction",
+                                3: "Disjunction",
+                                4: "Conditional Statements",
+                                5: "Biconditional Statements",
+                            },
+                        },
+                        2: {
+                            "title": "Truth Tables for Operators",
+                            "sections": {
+                                1: "Constructing Truth Tables",
+                                2: "Using Truth Tables for Validation",
+                                3: "Determining Logical Equivalences",
+                                4: "Common Logical Identities",
+                            },
+                        },
+                    },
+                },
+                "III": {
+                    "title": "Truth-tables",
+                    "chapters": {
+                        1: {
+                            "title": "Basics of Truth-tables",
+                            "sections": {
+                                1: "Truth-table Setup",
+                                2: "Analyzing Statements",
+                                3: "Validating Arguments",
+                            },
+                        },
+                        2: {
+                            "title": "Applications of Truth-tables",
+                            "sections": {
+                                1: "Solving Logical Puzzles",
+                                2: "Modeling Logical Circuits",
+                                3: "Advanced Truth-table Techniques",
+                            },
+                        },
+                    },
+                },
+            },
+        },
+    ],
 }
 

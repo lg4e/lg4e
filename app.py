@@ -146,12 +146,15 @@ def chapter(card_slug, chapter_id):
             if search_pattern in html_content:
                 # 替换标题，添加id和锚点
                 html_content = html_content.replace(
-                    search_pattern, 
+                    search_pattern,
                     f'<h2 id="section-{section_id}">{section_header}</h2>'
                 )
                 logging.info(f"Added anchor for section: {section_id} - {section_title}")
             else:
                 logging.warning(f"Section '{section_title}' not found in HTML content for chapter {chapter_id}")
+
+    # 获取 URL 参数中的 section 信息
+    selected_section = request.args.get("section", None)
 
     # 渲染章节页面
     return render_template(
@@ -159,6 +162,7 @@ def chapter(card_slug, chapter_id):
         title=f"{card_data['title']} - {chapter_title}",
         chapter_title=chapter_title,
         content=Markup(html_content),
+        selected_section=selected_section,  # 传递 section 参数给模板
     )
 
 if __name__ == '__main__':

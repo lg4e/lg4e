@@ -7109,3 +7109,1388 @@
 2025-01-19 17:59:04,496 INFO: Starting Flask application.
 2025-01-19 17:59:04,501 WARNING:  * Debugger is active!
 2025-01-19 17:59:04,501 INFO:  * Debugger PIN: 453-717-825
+2025-01-19 18:27:12,069 INFO: Starting Flask application.
+2025-01-19 18:27:12,073 WARNING:  * Debugger is active!
+2025-01-19 18:27:12,074 INFO:  * Debugger PIN: 453-717-825
+2025-01-19 18:27:15,683 INFO: Chapter page accessed: formal_logic - Chapter 1
+2025-01-19 18:27:15,683 INFO: Rendering Markdown file: content/formal_logic_chapter_1.md
+2025-01-19 18:27:15,689 INFO: Rendered HTML content preview: <h1>Chapter 1: Key Notions of Logic</h1>
+<h2>1.1 The Foundations of Logical Reasoning</h2>
+<p>An argument is a set of statements, one of which is the conclusion, and the rest are premises. The premises are intended to provide support for the conclusion.</p>
+<hr />
+<ol>
+<li>Premise: All humans are mortal.</li>
+<li>Premise: Socrates is human.</li>
+<li>Conclusion: Therefore, Socrates is mortal.</li>
+</ol>
+<hr />
+<p>The goal of an argument is to establish the truth of the conclusion. In logic, argum
+2025-01-19 18:27:15,689 INFO: Adding anchors for sections in chapter 1
+2025-01-19 18:27:15,689 INFO: Searching for header: <h2>1.1 The Foundations of Logical Reasoning</h2>
+2025-01-19 18:27:15,689 INFO: Added anchor for section: 1 - The Foundations of Logical Reasoning
+2025-01-19 18:27:15,689 INFO: Searching for header: <h2>1.2 Principles of Deductive and Inductive Logic</h2>
+2025-01-19 18:27:15,689 INFO: Added anchor for section: 2 - Principles of Deductive and Inductive Logic
+2025-01-19 18:27:15,689 INFO: Searching for header: <h2>1.3 Logical Fallacies: Identifying Errors in Arguments</h2>
+2025-01-19 18:27:15,689 INFO: Added anchor for section: 3 - Logical Fallacies: Identifying Errors in Arguments
+2025-01-19 18:27:15,689 INFO: Searching for header: <h2>1.4 Symbolic Logic and Its Applications</h2>
+2025-01-19 18:27:15,689 INFO: Added anchor for section: 4 - Symbolic Logic and Its Applications
+2025-01-19 18:27:15,689 INFO: Searching for header: <h2>1.5 Truth, Validity, and Soundness in Argumentation</h2>
+2025-01-19 18:27:15,689 INFO: Added anchor for section: 5 - Truth, Validity, and Soundness in Argumentation
+2025-01-19 18:27:15,692 INFO: 127.0.0.1 - - [19/Jan/2025 18:27:15] "GET /tutorials/formal_logic/chapter/1 HTTP/1.1" 200 -
+2025-01-19 18:27:15,757 INFO: 127.0.0.1 - - [19/Jan/2025 18:27:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-19 18:27:15,758 INFO: 127.0.0.1 - - [19/Jan/2025 18:27:15] "[36mGET /static/js/katex-config.js HTTP/1.1[0m" 304 -
+2025-01-19 18:27:16,759 INFO: Home page accessed.
+2025-01-19 18:27:16,760 INFO: 127.0.0.1 - - [19/Jan/2025 18:27:16] "GET / HTTP/1.1" 200 -
+2025-01-19 18:27:16,836 INFO: 127.0.0.1 - - [19/Jan/2025 18:27:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-19 18:27:16,837 INFO: 127.0.0.1 - - [19/Jan/2025 18:27:16] "[36mGET /static/js/katex-config.js HTTP/1.1[0m" 304 -
+2025-01-19 18:27:19,478 INFO: Tutorials page accessed.
+2025-01-19 18:27:19,480 INFO: 127.0.0.1 - - [19/Jan/2025 18:27:19] "GET /tutorials HTTP/1.1" 200 -
+2025-01-19 18:27:19,537 INFO: 127.0.0.1 - - [19/Jan/2025 18:27:19] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-19 18:27:19,537 INFO: 127.0.0.1 - - [19/Jan/2025 18:27:19] "[36mGET /static/js/katex-config.js HTTP/1.1[0m" 304 -
+2025-01-19 18:27:20,165 INFO: Card page accessed: formal_logic
+2025-01-19 18:27:20,165 INFO: Chapter 1 contains sections: {1: 'The Foundations of Logical Reasoning', 2: 'Principles of Deductive and Inductive Logic', 3: 'Logical Fallacies: Identifying Errors in Arguments', 4: 'Symbolic Logic and Its Applications', 5: 'Truth, Validity, and Soundness in Argumentation'}
+2025-01-19 18:27:20,165 INFO: Chapter 2 contains sections: {1: 'Consequence and validity', 2: 'Cases and types of validity', 3: 'Formal validity', 4: 'Sound arguments', 5: 'Inductive arguments'}
+2025-01-19 18:27:20,165 INFO: Chapter 3 contains sections: {}
+2025-01-19 18:27:20,165 INFO: Chapter 4 contains sections: {}
+2025-01-19 18:27:20,165 INFO: Chapter 5 contains sections: {}
+2025-01-19 18:27:20,165 INFO: Chapter 6 contains sections: {}
+2025-01-19 18:27:20,165 INFO: Chapter 7 contains sections: {}
+2025-01-19 18:27:20,168 INFO: 127.0.0.1 - - [19/Jan/2025 18:27:20] "GET /tutorials/formal_logic HTTP/1.1" 200 -
+2025-01-19 18:27:20,214 INFO: 127.0.0.1 - - [19/Jan/2025 18:27:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-19 18:27:20,214 INFO: 127.0.0.1 - - [19/Jan/2025 18:27:20] "[36mGET /static/js/katex-config.js HTTP/1.1[0m" 304 -
+2025-01-19 18:27:21,101 INFO: Chapter page accessed: formal_logic - Chapter 1
+2025-01-19 18:27:21,101 INFO: Rendering Markdown file: content/formal_logic_chapter_1.md
+2025-01-19 18:27:21,106 INFO: Rendered HTML content preview: <h1>Chapter 1: Key Notions of Logic</h1>
+<h2>1.1 The Foundations of Logical Reasoning</h2>
+<p>An argument is a set of statements, one of which is the conclusion, and the rest are premises. The premises are intended to provide support for the conclusion.</p>
+<hr />
+<ol>
+<li>Premise: All humans are mortal.</li>
+<li>Premise: Socrates is human.</li>
+<li>Conclusion: Therefore, Socrates is mortal.</li>
+</ol>
+<hr />
+<p>The goal of an argument is to establish the truth of the conclusion. In logic, argum
+2025-01-19 18:27:21,106 INFO: Adding anchors for sections in chapter 1
+2025-01-19 18:27:21,106 INFO: Searching for header: <h2>1.1 The Foundations of Logical Reasoning</h2>
+2025-01-19 18:27:21,106 INFO: Added anchor for section: 1 - The Foundations of Logical Reasoning
+2025-01-19 18:27:21,106 INFO: Searching for header: <h2>1.2 Principles of Deductive and Inductive Logic</h2>
+2025-01-19 18:27:21,106 INFO: Added anchor for section: 2 - Principles of Deductive and Inductive Logic
+2025-01-19 18:27:21,106 INFO: Searching for header: <h2>1.3 Logical Fallacies: Identifying Errors in Arguments</h2>
+2025-01-19 18:27:21,106 INFO: Added anchor for section: 3 - Logical Fallacies: Identifying Errors in Arguments
+2025-01-19 18:27:21,106 INFO: Searching for header: <h2>1.4 Symbolic Logic and Its Applications</h2>
+2025-01-19 18:27:21,106 INFO: Added anchor for section: 4 - Symbolic Logic and Its Applications
+2025-01-19 18:27:21,106 INFO: Searching for header: <h2>1.5 Truth, Validity, and Soundness in Argumentation</h2>
+2025-01-19 18:27:21,106 INFO: Added anchor for section: 5 - Truth, Validity, and Soundness in Argumentation
+2025-01-19 18:27:21,107 INFO: 127.0.0.1 - - [19/Jan/2025 18:27:21] "GET /tutorials/formal_logic/chapter/1 HTTP/1.1" 200 -
+2025-01-19 18:27:21,146 INFO: 127.0.0.1 - - [19/Jan/2025 18:27:21] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-19 18:27:21,147 INFO: 127.0.0.1 - - [19/Jan/2025 18:27:21] "[36mGET /static/js/katex-config.js HTTP/1.1[0m" 304 -
+2025-01-19 18:28:12,058 INFO: Chapter page accessed: formal_logic - Chapter 1
+2025-01-19 18:28:12,058 INFO: Rendering Markdown file: content/formal_logic_chapter_1.md
+2025-01-19 18:28:12,063 INFO: Rendered HTML content preview: <h1>Chapter 1: Key Notions of Logic</h1>
+<h2>1.1 The Foundations of Logical Reasoning</h2>
+<p>An argument is a set of statements, one of which is the conclusion, and the rest are premises. The premises are intended to provide support for the conclusion.</p>
+<hr />
+<ol>
+<li>Premise: All humans are mortal.</li>
+<li>Premise: Socrates is human.</li>
+<li>Conclusion: Therefore, Socrates is mortal.</li>
+</ol>
+<hr />
+<p>The goal of an argument is to establish the truth of the conclusion. In logic, argum
+2025-01-19 18:28:12,063 INFO: Adding anchors for sections in chapter 1
+2025-01-19 18:28:12,063 INFO: Searching for header: <h2>1.1 The Foundations of Logical Reasoning</h2>
+2025-01-19 18:28:12,063 INFO: Added anchor for section: 1 - The Foundations of Logical Reasoning
+2025-01-19 18:28:12,063 INFO: Searching for header: <h2>1.2 Principles of Deductive and Inductive Logic</h2>
+2025-01-19 18:28:12,063 INFO: Added anchor for section: 2 - Principles of Deductive and Inductive Logic
+2025-01-19 18:28:12,063 INFO: Searching for header: <h2>1.3 Logical Fallacies: Identifying Errors in Arguments</h2>
+2025-01-19 18:28:12,063 INFO: Added anchor for section: 3 - Logical Fallacies: Identifying Errors in Arguments
+2025-01-19 18:28:12,064 INFO: Searching for header: <h2>1.4 Symbolic Logic and Its Applications</h2>
+2025-01-19 18:28:12,064 INFO: Added anchor for section: 4 - Symbolic Logic and Its Applications
+2025-01-19 18:28:12,064 INFO: Searching for header: <h2>1.5 Truth, Validity, and Soundness in Argumentation</h2>
+2025-01-19 18:28:12,064 INFO: Added anchor for section: 5 - Truth, Validity, and Soundness in Argumentation
+2025-01-19 18:28:12,064 INFO: 127.0.0.1 - - [19/Jan/2025 18:28:12] "GET /tutorials/formal_logic/chapter/1 HTTP/1.1" 200 -
+2025-01-19 18:28:12,128 INFO: 127.0.0.1 - - [19/Jan/2025 18:28:12] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-19 18:28:12,128 INFO: 127.0.0.1 - - [19/Jan/2025 18:28:12] "[36mGET /static/js/katex-config.js HTTP/1.1[0m" 304 -
+2025-01-19 18:33:10,548 INFO: Chapter page accessed: formal_logic - Chapter 1
+2025-01-19 18:33:10,548 INFO: Rendering Markdown file: content/formal_logic_chapter_1.md
+2025-01-19 18:33:10,553 INFO: Rendered HTML content preview: <h1>Chapter 1: Key Notions of Logic</h1>
+<h2>1.1 The Foundations of Logical Reasoning</h2>
+<p>An argument is a set of statements, one of which is the conclusion, and the rest are premises. The premises are intended to provide support for the conclusion.</p>
+<hr />
+<ol>
+<li>Premise: All humans are mortal.</li>
+<li>Premise: Socrates is human.</li>
+<li>Conclusion: Therefore, Socrates is mortal.</li>
+</ol>
+<hr />
+<p>The goal of an argument is to establish the truth of the conclusion. In logic, argum
+2025-01-19 18:33:10,553 INFO: Adding anchors for sections in chapter 1
+2025-01-19 18:33:10,553 INFO: Searching for header: <h2>1.1 The Foundations of Logical Reasoning</h2>
+2025-01-19 18:33:10,553 INFO: Added anchor for section: 1 - The Foundations of Logical Reasoning
+2025-01-19 18:33:10,553 INFO: Searching for header: <h2>1.2 Principles of Deductive and Inductive Logic</h2>
+2025-01-19 18:33:10,553 INFO: Added anchor for section: 2 - Principles of Deductive and Inductive Logic
+2025-01-19 18:33:10,553 INFO: Searching for header: <h2>1.3 Logical Fallacies: Identifying Errors in Arguments</h2>
+2025-01-19 18:33:10,553 INFO: Added anchor for section: 3 - Logical Fallacies: Identifying Errors in Arguments
+2025-01-19 18:33:10,553 INFO: Searching for header: <h2>1.4 Symbolic Logic and Its Applications</h2>
+2025-01-19 18:33:10,554 INFO: Added anchor for section: 4 - Symbolic Logic and Its Applications
+2025-01-19 18:33:10,554 INFO: Searching for header: <h2>1.5 Truth, Validity, and Soundness in Argumentation</h2>
+2025-01-19 18:33:10,554 INFO: Added anchor for section: 5 - Truth, Validity, and Soundness in Argumentation
+2025-01-19 18:33:10,554 INFO: 127.0.0.1 - - [19/Jan/2025 18:33:10] "GET /tutorials/formal_logic/chapter/1 HTTP/1.1" 200 -
+2025-01-19 18:33:10,624 INFO: 127.0.0.1 - - [19/Jan/2025 18:33:10] "[36mGET /static/js/katex-config.js HTTP/1.1[0m" 304 -
+2025-01-19 18:33:10,625 INFO: 127.0.0.1 - - [19/Jan/2025 18:33:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-19 18:37:16,976 INFO: Home page accessed.
+2025-01-19 18:37:16,976 INFO: 127.0.0.1 - - [19/Jan/2025 18:37:16] "GET / HTTP/1.1" 200 -
+2025-01-19 18:37:17,099 INFO: 127.0.0.1 - - [19/Jan/2025 18:37:17] "[36mGET /static/js/katex-config.js HTTP/1.1[0m" 304 -
+2025-01-19 18:37:17,100 INFO: 127.0.0.1 - - [19/Jan/2025 18:37:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-19 18:37:17,940 INFO: Home page accessed.
+2025-01-19 18:37:17,941 INFO: 127.0.0.1 - - [19/Jan/2025 18:37:17] "GET / HTTP/1.1" 200 -
+2025-01-19 18:37:17,986 INFO: 127.0.0.1 - - [19/Jan/2025 18:37:17] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-01-19 18:37:17,987 INFO: 127.0.0.1 - - [19/Jan/2025 18:37:17] "GET /static/js/katex-config.js HTTP/1.1" 200 -
+2025-01-19 18:37:18,278 WARNING: 404 error occurred: /favicon.ico
+2025-01-19 18:37:18,279 INFO: 127.0.0.1 - - [19/Jan/2025 18:37:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-01-19 18:37:19,302 INFO: Tutorials page accessed.
+2025-01-19 18:37:19,303 INFO: 127.0.0.1 - - [19/Jan/2025 18:37:19] "GET /tutorials HTTP/1.1" 200 -
+2025-01-19 18:37:19,374 INFO: 127.0.0.1 - - [19/Jan/2025 18:37:19] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-19 18:37:19,376 INFO: 127.0.0.1 - - [19/Jan/2025 18:37:19] "[36mGET /static/js/katex-config.js HTTP/1.1[0m" 304 -
+2025-01-19 18:37:20,502 INFO: Card page accessed: formal_logic
+2025-01-19 18:37:20,502 INFO: Chapter 1 contains sections: {1: 'The Foundations of Logical Reasoning', 2: 'Principles of Deductive and Inductive Logic', 3: 'Logical Fallacies: Identifying Errors in Arguments', 4: 'Symbolic Logic and Its Applications', 5: 'Truth, Validity, and Soundness in Argumentation'}
+2025-01-19 18:37:20,502 INFO: Chapter 2 contains sections: {1: 'Consequence and validity', 2: 'Cases and types of validity', 3: 'Formal validity', 4: 'Sound arguments', 5: 'Inductive arguments'}
+2025-01-19 18:37:20,502 INFO: Chapter 3 contains sections: {}
+2025-01-19 18:37:20,502 INFO: Chapter 4 contains sections: {}
+2025-01-19 18:37:20,502 INFO: Chapter 5 contains sections: {}
+2025-01-19 18:37:20,502 INFO: Chapter 6 contains sections: {}
+2025-01-19 18:37:20,502 INFO: Chapter 7 contains sections: {}
+2025-01-19 18:37:20,506 INFO: 127.0.0.1 - - [19/Jan/2025 18:37:20] "GET /tutorials/formal_logic HTTP/1.1" 200 -
+2025-01-19 18:37:20,546 INFO: 127.0.0.1 - - [19/Jan/2025 18:37:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-19 18:37:20,547 INFO: 127.0.0.1 - - [19/Jan/2025 18:37:20] "[36mGET /static/js/katex-config.js HTTP/1.1[0m" 304 -
+2025-01-19 18:37:21,712 INFO: Chapter page accessed: formal_logic - Chapter 1
+2025-01-19 18:37:21,712 INFO: Rendering Markdown file: content/formal_logic_chapter_1.md
+2025-01-19 18:37:21,717 INFO: Rendered HTML content preview: <h1>Chapter 1: Key Notions of Logic</h1>
+<h2>1.1 The Foundations of Logical Reasoning</h2>
+<p>An argument is a set of statements, one of which is the conclusion, and the rest are premises. The premises are intended to provide support for the conclusion.</p>
+<hr />
+<ol>
+<li>Premise: All humans are mortal.</li>
+<li>Premise: Socrates is human.</li>
+<li>Conclusion: Therefore, Socrates is mortal.</li>
+</ol>
+<hr />
+<p>The goal of an argument is to establish the truth of the conclusion. In logic, argum
+2025-01-19 18:37:21,717 INFO: Adding anchors for sections in chapter 1
+2025-01-19 18:37:21,717 INFO: Searching for header: <h2>1.1 The Foundations of Logical Reasoning</h2>
+2025-01-19 18:37:21,717 INFO: Added anchor for section: 1 - The Foundations of Logical Reasoning
+2025-01-19 18:37:21,717 INFO: Searching for header: <h2>1.2 Principles of Deductive and Inductive Logic</h2>
+2025-01-19 18:37:21,717 INFO: Added anchor for section: 2 - Principles of Deductive and Inductive Logic
+2025-01-19 18:37:21,717 INFO: Searching for header: <h2>1.3 Logical Fallacies: Identifying Errors in Arguments</h2>
+2025-01-19 18:37:21,717 INFO: Added anchor for section: 3 - Logical Fallacies: Identifying Errors in Arguments
+2025-01-19 18:37:21,717 INFO: Searching for header: <h2>1.4 Symbolic Logic and Its Applications</h2>
+2025-01-19 18:37:21,717 INFO: Added anchor for section: 4 - Symbolic Logic and Its Applications
+2025-01-19 18:37:21,717 INFO: Searching for header: <h2>1.5 Truth, Validity, and Soundness in Argumentation</h2>
+2025-01-19 18:37:21,717 INFO: Added anchor for section: 5 - Truth, Validity, and Soundness in Argumentation
+2025-01-19 18:37:21,717 INFO: 127.0.0.1 - - [19/Jan/2025 18:37:21] "GET /tutorials/formal_logic/chapter/1 HTTP/1.1" 200 -
+2025-01-19 18:37:21,757 INFO: 127.0.0.1 - - [19/Jan/2025 18:37:21] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-19 18:37:21,762 INFO: 127.0.0.1 - - [19/Jan/2025 18:37:21] "[36mGET /static/js/katex-config.js HTTP/1.1[0m" 304 -
+2025-01-19 18:37:23,582 INFO: Chapter page accessed: formal_logic - Chapter 1
+2025-01-19 18:37:23,582 INFO: Rendering Markdown file: content/formal_logic_chapter_1.md
+2025-01-19 18:37:23,587 INFO: Rendered HTML content preview: <h1>Chapter 1: Key Notions of Logic</h1>
+<h2>1.1 The Foundations of Logical Reasoning</h2>
+<p>An argument is a set of statements, one of which is the conclusion, and the rest are premises. The premises are intended to provide support for the conclusion.</p>
+<hr />
+<ol>
+<li>Premise: All humans are mortal.</li>
+<li>Premise: Socrates is human.</li>
+<li>Conclusion: Therefore, Socrates is mortal.</li>
+</ol>
+<hr />
+<p>The goal of an argument is to establish the truth of the conclusion. In logic, argum
+2025-01-19 18:37:23,587 INFO: Adding anchors for sections in chapter 1
+2025-01-19 18:37:23,587 INFO: Searching for header: <h2>1.1 The Foundations of Logical Reasoning</h2>
+2025-01-19 18:37:23,587 INFO: Added anchor for section: 1 - The Foundations of Logical Reasoning
+2025-01-19 18:37:23,587 INFO: Searching for header: <h2>1.2 Principles of Deductive and Inductive Logic</h2>
+2025-01-19 18:37:23,587 INFO: Added anchor for section: 2 - Principles of Deductive and Inductive Logic
+2025-01-19 18:37:23,587 INFO: Searching for header: <h2>1.3 Logical Fallacies: Identifying Errors in Arguments</h2>
+2025-01-19 18:37:23,587 INFO: Added anchor for section: 3 - Logical Fallacies: Identifying Errors in Arguments
+2025-01-19 18:37:23,587 INFO: Searching for header: <h2>1.4 Symbolic Logic and Its Applications</h2>
+2025-01-19 18:37:23,587 INFO: Added anchor for section: 4 - Symbolic Logic and Its Applications
+2025-01-19 18:37:23,587 INFO: Searching for header: <h2>1.5 Truth, Validity, and Soundness in Argumentation</h2>
+2025-01-19 18:37:23,587 INFO: Added anchor for section: 5 - Truth, Validity, and Soundness in Argumentation
+2025-01-19 18:37:23,587 INFO: 127.0.0.1 - - [19/Jan/2025 18:37:23] "GET /tutorials/formal_logic/chapter/1 HTTP/1.1" 200 -
+2025-01-19 18:37:23,628 INFO: 127.0.0.1 - - [19/Jan/2025 18:37:23] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-19 18:37:23,634 INFO: 127.0.0.1 - - [19/Jan/2025 18:37:23] "[36mGET /static/js/katex-config.js HTTP/1.1[0m" 304 -
+2025-01-19 18:38:29,629 INFO: Home page accessed.
+2025-01-19 18:38:29,630 INFO: 127.0.0.1 - - [19/Jan/2025 18:38:29] "GET / HTTP/1.1" 200 -
+2025-01-19 18:38:29,723 INFO: 127.0.0.1 - - [19/Jan/2025 18:38:29] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-19 18:38:29,724 INFO: 127.0.0.1 - - [19/Jan/2025 18:38:29] "[36mGET /static/js/katex-config.js HTTP/1.1[0m" 304 -
+2025-01-19 18:38:30,662 INFO: Home page accessed.
+2025-01-19 18:38:30,662 INFO: 127.0.0.1 - - [19/Jan/2025 18:38:30] "GET / HTTP/1.1" 200 -
+2025-01-19 18:38:30,708 INFO: 127.0.0.1 - - [19/Jan/2025 18:38:30] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-01-19 18:38:30,709 INFO: 127.0.0.1 - - [19/Jan/2025 18:38:30] "GET /static/js/katex-config.js HTTP/1.1" 200 -
+2025-01-19 18:38:30,989 WARNING: 404 error occurred: /favicon.ico
+2025-01-19 18:38:30,989 INFO: 127.0.0.1 - - [19/Jan/2025 18:38:30] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-01-19 18:38:31,726 INFO: Tutorials page accessed.
+2025-01-19 18:38:31,726 INFO: 127.0.0.1 - - [19/Jan/2025 18:38:31] "GET /tutorials HTTP/1.1" 200 -
+2025-01-19 18:38:31,793 INFO: 127.0.0.1 - - [19/Jan/2025 18:38:31] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-19 18:38:31,794 INFO: 127.0.0.1 - - [19/Jan/2025 18:38:31] "[36mGET /static/js/katex-config.js HTTP/1.1[0m" 304 -
+2025-01-19 18:38:32,432 INFO: Card page accessed: formal_logic
+2025-01-19 18:38:32,432 INFO: Chapter 1 contains sections: {1: 'The Foundations of Logical Reasoning', 2: 'Principles of Deductive and Inductive Logic', 3: 'Logical Fallacies: Identifying Errors in Arguments', 4: 'Symbolic Logic and Its Applications', 5: 'Truth, Validity, and Soundness in Argumentation'}
+2025-01-19 18:38:32,432 INFO: Chapter 2 contains sections: {1: 'Consequence and validity', 2: 'Cases and types of validity', 3: 'Formal validity', 4: 'Sound arguments', 5: 'Inductive arguments'}
+2025-01-19 18:38:32,432 INFO: Chapter 3 contains sections: {}
+2025-01-19 18:38:32,432 INFO: Chapter 4 contains sections: {}
+2025-01-19 18:38:32,432 INFO: Chapter 5 contains sections: {}
+2025-01-19 18:38:32,432 INFO: Chapter 6 contains sections: {}
+2025-01-19 18:38:32,432 INFO: Chapter 7 contains sections: {}
+2025-01-19 18:38:32,436 INFO: 127.0.0.1 - - [19/Jan/2025 18:38:32] "GET /tutorials/formal_logic HTTP/1.1" 200 -
+2025-01-19 18:38:32,482 INFO: 127.0.0.1 - - [19/Jan/2025 18:38:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-19 18:38:32,482 INFO: 127.0.0.1 - - [19/Jan/2025 18:38:32] "[36mGET /static/js/katex-config.js HTTP/1.1[0m" 304 -
+2025-01-19 18:38:33,661 INFO: Chapter page accessed: formal_logic - Chapter 1
+2025-01-19 18:38:33,661 INFO: Rendering Markdown file: content/formal_logic_chapter_1.md
+2025-01-19 18:38:33,665 INFO: Rendered HTML content preview: <h1>Chapter 1: Key Notions of Logic</h1>
+<h2>1.1 The Foundations of Logical Reasoning</h2>
+<p>An argument is a set of statements, one of which is the conclusion, and the rest are premises. The premises are intended to provide support for the conclusion.</p>
+<hr />
+<ol>
+<li>Premise: All humans are mortal.</li>
+<li>Premise: Socrates is human.</li>
+<li>Conclusion: Therefore, Socrates is mortal.</li>
+</ol>
+<hr />
+<p>The goal of an argument is to establish the truth of the conclusion. In logic, argum
+2025-01-19 18:38:33,665 INFO: Adding anchors for sections in chapter 1
+2025-01-19 18:38:33,666 INFO: Searching for header: <h2>1.1 The Foundations of Logical Reasoning</h2>
+2025-01-19 18:38:33,666 INFO: Added anchor for section: 1 - The Foundations of Logical Reasoning
+2025-01-19 18:38:33,666 INFO: Searching for header: <h2>1.2 Principles of Deductive and Inductive Logic</h2>
+2025-01-19 18:38:33,666 INFO: Added anchor for section: 2 - Principles of Deductive and Inductive Logic
+2025-01-19 18:38:33,666 INFO: Searching for header: <h2>1.3 Logical Fallacies: Identifying Errors in Arguments</h2>
+2025-01-19 18:38:33,666 INFO: Added anchor for section: 3 - Logical Fallacies: Identifying Errors in Arguments
+2025-01-19 18:38:33,666 INFO: Searching for header: <h2>1.4 Symbolic Logic and Its Applications</h2>
+2025-01-19 18:38:33,666 INFO: Added anchor for section: 4 - Symbolic Logic and Its Applications
+2025-01-19 18:38:33,666 INFO: Searching for header: <h2>1.5 Truth, Validity, and Soundness in Argumentation</h2>
+2025-01-19 18:38:33,666 INFO: Added anchor for section: 5 - Truth, Validity, and Soundness in Argumentation
+2025-01-19 18:38:33,667 INFO: 127.0.0.1 - - [19/Jan/2025 18:38:33] "GET /tutorials/formal_logic/chapter/1 HTTP/1.1" 200 -
+2025-01-19 18:38:33,720 INFO: 127.0.0.1 - - [19/Jan/2025 18:38:33] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-19 18:38:33,721 INFO: 127.0.0.1 - - [19/Jan/2025 18:38:33] "[36mGET /static/js/katex-config.js HTTP/1.1[0m" 304 -
+2025-01-19 18:40:43,325 INFO:  * Detected change in '/home/shantaram/lg4e/app.py', reloading
+2025-01-19 18:40:43,428 INFO: Starting Flask application.
+2025-01-19 18:40:43,433 WARNING:  * Debugger is active!
+2025-01-19 18:40:43,433 INFO:  * Debugger PIN: 453-717-825
+2025-01-19 18:40:48,582 INFO: Home page accessed.
+2025-01-19 18:40:48,586 INFO: 127.0.0.1 - - [19/Jan/2025 18:40:48] "GET / HTTP/1.1" 200 -
+2025-01-19 18:40:48,705 INFO: 127.0.0.1 - - [19/Jan/2025 18:40:48] "[36mGET /static/js/katex-config.js HTTP/1.1[0m" 304 -
+2025-01-19 18:40:48,705 INFO: 127.0.0.1 - - [19/Jan/2025 18:40:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-19 18:40:49,594 INFO: Home page accessed.
+2025-01-19 18:40:49,595 INFO: 127.0.0.1 - - [19/Jan/2025 18:40:49] "GET / HTTP/1.1" 200 -
+2025-01-19 18:40:49,642 INFO: 127.0.0.1 - - [19/Jan/2025 18:40:49] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-01-19 18:40:49,644 INFO: 127.0.0.1 - - [19/Jan/2025 18:40:49] "GET /static/js/katex-config.js HTTP/1.1" 200 -
+2025-01-19 18:40:49,921 WARNING: 404 error occurred: /favicon.ico
+2025-01-19 18:40:49,922 INFO: 127.0.0.1 - - [19/Jan/2025 18:40:49] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-01-19 18:40:50,798 INFO: Tutorials page accessed.
+2025-01-19 18:40:50,800 INFO: 127.0.0.1 - - [19/Jan/2025 18:40:50] "GET /tutorials HTTP/1.1" 200 -
+2025-01-19 18:40:50,873 INFO: 127.0.0.1 - - [19/Jan/2025 18:40:50] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-19 18:40:50,882 INFO: 127.0.0.1 - - [19/Jan/2025 18:40:50] "[36mGET /static/js/katex-config.js HTTP/1.1[0m" 304 -
+2025-01-19 18:40:51,556 INFO: Card page accessed: formal_logic
+2025-01-19 18:40:51,556 INFO: Chapter 1 contains sections: {1: 'The Foundations of Logical Reasoning', 2: 'Principles of Deductive and Inductive Logic', 3: 'Logical Fallacies: Identifying Errors in Arguments', 4: 'Symbolic Logic and Its Applications', 5: 'Truth, Validity, and Soundness in Argumentation'}
+2025-01-19 18:40:51,556 INFO: Chapter 2 contains sections: {1: 'Consequence and validity', 2: 'Cases and types of validity', 3: 'Formal validity', 4: 'Sound arguments', 5: 'Inductive arguments'}
+2025-01-19 18:40:51,556 INFO: Chapter 3 contains sections: {}
+2025-01-19 18:40:51,556 INFO: Chapter 4 contains sections: {}
+2025-01-19 18:40:51,556 INFO: Chapter 5 contains sections: {}
+2025-01-19 18:40:51,556 INFO: Chapter 6 contains sections: {}
+2025-01-19 18:40:51,556 INFO: Chapter 7 contains sections: {}
+2025-01-19 18:40:51,559 INFO: 127.0.0.1 - - [19/Jan/2025 18:40:51] "GET /tutorials/formal_logic HTTP/1.1" 200 -
+2025-01-19 18:40:51,600 INFO: 127.0.0.1 - - [19/Jan/2025 18:40:51] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-19 18:40:51,601 INFO: 127.0.0.1 - - [19/Jan/2025 18:40:51] "[36mGET /static/js/katex-config.js HTTP/1.1[0m" 304 -
+2025-01-19 18:40:52,580 INFO: Chapter page accessed: formal_logic - Chapter 1
+2025-01-19 18:40:52,581 INFO: Rendering Markdown file: content/formal_logic_chapter_1.md
+2025-01-19 18:40:52,586 INFO: Rendered HTML content preview: <h1>Chapter 1: Key Notions of Logic</h1>
+<h2>1.1 The Foundations of Logical Reasoning</h2>
+<p>An argument is a set of statements, one of which is the conclusion, and the rest are premises. The premises are intended to provide support for the conclusion.</p>
+<hr />
+<ol>
+<li>Premise: All humans are mortal.</li>
+<li>Premise: Socrates is human.</li>
+<li>Conclusion: Therefore, Socrates is mortal.</li>
+</ol>
+<hr />
+<p>The goal of an argument is to establish the truth of the conclusion. In logic, argum
+2025-01-19 18:40:52,586 INFO: Adding anchors for sections in chapter 1
+2025-01-19 18:40:52,586 INFO: Searching for header: <h2>1.1 The Foundations of Logical Reasoning</h2>
+2025-01-19 18:40:52,586 INFO: Added anchor for section: 1 - The Foundations of Logical Reasoning
+2025-01-19 18:40:52,586 INFO: Searching for header: <h2>1.2 Principles of Deductive and Inductive Logic</h2>
+2025-01-19 18:40:52,586 INFO: Added anchor for section: 2 - Principles of Deductive and Inductive Logic
+2025-01-19 18:40:52,587 INFO: Searching for header: <h2>1.3 Logical Fallacies: Identifying Errors in Arguments</h2>
+2025-01-19 18:40:52,587 INFO: Added anchor for section: 3 - Logical Fallacies: Identifying Errors in Arguments
+2025-01-19 18:40:52,587 INFO: Searching for header: <h2>1.4 Symbolic Logic and Its Applications</h2>
+2025-01-19 18:40:52,587 INFO: Added anchor for section: 4 - Symbolic Logic and Its Applications
+2025-01-19 18:40:52,587 INFO: Searching for header: <h2>1.5 Truth, Validity, and Soundness in Argumentation</h2>
+2025-01-19 18:40:52,587 INFO: Added anchor for section: 5 - Truth, Validity, and Soundness in Argumentation
+2025-01-19 18:40:52,588 INFO: 127.0.0.1 - - [19/Jan/2025 18:40:52] "GET /tutorials/formal_logic/chapter/1 HTTP/1.1" 200 -
+2025-01-19 18:40:52,631 INFO: 127.0.0.1 - - [19/Jan/2025 18:40:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-19 18:40:52,635 INFO: 127.0.0.1 - - [19/Jan/2025 18:40:52] "[36mGET /static/js/katex-config.js HTTP/1.1[0m" 304 -
+2025-01-19 18:40:54,448 INFO: Chapter page accessed: formal_logic - Chapter 1
+2025-01-19 18:40:54,448 INFO: Rendering Markdown file: content/formal_logic_chapter_1.md
+2025-01-19 18:40:54,455 INFO: Rendered HTML content preview: <h1>Chapter 1: Key Notions of Logic</h1>
+<h2>1.1 The Foundations of Logical Reasoning</h2>
+<p>An argument is a set of statements, one of which is the conclusion, and the rest are premises. The premises are intended to provide support for the conclusion.</p>
+<hr />
+<ol>
+<li>Premise: All humans are mortal.</li>
+<li>Premise: Socrates is human.</li>
+<li>Conclusion: Therefore, Socrates is mortal.</li>
+</ol>
+<hr />
+<p>The goal of an argument is to establish the truth of the conclusion. In logic, argum
+2025-01-19 18:40:54,455 INFO: Adding anchors for sections in chapter 1
+2025-01-19 18:40:54,455 INFO: Searching for header: <h2>1.1 The Foundations of Logical Reasoning</h2>
+2025-01-19 18:40:54,455 INFO: Added anchor for section: 1 - The Foundations of Logical Reasoning
+2025-01-19 18:40:54,455 INFO: Searching for header: <h2>1.2 Principles of Deductive and Inductive Logic</h2>
+2025-01-19 18:40:54,455 INFO: Added anchor for section: 2 - Principles of Deductive and Inductive Logic
+2025-01-19 18:40:54,455 INFO: Searching for header: <h2>1.3 Logical Fallacies: Identifying Errors in Arguments</h2>
+2025-01-19 18:40:54,455 INFO: Added anchor for section: 3 - Logical Fallacies: Identifying Errors in Arguments
+2025-01-19 18:40:54,455 INFO: Searching for header: <h2>1.4 Symbolic Logic and Its Applications</h2>
+2025-01-19 18:40:54,455 INFO: Added anchor for section: 4 - Symbolic Logic and Its Applications
+2025-01-19 18:40:54,455 INFO: Searching for header: <h2>1.5 Truth, Validity, and Soundness in Argumentation</h2>
+2025-01-19 18:40:54,455 INFO: Added anchor for section: 5 - Truth, Validity, and Soundness in Argumentation
+2025-01-19 18:40:54,455 INFO: 127.0.0.1 - - [19/Jan/2025 18:40:54] "GET /tutorials/formal_logic/chapter/1 HTTP/1.1" 200 -
+2025-01-19 18:40:54,495 INFO: 127.0.0.1 - - [19/Jan/2025 18:40:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-19 18:40:54,500 INFO: 127.0.0.1 - - [19/Jan/2025 18:40:54] "[36mGET /static/js/katex-config.js HTTP/1.1[0m" 304 -
+2025-01-19 18:41:57,243 INFO: Chapter page accessed: formal_logic - Chapter 1
+2025-01-19 18:41:57,243 INFO: Rendering Markdown file: content/formal_logic_chapter_1.md
+2025-01-19 18:41:57,248 INFO: Rendered HTML content preview: <h1>Chapter 1: Key Notions of Logic</h1>
+<h2>1.1 The Foundations of Logical Reasoning</h2>
+<p>An argument is a set of statements, one of which is the conclusion, and the rest are premises. The premises are intended to provide support for the conclusion.</p>
+<hr />
+<ol>
+<li>Premise: All humans are mortal.</li>
+<li>Premise: Socrates is human.</li>
+<li>Conclusion: Therefore, Socrates is mortal.</li>
+</ol>
+<hr />
+<p>The goal of an argument is to establish the truth of the conclusion. In logic, argum
+2025-01-19 18:41:57,248 INFO: Adding anchors for sections in chapter 1
+2025-01-19 18:41:57,248 INFO: Searching for header: <h2>1.1 The Foundations of Logical Reasoning</h2>
+2025-01-19 18:41:57,248 INFO: Added anchor for section: 1 - The Foundations of Logical Reasoning
+2025-01-19 18:41:57,248 INFO: Searching for header: <h2>1.2 Principles of Deductive and Inductive Logic</h2>
+2025-01-19 18:41:57,248 INFO: Added anchor for section: 2 - Principles of Deductive and Inductive Logic
+2025-01-19 18:41:57,248 INFO: Searching for header: <h2>1.3 Logical Fallacies: Identifying Errors in Arguments</h2>
+2025-01-19 18:41:57,248 INFO: Added anchor for section: 3 - Logical Fallacies: Identifying Errors in Arguments
+2025-01-19 18:41:57,248 INFO: Searching for header: <h2>1.4 Symbolic Logic and Its Applications</h2>
+2025-01-19 18:41:57,248 INFO: Added anchor for section: 4 - Symbolic Logic and Its Applications
+2025-01-19 18:41:57,248 INFO: Searching for header: <h2>1.5 Truth, Validity, and Soundness in Argumentation</h2>
+2025-01-19 18:41:57,248 INFO: Added anchor for section: 5 - Truth, Validity, and Soundness in Argumentation
+2025-01-19 18:41:57,249 INFO: 127.0.0.1 - - [19/Jan/2025 18:41:57] "GET /tutorials/formal_logic/chapter/1 HTTP/1.1" 200 -
+2025-01-19 18:41:57,327 INFO: 127.0.0.1 - - [19/Jan/2025 18:41:57] "[36mGET /static/js/katex-config.js HTTP/1.1[0m" 304 -
+2025-01-19 18:41:57,328 INFO: 127.0.0.1 - - [19/Jan/2025 18:41:57] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-19 18:42:47,757 INFO:  * Detected change in '/home/shantaram/lg4e/app.py', reloading
+2025-01-19 18:42:47,858 INFO: Starting Flask application.
+2025-01-19 18:42:47,862 WARNING:  * Debugger is active!
+2025-01-19 18:42:47,863 INFO:  * Debugger PIN: 453-717-825
+2025-01-19 18:44:13,210 INFO: Home page accessed.
+2025-01-19 18:44:13,214 INFO: 127.0.0.1 - - [19/Jan/2025 18:44:13] "GET / HTTP/1.1" 200 -
+2025-01-19 18:44:13,305 INFO: 127.0.0.1 - - [19/Jan/2025 18:44:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-19 18:44:13,306 INFO: 127.0.0.1 - - [19/Jan/2025 18:44:13] "[36mGET /static/js/katex-config.js HTTP/1.1[0m" 304 -
+2025-01-19 18:44:14,167 INFO: Home page accessed.
+2025-01-19 18:44:14,167 INFO: 127.0.0.1 - - [19/Jan/2025 18:44:14] "GET / HTTP/1.1" 200 -
+2025-01-19 18:44:14,212 INFO: 127.0.0.1 - - [19/Jan/2025 18:44:14] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-01-19 18:44:14,213 INFO: 127.0.0.1 - - [19/Jan/2025 18:44:14] "GET /static/js/katex-config.js HTTP/1.1" 200 -
+2025-01-19 18:44:14,463 WARNING: 404 error occurred: /favicon.ico
+2025-01-19 18:44:14,464 INFO: 127.0.0.1 - - [19/Jan/2025 18:44:14] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-01-19 18:44:15,147 INFO: Tutorials page accessed.
+2025-01-19 18:44:15,149 INFO: 127.0.0.1 - - [19/Jan/2025 18:44:15] "GET /tutorials HTTP/1.1" 200 -
+2025-01-19 18:44:15,213 INFO: 127.0.0.1 - - [19/Jan/2025 18:44:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-19 18:44:15,218 INFO: 127.0.0.1 - - [19/Jan/2025 18:44:15] "[36mGET /static/js/katex-config.js HTTP/1.1[0m" 304 -
+2025-01-19 18:44:15,945 INFO: Card page accessed: formal_logic
+2025-01-19 18:44:15,945 INFO: Chapter 1 contains sections: {1: 'The Foundations of Logical Reasoning', 2: 'Principles of Deductive and Inductive Logic', 3: 'Logical Fallacies: Identifying Errors in Arguments', 4: 'Symbolic Logic and Its Applications', 5: 'Truth, Validity, and Soundness in Argumentation'}
+2025-01-19 18:44:15,945 INFO: Chapter 2 contains sections: {1: 'Consequence and validity', 2: 'Cases and types of validity', 3: 'Formal validity', 4: 'Sound arguments', 5: 'Inductive arguments'}
+2025-01-19 18:44:15,945 INFO: Chapter 3 contains sections: {}
+2025-01-19 18:44:15,945 INFO: Chapter 4 contains sections: {}
+2025-01-19 18:44:15,945 INFO: Chapter 5 contains sections: {}
+2025-01-19 18:44:15,945 INFO: Chapter 6 contains sections: {}
+2025-01-19 18:44:15,945 INFO: Chapter 7 contains sections: {}
+2025-01-19 18:44:15,948 INFO: 127.0.0.1 - - [19/Jan/2025 18:44:15] "GET /tutorials/formal_logic HTTP/1.1" 200 -
+2025-01-19 18:44:15,989 INFO: 127.0.0.1 - - [19/Jan/2025 18:44:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-19 18:44:15,991 INFO: 127.0.0.1 - - [19/Jan/2025 18:44:15] "[36mGET /static/js/katex-config.js HTTP/1.1[0m" 304 -
+2025-01-19 18:44:17,061 INFO: Chapter page accessed: formal_logic - Chapter 1
+2025-01-19 18:44:17,061 INFO: Rendering Markdown file: content/formal_logic_chapter_1.md
+2025-01-19 18:44:17,067 INFO: Rendered HTML content preview: <h1>Chapter 1: Key Notions of Logic</h1>
+<h2>1.1 The Foundations of Logical Reasoning</h2>
+<p>An argument is a set of statements, one of which is the conclusion, and the rest are premises. The premises are intended to provide support for the conclusion.</p>
+<hr />
+<ol>
+<li>Premise: All humans are mortal.</li>
+<li>Premise: Socrates is human.</li>
+<li>Conclusion: Therefore, Socrates is mortal.</li>
+</ol>
+<hr />
+<p>The goal of an argument is to establish the truth of the conclusion. In logic, argum
+2025-01-19 18:44:17,067 INFO: Adding anchors for sections in chapter 1
+2025-01-19 18:44:17,067 INFO: Searching for header: <h2>1.1 The Foundations of Logical Reasoning</h2>
+2025-01-19 18:44:17,067 INFO: Added anchor for section: 1 - The Foundations of Logical Reasoning
+2025-01-19 18:44:17,067 INFO: Searching for header: <h2>1.2 Principles of Deductive and Inductive Logic</h2>
+2025-01-19 18:44:17,067 INFO: Added anchor for section: 2 - Principles of Deductive and Inductive Logic
+2025-01-19 18:44:17,067 INFO: Searching for header: <h2>1.3 Logical Fallacies: Identifying Errors in Arguments</h2>
+2025-01-19 18:44:17,067 INFO: Added anchor for section: 3 - Logical Fallacies: Identifying Errors in Arguments
+2025-01-19 18:44:17,067 INFO: Searching for header: <h2>1.4 Symbolic Logic and Its Applications</h2>
+2025-01-19 18:44:17,067 INFO: Added anchor for section: 4 - Symbolic Logic and Its Applications
+2025-01-19 18:44:17,067 INFO: Searching for header: <h2>1.5 Truth, Validity, and Soundness in Argumentation</h2>
+2025-01-19 18:44:17,067 INFO: Added anchor for section: 5 - Truth, Validity, and Soundness in Argumentation
+2025-01-19 18:44:17,068 INFO: 127.0.0.1 - - [19/Jan/2025 18:44:17] "GET /tutorials/formal_logic/chapter/1 HTTP/1.1" 200 -
+2025-01-19 18:44:17,100 INFO: 127.0.0.1 - - [19/Jan/2025 18:44:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-19 18:44:17,108 INFO: 127.0.0.1 - - [19/Jan/2025 18:44:17] "[36mGET /static/js/katex-config.js HTTP/1.1[0m" 304 -
+2025-01-19 18:44:24,467 INFO: Chapter page accessed: formal_logic - Chapter 1
+2025-01-19 18:44:24,468 INFO: Rendering Markdown file: content/formal_logic_chapter_1.md
+2025-01-19 18:44:24,472 INFO: Rendered HTML content preview: <h1>Chapter 1: Key Notions of Logic</h1>
+<h2>1.1 The Foundations of Logical Reasoning</h2>
+<p>An argument is a set of statements, one of which is the conclusion, and the rest are premises. The premises are intended to provide support for the conclusion.</p>
+<hr />
+<ol>
+<li>Premise: All humans are mortal.</li>
+<li>Premise: Socrates is human.</li>
+<li>Conclusion: Therefore, Socrates is mortal.</li>
+</ol>
+<hr />
+<p>The goal of an argument is to establish the truth of the conclusion. In logic, argum
+2025-01-19 18:44:24,472 INFO: Adding anchors for sections in chapter 1
+2025-01-19 18:44:24,472 INFO: Searching for header: <h2>1.1 The Foundations of Logical Reasoning</h2>
+2025-01-19 18:44:24,472 INFO: Added anchor for section: 1 - The Foundations of Logical Reasoning
+2025-01-19 18:44:24,472 INFO: Searching for header: <h2>1.2 Principles of Deductive and Inductive Logic</h2>
+2025-01-19 18:44:24,472 INFO: Added anchor for section: 2 - Principles of Deductive and Inductive Logic
+2025-01-19 18:44:24,472 INFO: Searching for header: <h2>1.3 Logical Fallacies: Identifying Errors in Arguments</h2>
+2025-01-19 18:44:24,472 INFO: Added anchor for section: 3 - Logical Fallacies: Identifying Errors in Arguments
+2025-01-19 18:44:24,472 INFO: Searching for header: <h2>1.4 Symbolic Logic and Its Applications</h2>
+2025-01-19 18:44:24,472 INFO: Added anchor for section: 4 - Symbolic Logic and Its Applications
+2025-01-19 18:44:24,472 INFO: Searching for header: <h2>1.5 Truth, Validity, and Soundness in Argumentation</h2>
+2025-01-19 18:44:24,472 INFO: Added anchor for section: 5 - Truth, Validity, and Soundness in Argumentation
+2025-01-19 18:44:24,473 INFO: 127.0.0.1 - - [19/Jan/2025 18:44:24] "GET /tutorials/formal_logic/chapter/1 HTTP/1.1" 200 -
+2025-01-19 18:44:24,519 INFO: 127.0.0.1 - - [19/Jan/2025 18:44:24] "[36mGET /static/js/katex-config.js HTTP/1.1[0m" 304 -
+2025-01-19 18:44:24,520 INFO: 127.0.0.1 - - [19/Jan/2025 18:44:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-19 18:44:31,995 INFO: Home page accessed.
+2025-01-19 18:44:31,995 INFO: 127.0.0.1 - - [19/Jan/2025 18:44:31] "GET / HTTP/1.1" 200 -
+2025-01-19 18:44:32,067 INFO: 127.0.0.1 - - [19/Jan/2025 18:44:32] "[36mGET /static/js/katex-config.js HTTP/1.1[0m" 304 -
+2025-01-19 18:44:32,068 INFO: 127.0.0.1 - - [19/Jan/2025 18:44:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-19 18:44:40,186 INFO: Tutorials page accessed.
+2025-01-19 18:44:40,187 INFO: 127.0.0.1 - - [19/Jan/2025 18:44:40] "GET /tutorials HTTP/1.1" 200 -
+2025-01-19 18:44:40,248 INFO: 127.0.0.1 - - [19/Jan/2025 18:44:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-19 18:44:40,248 INFO: 127.0.0.1 - - [19/Jan/2025 18:44:40] "[36mGET /static/js/katex-config.js HTTP/1.1[0m" 304 -
+2025-01-19 18:44:41,135 INFO: Card page accessed: formal_logic
+2025-01-19 18:44:41,135 INFO: Chapter 1 contains sections: {1: 'The Foundations of Logical Reasoning', 2: 'Principles of Deductive and Inductive Logic', 3: 'Logical Fallacies: Identifying Errors in Arguments', 4: 'Symbolic Logic and Its Applications', 5: 'Truth, Validity, and Soundness in Argumentation'}
+2025-01-19 18:44:41,135 INFO: Chapter 2 contains sections: {1: 'Consequence and validity', 2: 'Cases and types of validity', 3: 'Formal validity', 4: 'Sound arguments', 5: 'Inductive arguments'}
+2025-01-19 18:44:41,135 INFO: Chapter 3 contains sections: {}
+2025-01-19 18:44:41,135 INFO: Chapter 4 contains sections: {}
+2025-01-19 18:44:41,135 INFO: Chapter 5 contains sections: {}
+2025-01-19 18:44:41,135 INFO: Chapter 6 contains sections: {}
+2025-01-19 18:44:41,135 INFO: Chapter 7 contains sections: {}
+2025-01-19 18:44:41,135 INFO: 127.0.0.1 - - [19/Jan/2025 18:44:41] "GET /tutorials/formal_logic HTTP/1.1" 200 -
+2025-01-19 18:44:41,202 INFO: 127.0.0.1 - - [19/Jan/2025 18:44:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-19 18:44:41,207 INFO: 127.0.0.1 - - [19/Jan/2025 18:44:41] "[36mGET /static/js/katex-config.js HTTP/1.1[0m" 304 -
+2025-01-19 18:44:42,429 INFO: Chapter page accessed: formal_logic - Chapter 1
+2025-01-19 18:44:42,429 INFO: Rendering Markdown file: content/formal_logic_chapter_1.md
+2025-01-19 18:44:42,433 INFO: Rendered HTML content preview: <h1>Chapter 1: Key Notions of Logic</h1>
+<h2>1.1 The Foundations of Logical Reasoning</h2>
+<p>An argument is a set of statements, one of which is the conclusion, and the rest are premises. The premises are intended to provide support for the conclusion.</p>
+<hr />
+<ol>
+<li>Premise: All humans are mortal.</li>
+<li>Premise: Socrates is human.</li>
+<li>Conclusion: Therefore, Socrates is mortal.</li>
+</ol>
+<hr />
+<p>The goal of an argument is to establish the truth of the conclusion. In logic, argum
+2025-01-19 18:44:42,434 INFO: Adding anchors for sections in chapter 1
+2025-01-19 18:44:42,434 INFO: Searching for header: <h2>1.1 The Foundations of Logical Reasoning</h2>
+2025-01-19 18:44:42,434 INFO: Added anchor for section: 1 - The Foundations of Logical Reasoning
+2025-01-19 18:44:42,434 INFO: Searching for header: <h2>1.2 Principles of Deductive and Inductive Logic</h2>
+2025-01-19 18:44:42,434 INFO: Added anchor for section: 2 - Principles of Deductive and Inductive Logic
+2025-01-19 18:44:42,434 INFO: Searching for header: <h2>1.3 Logical Fallacies: Identifying Errors in Arguments</h2>
+2025-01-19 18:44:42,434 INFO: Added anchor for section: 3 - Logical Fallacies: Identifying Errors in Arguments
+2025-01-19 18:44:42,434 INFO: Searching for header: <h2>1.4 Symbolic Logic and Its Applications</h2>
+2025-01-19 18:44:42,434 INFO: Added anchor for section: 4 - Symbolic Logic and Its Applications
+2025-01-19 18:44:42,434 INFO: Searching for header: <h2>1.5 Truth, Validity, and Soundness in Argumentation</h2>
+2025-01-19 18:44:42,434 INFO: Added anchor for section: 5 - Truth, Validity, and Soundness in Argumentation
+2025-01-19 18:44:42,434 INFO: 127.0.0.1 - - [19/Jan/2025 18:44:42] "GET /tutorials/formal_logic/chapter/1 HTTP/1.1" 200 -
+2025-01-19 18:44:42,501 INFO: 127.0.0.1 - - [19/Jan/2025 18:44:42] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-19 18:44:42,502 INFO: 127.0.0.1 - - [19/Jan/2025 18:44:42] "[36mGET /static/js/katex-config.js HTTP/1.1[0m" 304 -
+2025-01-19 18:46:12,898 INFO: Chapter page accessed: formal_logic - Chapter 1
+2025-01-19 18:46:12,898 INFO: Rendering Markdown file: content/formal_logic_chapter_1.md
+2025-01-19 18:46:12,903 INFO: Rendered HTML content preview: <h1>Chapter 1: Key Notions of Logic</h1>
+<h2>1.1 The Foundations of Logical Reasoning</h2>
+<p>An argument is a set of statements, one of which is the conclusion, and the rest are premises. The premises are intended to provide support for the conclusion.</p>
+<hr />
+<ol>
+<li>Premise: All humans are mortal.</li>
+<li>Premise: Socrates is human.</li>
+<li>Conclusion: Therefore, Socrates is mortal.</li>
+</ol>
+<hr />
+<p>The goal of an argument is to establish the truth of the conclusion. In logic, argum
+2025-01-19 18:46:12,903 INFO: Adding anchors for sections in chapter 1
+2025-01-19 18:46:12,903 INFO: Searching for header: <h2>1.1 The Foundations of Logical Reasoning</h2>
+2025-01-19 18:46:12,903 INFO: Added anchor for section: 1 - The Foundations of Logical Reasoning
+2025-01-19 18:46:12,903 INFO: Searching for header: <h2>1.2 Principles of Deductive and Inductive Logic</h2>
+2025-01-19 18:46:12,903 INFO: Added anchor for section: 2 - Principles of Deductive and Inductive Logic
+2025-01-19 18:46:12,903 INFO: Searching for header: <h2>1.3 Logical Fallacies: Identifying Errors in Arguments</h2>
+2025-01-19 18:46:12,903 INFO: Added anchor for section: 3 - Logical Fallacies: Identifying Errors in Arguments
+2025-01-19 18:46:12,903 INFO: Searching for header: <h2>1.4 Symbolic Logic and Its Applications</h2>
+2025-01-19 18:46:12,903 INFO: Added anchor for section: 4 - Symbolic Logic and Its Applications
+2025-01-19 18:46:12,903 INFO: Searching for header: <h2>1.5 Truth, Validity, and Soundness in Argumentation</h2>
+2025-01-19 18:46:12,903 INFO: Added anchor for section: 5 - Truth, Validity, and Soundness in Argumentation
+2025-01-19 18:46:12,904 INFO: 127.0.0.1 - - [19/Jan/2025 18:46:12] "GET /tutorials/formal_logic/chapter/1 HTTP/1.1" 200 -
+2025-01-19 18:46:12,961 INFO: 127.0.0.1 - - [19/Jan/2025 18:46:12] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-01-19 18:46:12,963 INFO: 127.0.0.1 - - [19/Jan/2025 18:46:12] "GET /static/js/katex-config.js HTTP/1.1" 200 -
+2025-01-19 18:46:13,245 WARNING: 404 error occurred: /favicon.ico
+2025-01-19 18:46:13,245 INFO: 127.0.0.1 - - [19/Jan/2025 18:46:13] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-01-19 18:46:18,436 INFO: Chapter page accessed: formal_logic - Chapter 2
+2025-01-19 18:46:18,436 WARNING: Markdown file not found: content/formal_logic_chapter_2.md
+2025-01-19 18:46:18,436 INFO: Rendered HTML content preview: <p>Content not available yet. Stay tuned!</p>
+2025-01-19 18:46:18,436 INFO: Adding anchors for sections in chapter 2
+2025-01-19 18:46:18,436 INFO: Searching for header: <h2>2.1 Consequence and validity</h2>
+2025-01-19 18:46:18,436 WARNING: Section 'Consequence and validity' not found in HTML content for chapter 2
+2025-01-19 18:46:18,436 INFO: Searching for header: <h2>2.2 Cases and types of validity</h2>
+2025-01-19 18:46:18,436 WARNING: Section 'Cases and types of validity' not found in HTML content for chapter 2
+2025-01-19 18:46:18,436 INFO: Searching for header: <h2>2.3 Formal validity</h2>
+2025-01-19 18:46:18,436 WARNING: Section 'Formal validity' not found in HTML content for chapter 2
+2025-01-19 18:46:18,436 INFO: Searching for header: <h2>2.4 Sound arguments</h2>
+2025-01-19 18:46:18,436 WARNING: Section 'Sound arguments' not found in HTML content for chapter 2
+2025-01-19 18:46:18,436 INFO: Searching for header: <h2>2.5 Inductive arguments</h2>
+2025-01-19 18:46:18,436 WARNING: Section 'Inductive arguments' not found in HTML content for chapter 2
+2025-01-19 18:46:18,436 INFO: 127.0.0.1 - - [19/Jan/2025 18:46:18] "GET /tutorials/formal_logic/chapter/2 HTTP/1.1" 200 -
+2025-01-19 18:46:18,529 INFO: 127.0.0.1 - - [19/Jan/2025 18:46:18] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-19 18:46:18,530 INFO: 127.0.0.1 - - [19/Jan/2025 18:46:18] "[36mGET /static/js/katex-config.js HTTP/1.1[0m" 304 -
+2025-01-19 18:46:20,913 INFO: Chapter page accessed: formal_logic - Chapter 1
+2025-01-19 18:46:20,913 INFO: Rendering Markdown file: content/formal_logic_chapter_1.md
+2025-01-19 18:46:20,917 INFO: Rendered HTML content preview: <h1>Chapter 1: Key Notions of Logic</h1>
+<h2>1.1 The Foundations of Logical Reasoning</h2>
+<p>An argument is a set of statements, one of which is the conclusion, and the rest are premises. The premises are intended to provide support for the conclusion.</p>
+<hr />
+<ol>
+<li>Premise: All humans are mortal.</li>
+<li>Premise: Socrates is human.</li>
+<li>Conclusion: Therefore, Socrates is mortal.</li>
+</ol>
+<hr />
+<p>The goal of an argument is to establish the truth of the conclusion. In logic, argum
+2025-01-19 18:46:20,918 INFO: Adding anchors for sections in chapter 1
+2025-01-19 18:46:20,918 INFO: Searching for header: <h2>1.1 The Foundations of Logical Reasoning</h2>
+2025-01-19 18:46:20,918 INFO: Added anchor for section: 1 - The Foundations of Logical Reasoning
+2025-01-19 18:46:20,918 INFO: Searching for header: <h2>1.2 Principles of Deductive and Inductive Logic</h2>
+2025-01-19 18:46:20,918 INFO: Added anchor for section: 2 - Principles of Deductive and Inductive Logic
+2025-01-19 18:46:20,918 INFO: Searching for header: <h2>1.3 Logical Fallacies: Identifying Errors in Arguments</h2>
+2025-01-19 18:46:20,918 INFO: Added anchor for section: 3 - Logical Fallacies: Identifying Errors in Arguments
+2025-01-19 18:46:20,918 INFO: Searching for header: <h2>1.4 Symbolic Logic and Its Applications</h2>
+2025-01-19 18:46:20,918 INFO: Added anchor for section: 4 - Symbolic Logic and Its Applications
+2025-01-19 18:46:20,918 INFO: Searching for header: <h2>1.5 Truth, Validity, and Soundness in Argumentation</h2>
+2025-01-19 18:46:20,918 INFO: Added anchor for section: 5 - Truth, Validity, and Soundness in Argumentation
+2025-01-19 18:46:20,918 INFO: 127.0.0.1 - - [19/Jan/2025 18:46:20] "GET /tutorials/formal_logic/chapter/1 HTTP/1.1" 200 -
+2025-01-19 18:46:20,986 INFO: 127.0.0.1 - - [19/Jan/2025 18:46:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-19 18:46:20,990 INFO: 127.0.0.1 - - [19/Jan/2025 18:46:20] "[36mGET /static/js/katex-config.js HTTP/1.1[0m" 304 -
+2025-01-19 18:50:54,702 INFO: Chapter page accessed: formal_logic - Chapter 1
+2025-01-19 18:50:54,702 INFO: Rendering Markdown file: content/formal_logic_chapter_1.md
+2025-01-19 18:50:54,707 INFO: Rendered HTML content preview: <h1>Chapter 1: Key Notions of Logic</h1>
+<h2>1.1 The Foundations of Logical Reasoning</h2>
+<p>An argument is a set of statements, one of which is the conclusion, and the rest are premises. The premises are intended to provide support for the conclusion.</p>
+<hr />
+<ol>
+<li>Premise: All humans are mortal.</li>
+<li>Premise: Socrates is human.</li>
+<li>Conclusion: Therefore, Socrates is mortal.</li>
+</ol>
+<hr />
+<p>The goal of an argument is to establish the truth of the conclusion. In logic, argum
+2025-01-19 18:50:54,707 INFO: Adding anchors for sections in chapter 1
+2025-01-19 18:50:54,708 INFO: Searching for header: <h2>1.1 The Foundations of Logical Reasoning</h2>
+2025-01-19 18:50:54,708 INFO: Added anchor for section: 1 - The Foundations of Logical Reasoning
+2025-01-19 18:50:54,708 INFO: Searching for header: <h2>1.2 Principles of Deductive and Inductive Logic</h2>
+2025-01-19 18:50:54,708 INFO: Added anchor for section: 2 - Principles of Deductive and Inductive Logic
+2025-01-19 18:50:54,708 INFO: Searching for header: <h2>1.3 Logical Fallacies: Identifying Errors in Arguments</h2>
+2025-01-19 18:50:54,708 INFO: Added anchor for section: 3 - Logical Fallacies: Identifying Errors in Arguments
+2025-01-19 18:50:54,708 INFO: Searching for header: <h2>1.4 Symbolic Logic and Its Applications</h2>
+2025-01-19 18:50:54,708 INFO: Added anchor for section: 4 - Symbolic Logic and Its Applications
+2025-01-19 18:50:54,708 INFO: Searching for header: <h2>1.5 Truth, Validity, and Soundness in Argumentation</h2>
+2025-01-19 18:50:54,708 INFO: Added anchor for section: 5 - Truth, Validity, and Soundness in Argumentation
+2025-01-19 18:50:54,709 INFO: 127.0.0.1 - - [19/Jan/2025 18:50:54] "GET /tutorials/formal_logic/chapter/1 HTTP/1.1" 200 -
+2025-01-19 18:50:54,803 INFO: 127.0.0.1 - - [19/Jan/2025 18:50:54] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-01-19 18:50:54,809 INFO: 127.0.0.1 - - [19/Jan/2025 18:50:54] "GET /static/js/katex-config.js HTTP/1.1" 200 -
+2025-01-19 18:50:55,369 WARNING: 404 error occurred: /favicon.ico
+2025-01-19 18:50:55,369 INFO: 127.0.0.1 - - [19/Jan/2025 18:50:55] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-01-19 18:50:58,690 INFO: Card page accessed: formal_logic
+2025-01-19 18:50:58,690 INFO: Chapter 1 contains sections: {1: 'The Foundations of Logical Reasoning', 2: 'Principles of Deductive and Inductive Logic', 3: 'Logical Fallacies: Identifying Errors in Arguments', 4: 'Symbolic Logic and Its Applications', 5: 'Truth, Validity, and Soundness in Argumentation'}
+2025-01-19 18:50:58,690 INFO: Chapter 2 contains sections: {1: 'Consequence and validity', 2: 'Cases and types of validity', 3: 'Formal validity', 4: 'Sound arguments', 5: 'Inductive arguments'}
+2025-01-19 18:50:58,690 INFO: Chapter 3 contains sections: {}
+2025-01-19 18:50:58,690 INFO: Chapter 4 contains sections: {}
+2025-01-19 18:50:58,690 INFO: Chapter 5 contains sections: {}
+2025-01-19 18:50:58,690 INFO: Chapter 6 contains sections: {}
+2025-01-19 18:50:58,690 INFO: Chapter 7 contains sections: {}
+2025-01-19 18:50:58,693 INFO: 127.0.0.1 - - [19/Jan/2025 18:50:58] "GET /tutorials/formal_logic HTTP/1.1" 200 -
+2025-01-19 18:50:58,753 INFO: 127.0.0.1 - - [19/Jan/2025 18:50:58] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-01-19 18:50:58,757 INFO: 127.0.0.1 - - [19/Jan/2025 18:50:58] "GET /static/js/katex-config.js HTTP/1.1" 200 -
+2025-01-19 18:50:59,265 WARNING: 404 error occurred: /favicon.ico
+2025-01-19 18:50:59,266 INFO: 127.0.0.1 - - [19/Jan/2025 18:50:59] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-01-19 18:50:59,921 INFO: Chapter page accessed: formal_logic - Chapter 1
+2025-01-19 18:50:59,921 INFO: Rendering Markdown file: content/formal_logic_chapter_1.md
+2025-01-19 18:50:59,926 INFO: Rendered HTML content preview: <h1>Chapter 1: Key Notions of Logic</h1>
+<h2>1.1 The Foundations of Logical Reasoning</h2>
+<p>An argument is a set of statements, one of which is the conclusion, and the rest are premises. The premises are intended to provide support for the conclusion.</p>
+<hr />
+<ol>
+<li>Premise: All humans are mortal.</li>
+<li>Premise: Socrates is human.</li>
+<li>Conclusion: Therefore, Socrates is mortal.</li>
+</ol>
+<hr />
+<p>The goal of an argument is to establish the truth of the conclusion. In logic, argum
+2025-01-19 18:50:59,926 INFO: Adding anchors for sections in chapter 1
+2025-01-19 18:50:59,926 INFO: Searching for header: <h2>1.1 The Foundations of Logical Reasoning</h2>
+2025-01-19 18:50:59,926 INFO: Added anchor for section: 1 - The Foundations of Logical Reasoning
+2025-01-19 18:50:59,926 INFO: Searching for header: <h2>1.2 Principles of Deductive and Inductive Logic</h2>
+2025-01-19 18:50:59,926 INFO: Added anchor for section: 2 - Principles of Deductive and Inductive Logic
+2025-01-19 18:50:59,926 INFO: Searching for header: <h2>1.3 Logical Fallacies: Identifying Errors in Arguments</h2>
+2025-01-19 18:50:59,926 INFO: Added anchor for section: 3 - Logical Fallacies: Identifying Errors in Arguments
+2025-01-19 18:50:59,926 INFO: Searching for header: <h2>1.4 Symbolic Logic and Its Applications</h2>
+2025-01-19 18:50:59,926 INFO: Added anchor for section: 4 - Symbolic Logic and Its Applications
+2025-01-19 18:50:59,926 INFO: Searching for header: <h2>1.5 Truth, Validity, and Soundness in Argumentation</h2>
+2025-01-19 18:50:59,926 INFO: Added anchor for section: 5 - Truth, Validity, and Soundness in Argumentation
+2025-01-19 18:50:59,926 INFO: 127.0.0.1 - - [19/Jan/2025 18:50:59] "GET /tutorials/formal_logic/chapter/1 HTTP/1.1" 200 -
+2025-01-19 18:50:59,992 INFO: 127.0.0.1 - - [19/Jan/2025 18:50:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-19 18:50:59,993 INFO: 127.0.0.1 - - [19/Jan/2025 18:50:59] "[36mGET /static/js/katex-config.js HTTP/1.1[0m" 304 -
+2025-01-19 18:51:31,879 INFO: Home page accessed.
+2025-01-19 18:51:31,879 INFO: 127.0.0.1 - - [19/Jan/2025 18:51:31] "GET / HTTP/1.1" 200 -
+2025-01-19 18:51:32,015 INFO: 127.0.0.1 - - [19/Jan/2025 18:51:32] "[36mGET /static/js/katex-config.js HTTP/1.1[0m" 304 -
+2025-01-19 18:51:32,016 INFO: 127.0.0.1 - - [19/Jan/2025 18:51:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-19 18:51:33,213 INFO: Home page accessed.
+2025-01-19 18:51:33,213 INFO: 127.0.0.1 - - [19/Jan/2025 18:51:33] "GET / HTTP/1.1" 200 -
+2025-01-19 18:51:33,279 INFO: 127.0.0.1 - - [19/Jan/2025 18:51:33] "GET /static/js/katex-config.js HTTP/1.1" 200 -
+2025-01-19 18:51:33,279 INFO: 127.0.0.1 - - [19/Jan/2025 18:51:33] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-01-19 18:51:33,816 WARNING: 404 error occurred: /favicon.ico
+2025-01-19 18:51:33,817 INFO: 127.0.0.1 - - [19/Jan/2025 18:51:33] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-01-19 18:51:37,667 INFO: Tutorials page accessed.
+2025-01-19 18:51:37,667 INFO: 127.0.0.1 - - [19/Jan/2025 18:51:37] "GET /tutorials HTTP/1.1" 200 -
+2025-01-19 18:51:37,781 INFO: 127.0.0.1 - - [19/Jan/2025 18:51:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-19 18:51:37,783 INFO: 127.0.0.1 - - [19/Jan/2025 18:51:37] "[36mGET /static/js/katex-config.js HTTP/1.1[0m" 304 -
+2025-01-19 18:51:38,798 INFO: Card page accessed: formal_logic
+2025-01-19 18:51:38,798 INFO: Chapter 1 contains sections: {1: 'The Foundations of Logical Reasoning', 2: 'Principles of Deductive and Inductive Logic', 3: 'Logical Fallacies: Identifying Errors in Arguments', 4: 'Symbolic Logic and Its Applications', 5: 'Truth, Validity, and Soundness in Argumentation'}
+2025-01-19 18:51:38,798 INFO: Chapter 2 contains sections: {1: 'Consequence and validity', 2: 'Cases and types of validity', 3: 'Formal validity', 4: 'Sound arguments', 5: 'Inductive arguments'}
+2025-01-19 18:51:38,798 INFO: Chapter 3 contains sections: {}
+2025-01-19 18:51:38,798 INFO: Chapter 4 contains sections: {}
+2025-01-19 18:51:38,798 INFO: Chapter 5 contains sections: {}
+2025-01-19 18:51:38,798 INFO: Chapter 6 contains sections: {}
+2025-01-19 18:51:38,798 INFO: Chapter 7 contains sections: {}
+2025-01-19 18:51:38,799 INFO: 127.0.0.1 - - [19/Jan/2025 18:51:38] "GET /tutorials/formal_logic HTTP/1.1" 200 -
+2025-01-19 18:51:38,912 INFO: 127.0.0.1 - - [19/Jan/2025 18:51:38] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-19 18:51:38,913 INFO: 127.0.0.1 - - [19/Jan/2025 18:51:38] "[36mGET /static/js/katex-config.js HTTP/1.1[0m" 304 -
+2025-01-19 18:51:40,151 INFO: Chapter page accessed: formal_logic - Chapter 1
+2025-01-19 18:51:40,151 INFO: Rendering Markdown file: content/formal_logic_chapter_1.md
+2025-01-19 18:51:40,156 INFO: Rendered HTML content preview: <h1>Chapter 1: Key Notions of Logic</h1>
+<h2>1.1 The Foundations of Logical Reasoning</h2>
+<p>An argument is a set of statements, one of which is the conclusion, and the rest are premises. The premises are intended to provide support for the conclusion.</p>
+<hr />
+<ol>
+<li>Premise: All humans are mortal.</li>
+<li>Premise: Socrates is human.</li>
+<li>Conclusion: Therefore, Socrates is mortal.</li>
+</ol>
+<hr />
+<p>The goal of an argument is to establish the truth of the conclusion. In logic, argum
+2025-01-19 18:51:40,156 INFO: Adding anchors for sections in chapter 1
+2025-01-19 18:51:40,156 INFO: Searching for header: <h2>1.1 The Foundations of Logical Reasoning</h2>
+2025-01-19 18:51:40,156 INFO: Added anchor for section: 1 - The Foundations of Logical Reasoning
+2025-01-19 18:51:40,156 INFO: Searching for header: <h2>1.2 Principles of Deductive and Inductive Logic</h2>
+2025-01-19 18:51:40,156 INFO: Added anchor for section: 2 - Principles of Deductive and Inductive Logic
+2025-01-19 18:51:40,156 INFO: Searching for header: <h2>1.3 Logical Fallacies: Identifying Errors in Arguments</h2>
+2025-01-19 18:51:40,156 INFO: Added anchor for section: 3 - Logical Fallacies: Identifying Errors in Arguments
+2025-01-19 18:51:40,156 INFO: Searching for header: <h2>1.4 Symbolic Logic and Its Applications</h2>
+2025-01-19 18:51:40,156 INFO: Added anchor for section: 4 - Symbolic Logic and Its Applications
+2025-01-19 18:51:40,156 INFO: Searching for header: <h2>1.5 Truth, Validity, and Soundness in Argumentation</h2>
+2025-01-19 18:51:40,156 INFO: Added anchor for section: 5 - Truth, Validity, and Soundness in Argumentation
+2025-01-19 18:51:40,157 INFO: 127.0.0.1 - - [19/Jan/2025 18:51:40] "GET /tutorials/formal_logic/chapter/1 HTTP/1.1" 200 -
+2025-01-19 18:51:40,223 INFO: 127.0.0.1 - - [19/Jan/2025 18:51:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-19 18:51:40,225 INFO: 127.0.0.1 - - [19/Jan/2025 18:51:40] "[36mGET /static/js/katex-config.js HTTP/1.1[0m" 304 -
+2025-01-19 18:53:29,188 INFO: Chapter page accessed: formal_logic - Chapter 1
+2025-01-19 18:53:29,188 INFO: Rendering Markdown file: content/formal_logic_chapter_1.md
+2025-01-19 18:53:29,194 INFO: Rendered HTML content preview: <h1>Chapter 1: Key Notions of Logic</h1>
+<h2>1.1 The Foundations of Logical Reasoning</h2>
+<p>An argument is a set of statements, one of which is the conclusion, and the rest are premises. The premises are intended to provide support for the conclusion.</p>
+<hr />
+<ol>
+<li>Premise: All humans are mortal.</li>
+<li>Premise: Socrates is human.</li>
+<li>Conclusion: Therefore, Socrates is mortal.</li>
+</ol>
+<hr />
+<p>The goal of an argument is to establish the truth of the conclusion. In logic, argum
+2025-01-19 18:53:29,194 INFO: Adding anchors for sections in chapter 1
+2025-01-19 18:53:29,194 INFO: Searching for header: <h2>1.1 The Foundations of Logical Reasoning</h2>
+2025-01-19 18:53:29,194 INFO: Added anchor for section: 1 - The Foundations of Logical Reasoning
+2025-01-19 18:53:29,194 INFO: Searching for header: <h2>1.2 Principles of Deductive and Inductive Logic</h2>
+2025-01-19 18:53:29,194 INFO: Added anchor for section: 2 - Principles of Deductive and Inductive Logic
+2025-01-19 18:53:29,194 INFO: Searching for header: <h2>1.3 Logical Fallacies: Identifying Errors in Arguments</h2>
+2025-01-19 18:53:29,194 INFO: Added anchor for section: 3 - Logical Fallacies: Identifying Errors in Arguments
+2025-01-19 18:53:29,194 INFO: Searching for header: <h2>1.4 Symbolic Logic and Its Applications</h2>
+2025-01-19 18:53:29,194 INFO: Added anchor for section: 4 - Symbolic Logic and Its Applications
+2025-01-19 18:53:29,194 INFO: Searching for header: <h2>1.5 Truth, Validity, and Soundness in Argumentation</h2>
+2025-01-19 18:53:29,194 INFO: Added anchor for section: 5 - Truth, Validity, and Soundness in Argumentation
+2025-01-19 18:53:29,195 INFO: 127.0.0.1 - - [19/Jan/2025 18:53:29] "GET /tutorials/formal_logic/chapter/1 HTTP/1.1" 200 -
+2025-01-19 18:53:29,303 INFO: 127.0.0.1 - - [19/Jan/2025 18:53:29] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-19 18:53:29,304 INFO: 127.0.0.1 - - [19/Jan/2025 18:53:29] "[36mGET /static/js/katex-config.js HTTP/1.1[0m" 304 -
+2025-01-19 18:53:33,728 INFO: Tutorials page accessed.
+2025-01-19 18:53:33,728 INFO: 127.0.0.1 - - [19/Jan/2025 18:53:33] "GET /tutorials HTTP/1.1" 200 -
+2025-01-19 18:53:33,842 INFO: 127.0.0.1 - - [19/Jan/2025 18:53:33] "[36mGET /static/js/katex-config.js HTTP/1.1[0m" 304 -
+2025-01-19 18:53:33,843 INFO: 127.0.0.1 - - [19/Jan/2025 18:53:33] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-19 18:53:34,072 WARNING: 404 error occurred: /discussions
+2025-01-19 18:53:34,072 INFO: 127.0.0.1 - - [19/Jan/2025 18:53:34] "[33mGET /discussions HTTP/1.1[0m" 404 -
+2025-01-19 18:53:34,135 INFO: 127.0.0.1 - - [19/Jan/2025 18:53:34] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-19 18:53:34,136 INFO: 127.0.0.1 - - [19/Jan/2025 18:53:34] "[36mGET /static/js/katex-config.js HTTP/1.1[0m" 304 -
+2025-01-19 18:53:35,671 INFO: Home page accessed.
+2025-01-19 18:53:35,671 INFO: 127.0.0.1 - - [19/Jan/2025 18:53:35] "GET / HTTP/1.1" 200 -
+2025-01-19 18:53:35,784 INFO: 127.0.0.1 - - [19/Jan/2025 18:53:35] "[36mGET /static/js/katex-config.js HTTP/1.1[0m" 304 -
+2025-01-19 18:53:35,786 INFO: 127.0.0.1 - - [19/Jan/2025 18:53:35] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-19 18:53:36,198 INFO: Home page accessed.
+2025-01-19 18:53:36,199 INFO: 127.0.0.1 - - [19/Jan/2025 18:53:36] "GET / HTTP/1.1" 200 -
+2025-01-19 18:53:36,316 INFO: 127.0.0.1 - - [19/Jan/2025 18:53:36] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-01-19 18:53:36,317 INFO: 127.0.0.1 - - [19/Jan/2025 18:53:36] "GET /static/js/katex-config.js HTTP/1.1" 200 -
+2025-01-19 18:53:36,625 WARNING: 404 error occurred: /favicon.ico
+2025-01-19 18:53:36,625 INFO: 127.0.0.1 - - [19/Jan/2025 18:53:36] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-01-19 18:53:37,667 INFO: Tutorials page accessed.
+2025-01-19 18:53:37,667 INFO: 127.0.0.1 - - [19/Jan/2025 18:53:37] "GET /tutorials HTTP/1.1" 200 -
+2025-01-19 18:53:37,759 INFO: 127.0.0.1 - - [19/Jan/2025 18:53:37] "[36mGET /static/js/katex-config.js HTTP/1.1[0m" 304 -
+2025-01-19 18:53:37,759 INFO: 127.0.0.1 - - [19/Jan/2025 18:53:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-19 18:53:39,131 INFO: Card page accessed: formal_logic
+2025-01-19 18:53:39,131 INFO: Chapter 1 contains sections: {1: 'The Foundations of Logical Reasoning', 2: 'Principles of Deductive and Inductive Logic', 3: 'Logical Fallacies: Identifying Errors in Arguments', 4: 'Symbolic Logic and Its Applications', 5: 'Truth, Validity, and Soundness in Argumentation'}
+2025-01-19 18:53:39,131 INFO: Chapter 2 contains sections: {1: 'Consequence and validity', 2: 'Cases and types of validity', 3: 'Formal validity', 4: 'Sound arguments', 5: 'Inductive arguments'}
+2025-01-19 18:53:39,131 INFO: Chapter 3 contains sections: {}
+2025-01-19 18:53:39,131 INFO: Chapter 4 contains sections: {}
+2025-01-19 18:53:39,131 INFO: Chapter 5 contains sections: {}
+2025-01-19 18:53:39,131 INFO: Chapter 6 contains sections: {}
+2025-01-19 18:53:39,131 INFO: Chapter 7 contains sections: {}
+2025-01-19 18:53:39,131 INFO: 127.0.0.1 - - [19/Jan/2025 18:53:39] "GET /tutorials/formal_logic HTTP/1.1" 200 -
+2025-01-19 18:53:39,251 INFO: 127.0.0.1 - - [19/Jan/2025 18:53:39] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-19 18:53:39,253 INFO: 127.0.0.1 - - [19/Jan/2025 18:53:39] "[36mGET /static/js/katex-config.js HTTP/1.1[0m" 304 -
+2025-01-19 18:53:40,195 INFO: Chapter page accessed: formal_logic - Chapter 1
+2025-01-19 18:53:40,195 INFO: Rendering Markdown file: content/formal_logic_chapter_1.md
+2025-01-19 18:53:40,200 INFO: Rendered HTML content preview: <h1>Chapter 1: Key Notions of Logic</h1>
+<h2>1.1 The Foundations of Logical Reasoning</h2>
+<p>An argument is a set of statements, one of which is the conclusion, and the rest are premises. The premises are intended to provide support for the conclusion.</p>
+<hr />
+<ol>
+<li>Premise: All humans are mortal.</li>
+<li>Premise: Socrates is human.</li>
+<li>Conclusion: Therefore, Socrates is mortal.</li>
+</ol>
+<hr />
+<p>The goal of an argument is to establish the truth of the conclusion. In logic, argum
+2025-01-19 18:53:40,200 INFO: Adding anchors for sections in chapter 1
+2025-01-19 18:53:40,200 INFO: Searching for header: <h2>1.1 The Foundations of Logical Reasoning</h2>
+2025-01-19 18:53:40,200 INFO: Added anchor for section: 1 - The Foundations of Logical Reasoning
+2025-01-19 18:53:40,200 INFO: Searching for header: <h2>1.2 Principles of Deductive and Inductive Logic</h2>
+2025-01-19 18:53:40,200 INFO: Added anchor for section: 2 - Principles of Deductive and Inductive Logic
+2025-01-19 18:53:40,200 INFO: Searching for header: <h2>1.3 Logical Fallacies: Identifying Errors in Arguments</h2>
+2025-01-19 18:53:40,200 INFO: Added anchor for section: 3 - Logical Fallacies: Identifying Errors in Arguments
+2025-01-19 18:53:40,200 INFO: Searching for header: <h2>1.4 Symbolic Logic and Its Applications</h2>
+2025-01-19 18:53:40,200 INFO: Added anchor for section: 4 - Symbolic Logic and Its Applications
+2025-01-19 18:53:40,200 INFO: Searching for header: <h2>1.5 Truth, Validity, and Soundness in Argumentation</h2>
+2025-01-19 18:53:40,201 INFO: Added anchor for section: 5 - Truth, Validity, and Soundness in Argumentation
+2025-01-19 18:53:40,201 INFO: 127.0.0.1 - - [19/Jan/2025 18:53:40] "GET /tutorials/formal_logic/chapter/1 HTTP/1.1" 200 -
+2025-01-19 18:53:40,253 INFO: 127.0.0.1 - - [19/Jan/2025 18:53:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-19 18:53:40,253 INFO: 127.0.0.1 - - [19/Jan/2025 18:53:40] "[36mGET /static/js/katex-config.js HTTP/1.1[0m" 304 -
+2025-01-19 19:13:56,121 WARNING: 404 error occurred: /assignments
+2025-01-19 19:13:56,122 INFO: 127.0.0.1 - - [19/Jan/2025 19:13:56] "[33mGET /assignments HTTP/1.1[0m" 404 -
+2025-01-19 19:13:59,145 INFO: Card page accessed: linear_algebra
+2025-01-19 19:13:59,145 INFO: 127.0.0.1 - - [19/Jan/2025 19:13:59] "GET /tutorials/linear_algebra HTTP/1.1" 200 -
+2025-01-19 19:31:19,526 INFO: Card page accessed: formal_logic
+2025-01-19 19:31:19,526 INFO: Chapter 1 contains sections: {1: 'The Foundations of Logical Reasoning', 2: 'Principles of Deductive and Inductive Logic', 3: 'Logical Fallacies: Identifying Errors in Arguments', 4: 'Symbolic Logic and Its Applications', 5: 'Truth, Validity, and Soundness in Argumentation'}
+2025-01-19 19:31:19,526 INFO: Chapter 2 contains sections: {1: 'Consequence and validity', 2: 'Cases and types of validity', 3: 'Formal validity', 4: 'Sound arguments', 5: 'Inductive arguments'}
+2025-01-19 19:31:19,526 INFO: Chapter 3 contains sections: {}
+2025-01-19 19:31:19,526 INFO: Chapter 4 contains sections: {}
+2025-01-19 19:31:19,526 INFO: Chapter 5 contains sections: {}
+2025-01-19 19:31:19,526 INFO: Chapter 6 contains sections: {}
+2025-01-19 19:31:19,526 INFO: Chapter 7 contains sections: {}
+2025-01-19 19:31:19,527 INFO: 127.0.0.1 - - [19/Jan/2025 19:31:19] "GET /tutorials/formal_logic HTTP/1.1" 200 -
+2025-01-19 19:31:19,651 INFO: 127.0.0.1 - - [19/Jan/2025 19:31:19] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-01-19 19:31:19,653 INFO: 127.0.0.1 - - [19/Jan/2025 19:31:19] "GET /static/js/katex-config.js HTTP/1.1" 200 -
+2025-01-19 19:31:20,612 WARNING: 404 error occurred: /favicon.ico
+2025-01-19 19:31:20,612 INFO: 127.0.0.1 - - [19/Jan/2025 19:31:20] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-01-19 19:34:30,697 INFO: Card page accessed: formal_logic
+2025-01-19 19:34:30,697 INFO: Chapter 1 contains sections: {1: 'The Foundations of Logical Reasoning', 2: 'Principles of Deductive and Inductive Logic', 3: 'Logical Fallacies: Identifying Errors in Arguments', 4: 'Symbolic Logic and Its Applications', 5: 'Truth, Validity, and Soundness in Argumentation'}
+2025-01-19 19:34:30,697 INFO: Chapter 2 contains sections: {1: 'Consequence and validity', 2: 'Cases and types of validity', 3: 'Formal validity', 4: 'Sound arguments', 5: 'Inductive arguments'}
+2025-01-19 19:34:30,697 INFO: Chapter 3 contains sections: {}
+2025-01-19 19:34:30,697 INFO: Chapter 4 contains sections: {}
+2025-01-19 19:34:30,697 INFO: Chapter 5 contains sections: {}
+2025-01-19 19:34:30,697 INFO: Chapter 6 contains sections: {}
+2025-01-19 19:34:30,697 INFO: Chapter 7 contains sections: {}
+2025-01-19 19:34:30,698 INFO: 127.0.0.1 - - [19/Jan/2025 19:34:30] "GET /tutorials/formal_logic HTTP/1.1" 200 -
+2025-01-19 19:34:30,808 INFO: 127.0.0.1 - - [19/Jan/2025 19:34:30] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-01-19 19:34:30,809 INFO: 127.0.0.1 - - [19/Jan/2025 19:34:30] "GET /static/js/katex-config.js HTTP/1.1" 200 -
+2025-01-19 19:34:31,947 WARNING: 404 error occurred: /favicon.ico
+2025-01-19 19:34:31,947 INFO: 127.0.0.1 - - [19/Jan/2025 19:34:31] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-01-19 19:34:32,323 INFO: Chapter page accessed: formal_logic - Chapter 1
+2025-01-19 19:34:32,323 INFO: Rendering Markdown file: content/formal_logic_chapter_1.md
+2025-01-19 19:34:32,330 INFO: Rendered HTML content preview: <h1>Chapter 1: Key Notions of Logic</h1>
+<h2>1.1 The Foundations of Logical Reasoning</h2>
+<p>An argument is a set of statements, one of which is the conclusion, and the rest are premises. The premises are intended to provide support for the conclusion.</p>
+<hr />
+<ol>
+<li>Premise: All humans are mortal.</li>
+<li>Premise: Socrates is human.</li>
+<li>Conclusion: Therefore, Socrates is mortal.</li>
+</ol>
+<hr />
+<p>The goal of an argument is to establish the truth of the conclusion. In logic, argum
+2025-01-19 19:34:32,330 INFO: Adding anchors for sections in chapter 1
+2025-01-19 19:34:32,330 INFO: Searching for header: <h2>1.1 The Foundations of Logical Reasoning</h2>
+2025-01-19 19:34:32,330 INFO: Added anchor for section: 1 - The Foundations of Logical Reasoning
+2025-01-19 19:34:32,330 INFO: Searching for header: <h2>1.2 Principles of Deductive and Inductive Logic</h2>
+2025-01-19 19:34:32,330 INFO: Added anchor for section: 2 - Principles of Deductive and Inductive Logic
+2025-01-19 19:34:32,330 INFO: Searching for header: <h2>1.3 Logical Fallacies: Identifying Errors in Arguments</h2>
+2025-01-19 19:34:32,330 INFO: Added anchor for section: 3 - Logical Fallacies: Identifying Errors in Arguments
+2025-01-19 19:34:32,330 INFO: Searching for header: <h2>1.4 Symbolic Logic and Its Applications</h2>
+2025-01-19 19:34:32,330 INFO: Added anchor for section: 4 - Symbolic Logic and Its Applications
+2025-01-19 19:34:32,330 INFO: Searching for header: <h2>1.5 Truth, Validity, and Soundness in Argumentation</h2>
+2025-01-19 19:34:32,330 INFO: Added anchor for section: 5 - Truth, Validity, and Soundness in Argumentation
+2025-01-19 19:34:32,334 INFO: 127.0.0.1 - - [19/Jan/2025 19:34:32] "GET /tutorials/formal_logic/chapter/1 HTTP/1.1" 200 -
+2025-01-19 19:34:32,437 INFO: 127.0.0.1 - - [19/Jan/2025 19:34:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-19 19:34:32,438 INFO: 127.0.0.1 - - [19/Jan/2025 19:34:32] "[36mGET /static/js/katex-config.js HTTP/1.1[0m" 304 -
+2025-01-19 19:34:37,332 INFO: Chapter page accessed: formal_logic - Chapter 1
+2025-01-19 19:34:37,332 INFO: Rendering Markdown file: content/formal_logic_chapter_1.md
+2025-01-19 19:34:37,337 INFO: Rendered HTML content preview: <h1>Chapter 1: Key Notions of Logic</h1>
+<h2>1.1 The Foundations of Logical Reasoning</h2>
+<p>An argument is a set of statements, one of which is the conclusion, and the rest are premises. The premises are intended to provide support for the conclusion.</p>
+<hr />
+<ol>
+<li>Premise: All humans are mortal.</li>
+<li>Premise: Socrates is human.</li>
+<li>Conclusion: Therefore, Socrates is mortal.</li>
+</ol>
+<hr />
+<p>The goal of an argument is to establish the truth of the conclusion. In logic, argum
+2025-01-19 19:34:37,337 INFO: Adding anchors for sections in chapter 1
+2025-01-19 19:34:37,337 INFO: Searching for header: <h2>1.1 The Foundations of Logical Reasoning</h2>
+2025-01-19 19:34:37,337 INFO: Added anchor for section: 1 - The Foundations of Logical Reasoning
+2025-01-19 19:34:37,337 INFO: Searching for header: <h2>1.2 Principles of Deductive and Inductive Logic</h2>
+2025-01-19 19:34:37,337 INFO: Added anchor for section: 2 - Principles of Deductive and Inductive Logic
+2025-01-19 19:34:37,337 INFO: Searching for header: <h2>1.3 Logical Fallacies: Identifying Errors in Arguments</h2>
+2025-01-19 19:34:37,337 INFO: Added anchor for section: 3 - Logical Fallacies: Identifying Errors in Arguments
+2025-01-19 19:34:37,337 INFO: Searching for header: <h2>1.4 Symbolic Logic and Its Applications</h2>
+2025-01-19 19:34:37,337 INFO: Added anchor for section: 4 - Symbolic Logic and Its Applications
+2025-01-19 19:34:37,337 INFO: Searching for header: <h2>1.5 Truth, Validity, and Soundness in Argumentation</h2>
+2025-01-19 19:34:37,337 INFO: Added anchor for section: 5 - Truth, Validity, and Soundness in Argumentation
+2025-01-19 19:34:37,338 INFO: 127.0.0.1 - - [19/Jan/2025 19:34:37] "GET /tutorials/formal_logic/chapter/1 HTTP/1.1" 200 -
+2025-01-19 19:34:37,444 INFO: 127.0.0.1 - - [19/Jan/2025 19:34:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-19 19:34:37,446 INFO: 127.0.0.1 - - [19/Jan/2025 19:34:37] "[36mGET /static/js/katex-config.js HTTP/1.1[0m" 304 -
+2025-01-19 19:36:22,034 INFO: Chapter page accessed: formal_logic - Chapter 1
+2025-01-19 19:36:22,034 INFO: Rendering Markdown file: content/formal_logic_chapter_1.md
+2025-01-19 19:36:22,040 INFO: Rendered HTML content preview: <h1>Chapter 1: Key Notions of Logic</h1>
+<h2>1.1 The Foundations of Logical Reasoning</h2>
+<p>An argument is a set of statements, one of which is the conclusion, and the rest are premises. The premises are intended to provide support for the conclusion.</p>
+<hr />
+<ol>
+<li>Premise: All humans are mortal.</li>
+<li>Premise: Socrates is human.</li>
+<li>Conclusion: Therefore, Socrates is mortal.</li>
+</ol>
+<hr />
+<p>The goal of an argument is to establish the truth of the conclusion. In logic, argum
+2025-01-19 19:36:22,040 INFO: Adding anchors for sections in chapter 1
+2025-01-19 19:36:22,040 INFO: Searching for header: <h2>1.1 The Foundations of Logical Reasoning</h2>
+2025-01-19 19:36:22,040 INFO: Added anchor for section: 1 - The Foundations of Logical Reasoning
+2025-01-19 19:36:22,040 INFO: Searching for header: <h2>1.2 Principles of Deductive and Inductive Logic</h2>
+2025-01-19 19:36:22,040 INFO: Added anchor for section: 2 - Principles of Deductive and Inductive Logic
+2025-01-19 19:36:22,040 INFO: Searching for header: <h2>1.3 Logical Fallacies: Identifying Errors in Arguments</h2>
+2025-01-19 19:36:22,040 INFO: Added anchor for section: 3 - Logical Fallacies: Identifying Errors in Arguments
+2025-01-19 19:36:22,040 INFO: Searching for header: <h2>1.4 Symbolic Logic and Its Applications</h2>
+2025-01-19 19:36:22,040 INFO: Added anchor for section: 4 - Symbolic Logic and Its Applications
+2025-01-19 19:36:22,040 INFO: Searching for header: <h2>1.5 Truth, Validity, and Soundness in Argumentation</h2>
+2025-01-19 19:36:22,040 INFO: Added anchor for section: 5 - Truth, Validity, and Soundness in Argumentation
+2025-01-19 19:36:22,041 INFO: 127.0.0.1 - - [19/Jan/2025 19:36:22] "GET /tutorials/formal_logic/chapter/1 HTTP/1.1" 200 -
+2025-01-19 19:36:22,162 INFO: 127.0.0.1 - - [19/Jan/2025 19:36:22] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-01-19 19:36:22,162 INFO: 127.0.0.1 - - [19/Jan/2025 19:36:22] "GET /static/js/katex-config.js HTTP/1.1" 200 -
+2025-01-19 19:36:22,866 WARNING: 404 error occurred: /favicon.ico
+2025-01-19 19:36:22,866 INFO: 127.0.0.1 - - [19/Jan/2025 19:36:22] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-01-19 19:36:24,169 WARNING: 404 error occurred: /discussions
+2025-01-19 19:36:24,170 INFO: 127.0.0.1 - - [19/Jan/2025 19:36:24] "[33mGET /discussions HTTP/1.1[0m" 404 -
+2025-01-19 19:36:24,262 INFO: 127.0.0.1 - - [19/Jan/2025 19:36:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-19 19:36:24,264 INFO: 127.0.0.1 - - [19/Jan/2025 19:36:24] "[36mGET /static/js/katex-config.js HTTP/1.1[0m" 304 -
+2025-01-19 19:36:24,682 INFO: Tutorials page accessed.
+2025-01-19 19:36:24,683 INFO: 127.0.0.1 - - [19/Jan/2025 19:36:24] "GET /tutorials HTTP/1.1" 200 -
+2025-01-19 19:36:24,838 INFO: 127.0.0.1 - - [19/Jan/2025 19:36:24] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-01-19 19:36:24,839 INFO: 127.0.0.1 - - [19/Jan/2025 19:36:24] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-19 19:36:24,842 INFO: 127.0.0.1 - - [19/Jan/2025 19:36:24] "[36mGET /static/js/katex-config.js HTTP/1.1[0m" 304 -
+2025-01-19 19:36:25,860 INFO: Card page accessed: formal_logic
+2025-01-19 19:36:25,861 INFO: Chapter 1 contains sections: {1: 'The Foundations of Logical Reasoning', 2: 'Principles of Deductive and Inductive Logic', 3: 'Logical Fallacies: Identifying Errors in Arguments', 4: 'Symbolic Logic and Its Applications', 5: 'Truth, Validity, and Soundness in Argumentation'}
+2025-01-19 19:36:25,861 INFO: Chapter 2 contains sections: {1: 'Consequence and validity', 2: 'Cases and types of validity', 3: 'Formal validity', 4: 'Sound arguments', 5: 'Inductive arguments'}
+2025-01-19 19:36:25,861 INFO: Chapter 3 contains sections: {}
+2025-01-19 19:36:25,861 INFO: Chapter 4 contains sections: {}
+2025-01-19 19:36:25,861 INFO: Chapter 5 contains sections: {}
+2025-01-19 19:36:25,861 INFO: Chapter 6 contains sections: {}
+2025-01-19 19:36:25,861 INFO: Chapter 7 contains sections: {}
+2025-01-19 19:36:25,861 INFO: 127.0.0.1 - - [19/Jan/2025 19:36:25] "GET /tutorials/formal_logic HTTP/1.1" 200 -
+2025-01-19 19:36:25,995 INFO: 127.0.0.1 - - [19/Jan/2025 19:36:25] "[36mGET /static/js/katex-config.js HTTP/1.1[0m" 304 -
+2025-01-19 19:36:25,995 INFO: 127.0.0.1 - - [19/Jan/2025 19:36:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-19 19:36:27,955 INFO: Chapter page accessed: formal_logic - Chapter 1
+2025-01-19 19:36:27,955 INFO: Rendering Markdown file: content/formal_logic_chapter_1.md
+2025-01-19 19:36:27,960 INFO: Rendered HTML content preview: <h1>Chapter 1: Key Notions of Logic</h1>
+<h2>1.1 The Foundations of Logical Reasoning</h2>
+<p>An argument is a set of statements, one of which is the conclusion, and the rest are premises. The premises are intended to provide support for the conclusion.</p>
+<hr />
+<ol>
+<li>Premise: All humans are mortal.</li>
+<li>Premise: Socrates is human.</li>
+<li>Conclusion: Therefore, Socrates is mortal.</li>
+</ol>
+<hr />
+<p>The goal of an argument is to establish the truth of the conclusion. In logic, argum
+2025-01-19 19:36:27,960 INFO: Adding anchors for sections in chapter 1
+2025-01-19 19:36:27,960 INFO: Searching for header: <h2>1.1 The Foundations of Logical Reasoning</h2>
+2025-01-19 19:36:27,960 INFO: Added anchor for section: 1 - The Foundations of Logical Reasoning
+2025-01-19 19:36:27,960 INFO: Searching for header: <h2>1.2 Principles of Deductive and Inductive Logic</h2>
+2025-01-19 19:36:27,960 INFO: Added anchor for section: 2 - Principles of Deductive and Inductive Logic
+2025-01-19 19:36:27,960 INFO: Searching for header: <h2>1.3 Logical Fallacies: Identifying Errors in Arguments</h2>
+2025-01-19 19:36:27,960 INFO: Added anchor for section: 3 - Logical Fallacies: Identifying Errors in Arguments
+2025-01-19 19:36:27,960 INFO: Searching for header: <h2>1.4 Symbolic Logic and Its Applications</h2>
+2025-01-19 19:36:27,960 INFO: Added anchor for section: 4 - Symbolic Logic and Its Applications
+2025-01-19 19:36:27,960 INFO: Searching for header: <h2>1.5 Truth, Validity, and Soundness in Argumentation</h2>
+2025-01-19 19:36:27,960 INFO: Added anchor for section: 5 - Truth, Validity, and Soundness in Argumentation
+2025-01-19 19:36:27,961 INFO: 127.0.0.1 - - [19/Jan/2025 19:36:27] "GET /tutorials/formal_logic/chapter/1 HTTP/1.1" 200 -
+2025-01-19 19:36:28,084 INFO: 127.0.0.1 - - [19/Jan/2025 19:36:28] "[36mGET /static/js/katex-config.js HTTP/1.1[0m" 304 -
+2025-01-19 19:36:28,094 INFO: 127.0.0.1 - - [19/Jan/2025 19:36:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-19 19:37:59,125 INFO: Chapter page accessed: formal_logic - Chapter 1
+2025-01-19 19:37:59,126 INFO: Rendering Markdown file: content/formal_logic_chapter_1.md
+2025-01-19 19:37:59,131 INFO: Rendered HTML content preview: <h1>Chapter 1: Key Notions of Logic</h1>
+<h2>1.1 The Foundations of Logical Reasoning</h2>
+<p>An argument is a set of statements, one of which is the conclusion, and the rest are premises. The premises are intended to provide support for the conclusion.</p>
+<hr />
+<ol>
+<li>Premise: All humans are mortal.</li>
+<li>Premise: Socrates is human.</li>
+<li>Conclusion: Therefore, Socrates is mortal.</li>
+</ol>
+<hr />
+<p>The goal of an argument is to establish the truth of the conclusion. In logic, argum
+2025-01-19 19:37:59,131 INFO: Adding anchors for sections in chapter 1
+2025-01-19 19:37:59,131 INFO: Searching for header: <h2>1.1 The Foundations of Logical Reasoning</h2>
+2025-01-19 19:37:59,131 INFO: Added anchor for section: 1 - The Foundations of Logical Reasoning
+2025-01-19 19:37:59,131 INFO: Searching for header: <h2>1.2 Principles of Deductive and Inductive Logic</h2>
+2025-01-19 19:37:59,131 INFO: Added anchor for section: 2 - Principles of Deductive and Inductive Logic
+2025-01-19 19:37:59,131 INFO: Searching for header: <h2>1.3 Logical Fallacies: Identifying Errors in Arguments</h2>
+2025-01-19 19:37:59,131 INFO: Added anchor for section: 3 - Logical Fallacies: Identifying Errors in Arguments
+2025-01-19 19:37:59,131 INFO: Searching for header: <h2>1.4 Symbolic Logic and Its Applications</h2>
+2025-01-19 19:37:59,131 INFO: Added anchor for section: 4 - Symbolic Logic and Its Applications
+2025-01-19 19:37:59,131 INFO: Searching for header: <h2>1.5 Truth, Validity, and Soundness in Argumentation</h2>
+2025-01-19 19:37:59,131 INFO: Added anchor for section: 5 - Truth, Validity, and Soundness in Argumentation
+2025-01-19 19:37:59,134 INFO: 127.0.0.1 - - [19/Jan/2025 19:37:59] "GET /tutorials/formal_logic/chapter/1 HTTP/1.1" 200 -
+2025-01-19 19:37:59,244 INFO: 127.0.0.1 - - [19/Jan/2025 19:37:59] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-01-19 19:37:59,245 INFO: 127.0.0.1 - - [19/Jan/2025 19:37:59] "GET /static/js/katex-config.js HTTP/1.1" 200 -
+2025-01-19 19:37:59,899 WARNING: 404 error occurred: /favicon.ico
+2025-01-19 19:37:59,900 INFO: 127.0.0.1 - - [19/Jan/2025 19:37:59] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-01-19 19:38:02,171 WARNING: 404 error occurred: /discussions
+2025-01-19 19:38:02,171 INFO: 127.0.0.1 - - [19/Jan/2025 19:38:02] "[33mGET /discussions HTTP/1.1[0m" 404 -
+2025-01-19 19:38:02,266 INFO: 127.0.0.1 - - [19/Jan/2025 19:38:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-19 19:38:02,268 INFO: 127.0.0.1 - - [19/Jan/2025 19:38:02] "[36mGET /static/js/katex-config.js HTTP/1.1[0m" 304 -
+2025-01-19 19:38:03,568 INFO: Tutorials page accessed.
+2025-01-19 19:38:03,569 INFO: 127.0.0.1 - - [19/Jan/2025 19:38:03] "GET /tutorials HTTP/1.1" 200 -
+2025-01-19 19:38:03,695 INFO: 127.0.0.1 - - [19/Jan/2025 19:38:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-19 19:38:03,697 INFO: 127.0.0.1 - - [19/Jan/2025 19:38:03] "[36mGET /static/js/katex-config.js HTTP/1.1[0m" 304 -
+2025-01-19 19:38:04,466 INFO: Card page accessed: formal_logic
+2025-01-19 19:38:04,466 INFO: Chapter 1 contains sections: {1: 'The Foundations of Logical Reasoning', 2: 'Principles of Deductive and Inductive Logic', 3: 'Logical Fallacies: Identifying Errors in Arguments', 4: 'Symbolic Logic and Its Applications', 5: 'Truth, Validity, and Soundness in Argumentation'}
+2025-01-19 19:38:04,467 INFO: Chapter 2 contains sections: {1: 'Consequence and validity', 2: 'Cases and types of validity', 3: 'Formal validity', 4: 'Sound arguments', 5: 'Inductive arguments'}
+2025-01-19 19:38:04,467 INFO: Chapter 3 contains sections: {}
+2025-01-19 19:38:04,467 INFO: Chapter 4 contains sections: {}
+2025-01-19 19:38:04,467 INFO: Chapter 5 contains sections: {}
+2025-01-19 19:38:04,467 INFO: Chapter 6 contains sections: {}
+2025-01-19 19:38:04,467 INFO: Chapter 7 contains sections: {}
+2025-01-19 19:38:04,467 INFO: 127.0.0.1 - - [19/Jan/2025 19:38:04] "GET /tutorials/formal_logic HTTP/1.1" 200 -
+2025-01-19 19:38:04,570 INFO: 127.0.0.1 - - [19/Jan/2025 19:38:04] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-19 19:38:04,571 INFO: 127.0.0.1 - - [19/Jan/2025 19:38:04] "[36mGET /static/js/katex-config.js HTTP/1.1[0m" 304 -
+2025-01-19 19:38:05,649 INFO: Chapter page accessed: formal_logic - Chapter 1
+2025-01-19 19:38:05,649 INFO: Rendering Markdown file: content/formal_logic_chapter_1.md
+2025-01-19 19:38:05,654 INFO: Rendered HTML content preview: <h1>Chapter 1: Key Notions of Logic</h1>
+<h2>1.1 The Foundations of Logical Reasoning</h2>
+<p>An argument is a set of statements, one of which is the conclusion, and the rest are premises. The premises are intended to provide support for the conclusion.</p>
+<hr />
+<ol>
+<li>Premise: All humans are mortal.</li>
+<li>Premise: Socrates is human.</li>
+<li>Conclusion: Therefore, Socrates is mortal.</li>
+</ol>
+<hr />
+<p>The goal of an argument is to establish the truth of the conclusion. In logic, argum
+2025-01-19 19:38:05,654 INFO: Adding anchors for sections in chapter 1
+2025-01-19 19:38:05,654 INFO: Searching for header: <h2>1.1 The Foundations of Logical Reasoning</h2>
+2025-01-19 19:38:05,654 INFO: Added anchor for section: 1 - The Foundations of Logical Reasoning
+2025-01-19 19:38:05,654 INFO: Searching for header: <h2>1.2 Principles of Deductive and Inductive Logic</h2>
+2025-01-19 19:38:05,654 INFO: Added anchor for section: 2 - Principles of Deductive and Inductive Logic
+2025-01-19 19:38:05,654 INFO: Searching for header: <h2>1.3 Logical Fallacies: Identifying Errors in Arguments</h2>
+2025-01-19 19:38:05,654 INFO: Added anchor for section: 3 - Logical Fallacies: Identifying Errors in Arguments
+2025-01-19 19:38:05,654 INFO: Searching for header: <h2>1.4 Symbolic Logic and Its Applications</h2>
+2025-01-19 19:38:05,654 INFO: Added anchor for section: 4 - Symbolic Logic and Its Applications
+2025-01-19 19:38:05,654 INFO: Searching for header: <h2>1.5 Truth, Validity, and Soundness in Argumentation</h2>
+2025-01-19 19:38:05,654 INFO: Added anchor for section: 5 - Truth, Validity, and Soundness in Argumentation
+2025-01-19 19:38:05,655 INFO: 127.0.0.1 - - [19/Jan/2025 19:38:05] "GET /tutorials/formal_logic/chapter/1 HTTP/1.1" 200 -
+2025-01-19 19:38:05,738 INFO: 127.0.0.1 - - [19/Jan/2025 19:38:05] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-19 19:38:05,738 INFO: 127.0.0.1 - - [19/Jan/2025 19:38:05] "[36mGET /static/js/katex-config.js HTTP/1.1[0m" 304 -
+2025-01-19 19:38:28,164 INFO: Card page accessed: formal_logic
+2025-01-19 19:38:28,164 INFO: Chapter 1 contains sections: {1: 'The Foundations of Logical Reasoning', 2: 'Principles of Deductive and Inductive Logic', 3: 'Logical Fallacies: Identifying Errors in Arguments', 4: 'Symbolic Logic and Its Applications', 5: 'Truth, Validity, and Soundness in Argumentation'}
+2025-01-19 19:38:28,164 INFO: Chapter 2 contains sections: {1: 'Consequence and validity', 2: 'Cases and types of validity', 3: 'Formal validity', 4: 'Sound arguments', 5: 'Inductive arguments'}
+2025-01-19 19:38:28,164 INFO: Chapter 3 contains sections: {}
+2025-01-19 19:38:28,164 INFO: Chapter 4 contains sections: {}
+2025-01-19 19:38:28,164 INFO: Chapter 5 contains sections: {}
+2025-01-19 19:38:28,164 INFO: Chapter 6 contains sections: {}
+2025-01-19 19:38:28,164 INFO: Chapter 7 contains sections: {}
+2025-01-19 19:38:28,165 INFO: 127.0.0.1 - - [19/Jan/2025 19:38:28] "GET /tutorials/formal_logic HTTP/1.1" 200 -
+2025-01-19 19:38:28,259 INFO: 127.0.0.1 - - [19/Jan/2025 19:38:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-19 19:38:28,261 INFO: 127.0.0.1 - - [19/Jan/2025 19:38:28] "[36mGET /static/js/katex-config.js HTTP/1.1[0m" 304 -
+2025-01-19 19:38:29,480 INFO: Card page accessed: formal_logic
+2025-01-19 19:38:29,480 INFO: Chapter 1 contains sections: {1: 'The Foundations of Logical Reasoning', 2: 'Principles of Deductive and Inductive Logic', 3: 'Logical Fallacies: Identifying Errors in Arguments', 4: 'Symbolic Logic and Its Applications', 5: 'Truth, Validity, and Soundness in Argumentation'}
+2025-01-19 19:38:29,480 INFO: Chapter 2 contains sections: {1: 'Consequence and validity', 2: 'Cases and types of validity', 3: 'Formal validity', 4: 'Sound arguments', 5: 'Inductive arguments'}
+2025-01-19 19:38:29,480 INFO: Chapter 3 contains sections: {}
+2025-01-19 19:38:29,480 INFO: Chapter 4 contains sections: {}
+2025-01-19 19:38:29,481 INFO: Chapter 5 contains sections: {}
+2025-01-19 19:38:29,481 INFO: Chapter 6 contains sections: {}
+2025-01-19 19:38:29,481 INFO: Chapter 7 contains sections: {}
+2025-01-19 19:38:29,481 INFO: 127.0.0.1 - - [19/Jan/2025 19:38:29] "GET /tutorials/formal_logic HTTP/1.1" 200 -
+2025-01-19 19:38:29,583 INFO: 127.0.0.1 - - [19/Jan/2025 19:38:29] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-01-19 19:38:29,583 INFO: 127.0.0.1 - - [19/Jan/2025 19:38:29] "GET /static/js/katex-config.js HTTP/1.1" 200 -
+2025-01-19 19:38:30,212 WARNING: 404 error occurred: /favicon.ico
+2025-01-19 19:38:30,212 INFO: 127.0.0.1 - - [19/Jan/2025 19:38:30] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-01-19 19:38:32,484 INFO: Chapter page accessed: formal_logic - Chapter 1
+2025-01-19 19:38:32,485 INFO: Rendering Markdown file: content/formal_logic_chapter_1.md
+2025-01-19 19:38:32,489 INFO: Rendered HTML content preview: <h1>Chapter 1: Key Notions of Logic</h1>
+<h2>1.1 The Foundations of Logical Reasoning</h2>
+<p>An argument is a set of statements, one of which is the conclusion, and the rest are premises. The premises are intended to provide support for the conclusion.</p>
+<hr />
+<ol>
+<li>Premise: All humans are mortal.</li>
+<li>Premise: Socrates is human.</li>
+<li>Conclusion: Therefore, Socrates is mortal.</li>
+</ol>
+<hr />
+<p>The goal of an argument is to establish the truth of the conclusion. In logic, argum
+2025-01-19 19:38:32,490 INFO: Adding anchors for sections in chapter 1
+2025-01-19 19:38:32,490 INFO: Searching for header: <h2>1.1 The Foundations of Logical Reasoning</h2>
+2025-01-19 19:38:32,490 INFO: Added anchor for section: 1 - The Foundations of Logical Reasoning
+2025-01-19 19:38:32,490 INFO: Searching for header: <h2>1.2 Principles of Deductive and Inductive Logic</h2>
+2025-01-19 19:38:32,490 INFO: Added anchor for section: 2 - Principles of Deductive and Inductive Logic
+2025-01-19 19:38:32,490 INFO: Searching for header: <h2>1.3 Logical Fallacies: Identifying Errors in Arguments</h2>
+2025-01-19 19:38:32,490 INFO: Added anchor for section: 3 - Logical Fallacies: Identifying Errors in Arguments
+2025-01-19 19:38:32,490 INFO: Searching for header: <h2>1.4 Symbolic Logic and Its Applications</h2>
+2025-01-19 19:38:32,490 INFO: Added anchor for section: 4 - Symbolic Logic and Its Applications
+2025-01-19 19:38:32,490 INFO: Searching for header: <h2>1.5 Truth, Validity, and Soundness in Argumentation</h2>
+2025-01-19 19:38:32,490 INFO: Added anchor for section: 5 - Truth, Validity, and Soundness in Argumentation
+2025-01-19 19:38:32,490 INFO: 127.0.0.1 - - [19/Jan/2025 19:38:32] "GET /tutorials/formal_logic/chapter/1 HTTP/1.1" 200 -
+2025-01-19 19:38:32,578 INFO: 127.0.0.1 - - [19/Jan/2025 19:38:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-19 19:38:32,581 INFO: 127.0.0.1 - - [19/Jan/2025 19:38:32] "[36mGET /static/js/katex-config.js HTTP/1.1[0m" 304 -
+2025-01-19 19:40:49,129 INFO: Card page accessed: formal_logic
+2025-01-19 19:40:49,129 INFO: Chapter 1 contains sections: {1: 'The Foundations of Logical Reasoning', 2: 'Principles of Deductive and Inductive Logic', 3: 'Logical Fallacies: Identifying Errors in Arguments', 4: 'Symbolic Logic and Its Applications', 5: 'Truth, Validity, and Soundness in Argumentation'}
+2025-01-19 19:40:49,129 INFO: Chapter 2 contains sections: {1: 'Consequence and validity', 2: 'Cases and types of validity', 3: 'Formal validity', 4: 'Sound arguments', 5: 'Inductive arguments'}
+2025-01-19 19:40:49,129 INFO: Chapter 3 contains sections: {}
+2025-01-19 19:40:49,129 INFO: Chapter 4 contains sections: {}
+2025-01-19 19:40:49,129 INFO: Chapter 5 contains sections: {}
+2025-01-19 19:40:49,129 INFO: Chapter 6 contains sections: {}
+2025-01-19 19:40:49,130 INFO: Chapter 7 contains sections: {}
+2025-01-19 19:40:49,130 INFO: 127.0.0.1 - - [19/Jan/2025 19:40:49] "GET /tutorials/formal_logic HTTP/1.1" 200 -
+2025-01-19 19:40:49,234 INFO: 127.0.0.1 - - [19/Jan/2025 19:40:49] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-19 19:40:49,235 INFO: 127.0.0.1 - - [19/Jan/2025 19:40:49] "[36mGET /static/js/katex-config.js HTTP/1.1[0m" 304 -
+2025-01-19 19:40:51,578 INFO: Chapter page accessed: formal_logic - Chapter 2
+2025-01-19 19:40:51,578 WARNING: Markdown file not found: content/formal_logic_chapter_2.md
+2025-01-19 19:40:51,578 INFO: Rendered HTML content preview: <p>Content not available yet. Stay tuned!</p>
+2025-01-19 19:40:51,578 INFO: Adding anchors for sections in chapter 2
+2025-01-19 19:40:51,578 INFO: Searching for header: <h2>2.1 Consequence and validity</h2>
+2025-01-19 19:40:51,578 WARNING: Section 'Consequence and validity' not found in HTML content for chapter 2
+2025-01-19 19:40:51,578 INFO: Searching for header: <h2>2.2 Cases and types of validity</h2>
+2025-01-19 19:40:51,578 WARNING: Section 'Cases and types of validity' not found in HTML content for chapter 2
+2025-01-19 19:40:51,578 INFO: Searching for header: <h2>2.3 Formal validity</h2>
+2025-01-19 19:40:51,578 WARNING: Section 'Formal validity' not found in HTML content for chapter 2
+2025-01-19 19:40:51,578 INFO: Searching for header: <h2>2.4 Sound arguments</h2>
+2025-01-19 19:40:51,578 WARNING: Section 'Sound arguments' not found in HTML content for chapter 2
+2025-01-19 19:40:51,578 INFO: Searching for header: <h2>2.5 Inductive arguments</h2>
+2025-01-19 19:40:51,578 WARNING: Section 'Inductive arguments' not found in HTML content for chapter 2
+2025-01-19 19:40:51,579 INFO: 127.0.0.1 - - [19/Jan/2025 19:40:51] "GET /tutorials/formal_logic/chapter/2 HTTP/1.1" 200 -
+2025-01-19 19:40:51,695 INFO: 127.0.0.1 - - [19/Jan/2025 19:40:51] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-19 19:40:51,697 INFO: 127.0.0.1 - - [19/Jan/2025 19:40:51] "[36mGET /static/js/katex-config.js HTTP/1.1[0m" 304 -
+2025-01-19 19:40:54,285 INFO: Chapter page accessed: formal_logic - Chapter 1
+2025-01-19 19:40:54,285 INFO: Rendering Markdown file: content/formal_logic_chapter_1.md
+2025-01-19 19:40:54,289 INFO: Rendered HTML content preview: <h1>Chapter 1: Key Notions of Logic</h1>
+<h2>1.1 The Foundations of Logical Reasoning</h2>
+<p>An argument is a set of statements, one of which is the conclusion, and the rest are premises. The premises are intended to provide support for the conclusion.</p>
+<hr />
+<ol>
+<li>Premise: All humans are mortal.</li>
+<li>Premise: Socrates is human.</li>
+<li>Conclusion: Therefore, Socrates is mortal.</li>
+</ol>
+<hr />
+<p>The goal of an argument is to establish the truth of the conclusion. In logic, argum
+2025-01-19 19:40:54,290 INFO: Adding anchors for sections in chapter 1
+2025-01-19 19:40:54,290 INFO: Searching for header: <h2>1.1 The Foundations of Logical Reasoning</h2>
+2025-01-19 19:40:54,290 INFO: Added anchor for section: 1 - The Foundations of Logical Reasoning
+2025-01-19 19:40:54,290 INFO: Searching for header: <h2>1.2 Principles of Deductive and Inductive Logic</h2>
+2025-01-19 19:40:54,290 INFO: Added anchor for section: 2 - Principles of Deductive and Inductive Logic
+2025-01-19 19:40:54,290 INFO: Searching for header: <h2>1.3 Logical Fallacies: Identifying Errors in Arguments</h2>
+2025-01-19 19:40:54,290 INFO: Added anchor for section: 3 - Logical Fallacies: Identifying Errors in Arguments
+2025-01-19 19:40:54,290 INFO: Searching for header: <h2>1.4 Symbolic Logic and Its Applications</h2>
+2025-01-19 19:40:54,290 INFO: Added anchor for section: 4 - Symbolic Logic and Its Applications
+2025-01-19 19:40:54,290 INFO: Searching for header: <h2>1.5 Truth, Validity, and Soundness in Argumentation</h2>
+2025-01-19 19:40:54,290 INFO: Added anchor for section: 5 - Truth, Validity, and Soundness in Argumentation
+2025-01-19 19:40:54,290 INFO: 127.0.0.1 - - [19/Jan/2025 19:40:54] "GET /tutorials/formal_logic/chapter/1 HTTP/1.1" 200 -
+2025-01-19 19:40:54,454 INFO: 127.0.0.1 - - [19/Jan/2025 19:40:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-19 19:40:54,462 INFO: 127.0.0.1 - - [19/Jan/2025 19:40:54] "[36mGET /static/js/katex-config.js HTTP/1.1[0m" 304 -
+2025-01-19 19:43:26,529 INFO: Tutorials page accessed.
+2025-01-19 19:43:26,530 INFO: 127.0.0.1 - - [19/Jan/2025 19:43:26] "GET /tutorials HTTP/1.1" 200 -
+2025-01-19 19:43:26,697 INFO: 127.0.0.1 - - [19/Jan/2025 19:43:26] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-19 19:43:26,698 INFO: 127.0.0.1 - - [19/Jan/2025 19:43:26] "[36mGET /static/js/katex-config.js HTTP/1.1[0m" 304 -
+2025-01-19 19:43:28,141 INFO: Tutorials page accessed.
+2025-01-19 19:43:28,141 INFO: 127.0.0.1 - - [19/Jan/2025 19:43:28] "GET /tutorials HTTP/1.1" 200 -
+2025-01-19 19:43:28,230 INFO: 127.0.0.1 - - [19/Jan/2025 19:43:28] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-01-19 19:43:28,232 INFO: 127.0.0.1 - - [19/Jan/2025 19:43:28] "GET /static/js/katex-config.js HTTP/1.1" 200 -
+2025-01-19 19:43:28,851 WARNING: 404 error occurred: /favicon.ico
+2025-01-19 19:43:28,851 INFO: 127.0.0.1 - - [19/Jan/2025 19:43:28] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-01-19 19:43:29,706 INFO: Card page accessed: formal_logic
+2025-01-19 19:43:29,706 INFO: Chapter 1 contains sections: {1: 'The Foundations of Logical Reasoning', 2: 'Principles of Deductive and Inductive Logic', 3: 'Logical Fallacies: Identifying Errors in Arguments', 4: 'Symbolic Logic and Its Applications', 5: 'Truth, Validity, and Soundness in Argumentation'}
+2025-01-19 19:43:29,706 INFO: Chapter 2 contains sections: {1: 'Consequence and validity', 2: 'Cases and types of validity', 3: 'Formal validity', 4: 'Sound arguments', 5: 'Inductive arguments'}
+2025-01-19 19:43:29,706 INFO: Chapter 3 contains sections: {}
+2025-01-19 19:43:29,706 INFO: Chapter 4 contains sections: {}
+2025-01-19 19:43:29,706 INFO: Chapter 5 contains sections: {}
+2025-01-19 19:43:29,706 INFO: Chapter 6 contains sections: {}
+2025-01-19 19:43:29,706 INFO: Chapter 7 contains sections: {}
+2025-01-19 19:43:29,711 INFO: 127.0.0.1 - - [19/Jan/2025 19:43:29] "GET /tutorials/formal_logic HTTP/1.1" 200 -
+2025-01-19 19:43:29,836 INFO: 127.0.0.1 - - [19/Jan/2025 19:43:29] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-19 19:43:29,844 INFO: 127.0.0.1 - - [19/Jan/2025 19:43:29] "[36mGET /static/js/katex-config.js HTTP/1.1[0m" 304 -
+2025-01-19 19:43:34,297 INFO: Chapter page accessed: formal_logic - Chapter 1
+2025-01-19 19:43:34,297 INFO: Rendering Markdown file: content/formal_logic_chapter_1.md
+2025-01-19 19:43:34,301 INFO: Rendered HTML content preview: <h1>Chapter 1: Key Notions of Logic</h1>
+<h2>1.1 The Foundations of Logical Reasoning</h2>
+<p>An argument is a set of statements, one of which is the conclusion, and the rest are premises. The premises are intended to provide support for the conclusion.</p>
+<hr />
+<ol>
+<li>Premise: All humans are mortal.</li>
+<li>Premise: Socrates is human.</li>
+<li>Conclusion: Therefore, Socrates is mortal.</li>
+</ol>
+<hr />
+<p>The goal of an argument is to establish the truth of the conclusion. In logic, argum
+2025-01-19 19:43:34,301 INFO: Adding anchors for sections in chapter 1
+2025-01-19 19:43:34,301 INFO: Searching for header: <h2>1.1 The Foundations of Logical Reasoning</h2>
+2025-01-19 19:43:34,301 INFO: Added anchor for section: 1 - The Foundations of Logical Reasoning
+2025-01-19 19:43:34,301 INFO: Searching for header: <h2>1.2 Principles of Deductive and Inductive Logic</h2>
+2025-01-19 19:43:34,301 INFO: Added anchor for section: 2 - Principles of Deductive and Inductive Logic
+2025-01-19 19:43:34,301 INFO: Searching for header: <h2>1.3 Logical Fallacies: Identifying Errors in Arguments</h2>
+2025-01-19 19:43:34,301 INFO: Added anchor for section: 3 - Logical Fallacies: Identifying Errors in Arguments
+2025-01-19 19:43:34,301 INFO: Searching for header: <h2>1.4 Symbolic Logic and Its Applications</h2>
+2025-01-19 19:43:34,301 INFO: Added anchor for section: 4 - Symbolic Logic and Its Applications
+2025-01-19 19:43:34,302 INFO: Searching for header: <h2>1.5 Truth, Validity, and Soundness in Argumentation</h2>
+2025-01-19 19:43:34,302 INFO: Added anchor for section: 5 - Truth, Validity, and Soundness in Argumentation
+2025-01-19 19:43:34,303 INFO: 127.0.0.1 - - [19/Jan/2025 19:43:34] "GET /tutorials/formal_logic/chapter/1?section=section-4 HTTP/1.1" 200 -
+2025-01-19 19:43:34,395 INFO: 127.0.0.1 - - [19/Jan/2025 19:43:34] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-19 19:43:34,396 INFO: 127.0.0.1 - - [19/Jan/2025 19:43:34] "[36mGET /static/js/katex-config.js HTTP/1.1[0m" 304 -
+2025-01-19 19:44:56,488 INFO: Chapter page accessed: formal_logic - Chapter 1
+2025-01-19 19:44:56,488 INFO: Rendering Markdown file: content/formal_logic_chapter_1.md
+2025-01-19 19:44:56,494 INFO: Rendered HTML content preview: <h1>Chapter 1: Key Notions of Logic</h1>
+<h2>1.1 The Foundations of Logical Reasoning</h2>
+<p>An argument is a set of statements, one of which is the conclusion, and the rest are premises. The premises are intended to provide support for the conclusion.</p>
+<hr />
+<ol>
+<li>Premise: All humans are mortal.</li>
+<li>Premise: Socrates is human.</li>
+<li>Conclusion: Therefore, Socrates is mortal.</li>
+</ol>
+<hr />
+<p>The goal of an argument is to establish the truth of the conclusion. In logic, argum
+2025-01-19 19:44:56,494 INFO: Adding anchors for sections in chapter 1
+2025-01-19 19:44:56,494 INFO: Searching for header: <h2>1.1 The Foundations of Logical Reasoning</h2>
+2025-01-19 19:44:56,494 INFO: Added anchor for section: 1 - The Foundations of Logical Reasoning
+2025-01-19 19:44:56,494 INFO: Searching for header: <h2>1.2 Principles of Deductive and Inductive Logic</h2>
+2025-01-19 19:44:56,494 INFO: Added anchor for section: 2 - Principles of Deductive and Inductive Logic
+2025-01-19 19:44:56,494 INFO: Searching for header: <h2>1.3 Logical Fallacies: Identifying Errors in Arguments</h2>
+2025-01-19 19:44:56,494 INFO: Added anchor for section: 3 - Logical Fallacies: Identifying Errors in Arguments
+2025-01-19 19:44:56,494 INFO: Searching for header: <h2>1.4 Symbolic Logic and Its Applications</h2>
+2025-01-19 19:44:56,494 INFO: Added anchor for section: 4 - Symbolic Logic and Its Applications
+2025-01-19 19:44:56,494 INFO: Searching for header: <h2>1.5 Truth, Validity, and Soundness in Argumentation</h2>
+2025-01-19 19:44:56,494 INFO: Added anchor for section: 5 - Truth, Validity, and Soundness in Argumentation
+2025-01-19 19:44:56,495 INFO: 127.0.0.1 - - [19/Jan/2025 19:44:56] "GET /tutorials/formal_logic/chapter/1?section=section-1 HTTP/1.1" 200 -
+2025-01-19 19:44:56,629 INFO: 127.0.0.1 - - [19/Jan/2025 19:44:56] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-19 19:44:56,638 INFO: 127.0.0.1 - - [19/Jan/2025 19:44:56] "[36mGET /static/js/katex-config.js HTTP/1.1[0m" 304 -
+2025-01-19 19:45:00,795 INFO: Chapter page accessed: formal_logic - Chapter 1
+2025-01-19 19:45:00,795 INFO: Rendering Markdown file: content/formal_logic_chapter_1.md
+2025-01-19 19:45:00,800 INFO: Rendered HTML content preview: <h1>Chapter 1: Key Notions of Logic</h1>
+<h2>1.1 The Foundations of Logical Reasoning</h2>
+<p>An argument is a set of statements, one of which is the conclusion, and the rest are premises. The premises are intended to provide support for the conclusion.</p>
+<hr />
+<ol>
+<li>Premise: All humans are mortal.</li>
+<li>Premise: Socrates is human.</li>
+<li>Conclusion: Therefore, Socrates is mortal.</li>
+</ol>
+<hr />
+<p>The goal of an argument is to establish the truth of the conclusion. In logic, argum
+2025-01-19 19:45:00,800 INFO: Adding anchors for sections in chapter 1
+2025-01-19 19:45:00,800 INFO: Searching for header: <h2>1.1 The Foundations of Logical Reasoning</h2>
+2025-01-19 19:45:00,800 INFO: Added anchor for section: 1 - The Foundations of Logical Reasoning
+2025-01-19 19:45:00,800 INFO: Searching for header: <h2>1.2 Principles of Deductive and Inductive Logic</h2>
+2025-01-19 19:45:00,800 INFO: Added anchor for section: 2 - Principles of Deductive and Inductive Logic
+2025-01-19 19:45:00,800 INFO: Searching for header: <h2>1.3 Logical Fallacies: Identifying Errors in Arguments</h2>
+2025-01-19 19:45:00,800 INFO: Added anchor for section: 3 - Logical Fallacies: Identifying Errors in Arguments
+2025-01-19 19:45:00,800 INFO: Searching for header: <h2>1.4 Symbolic Logic and Its Applications</h2>
+2025-01-19 19:45:00,800 INFO: Added anchor for section: 4 - Symbolic Logic and Its Applications
+2025-01-19 19:45:00,800 INFO: Searching for header: <h2>1.5 Truth, Validity, and Soundness in Argumentation</h2>
+2025-01-19 19:45:00,800 INFO: Added anchor for section: 5 - Truth, Validity, and Soundness in Argumentation
+2025-01-19 19:45:00,801 INFO: 127.0.0.1 - - [19/Jan/2025 19:45:00] "GET /tutorials/formal_logic/chapter/1?section=section-5 HTTP/1.1" 200 -
+2025-01-19 19:45:00,901 INFO: 127.0.0.1 - - [19/Jan/2025 19:45:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-19 19:45:00,905 INFO: 127.0.0.1 - - [19/Jan/2025 19:45:00] "[36mGET /static/js/katex-config.js HTTP/1.1[0m" 304 -
+2025-01-19 19:47:14,043 INFO: Chapter page accessed: formal_logic - Chapter 2
+2025-01-19 19:47:14,044 WARNING: Markdown file not found: content/formal_logic_chapter_2.md
+2025-01-19 19:47:14,044 INFO: Rendered HTML content preview: <p>Content not available yet. Stay tuned!</p>
+2025-01-19 19:47:14,044 INFO: Adding anchors for sections in chapter 2
+2025-01-19 19:47:14,044 INFO: Searching for header: <h2>2.1 Consequence and validity</h2>
+2025-01-19 19:47:14,044 WARNING: Section 'Consequence and validity' not found in HTML content for chapter 2
+2025-01-19 19:47:14,044 INFO: Searching for header: <h2>2.2 Cases and types of validity</h2>
+2025-01-19 19:47:14,044 WARNING: Section 'Cases and types of validity' not found in HTML content for chapter 2
+2025-01-19 19:47:14,044 INFO: Searching for header: <h2>2.3 Formal validity</h2>
+2025-01-19 19:47:14,044 WARNING: Section 'Formal validity' not found in HTML content for chapter 2
+2025-01-19 19:47:14,044 INFO: Searching for header: <h2>2.4 Sound arguments</h2>
+2025-01-19 19:47:14,044 WARNING: Section 'Sound arguments' not found in HTML content for chapter 2
+2025-01-19 19:47:14,044 INFO: Searching for header: <h2>2.5 Inductive arguments</h2>
+2025-01-19 19:47:14,044 WARNING: Section 'Inductive arguments' not found in HTML content for chapter 2
+2025-01-19 19:47:14,044 INFO: 127.0.0.1 - - [19/Jan/2025 19:47:14] "GET /tutorials/formal_logic/chapter/2 HTTP/1.1" 200 -
+2025-01-19 19:47:28,096 INFO: Tutorials page accessed.
+2025-01-19 19:47:28,097 INFO: 127.0.0.1 - - [19/Jan/2025 19:47:28] "GET /tutorials HTTP/1.1" 200 -
+2025-01-19 19:47:28,205 INFO: 127.0.0.1 - - [19/Jan/2025 19:47:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-19 19:47:28,212 INFO: 127.0.0.1 - - [19/Jan/2025 19:47:28] "[36mGET /static/js/katex-config.js HTTP/1.1[0m" 304 -
+2025-01-19 19:47:29,009 INFO: Tutorials page accessed.
+2025-01-19 19:47:29,009 INFO: 127.0.0.1 - - [19/Jan/2025 19:47:29] "GET /tutorials HTTP/1.1" 200 -
+2025-01-19 19:47:29,058 INFO: 127.0.0.1 - - [19/Jan/2025 19:47:29] "GET /static/css/style.css HTTP/1.1" 200 -
+2025-01-19 19:47:29,059 INFO: 127.0.0.1 - - [19/Jan/2025 19:47:29] "GET /static/js/katex-config.js HTTP/1.1" 200 -
+2025-01-19 19:47:29,343 WARNING: 404 error occurred: /favicon.ico
+2025-01-19 19:47:29,343 INFO: 127.0.0.1 - - [19/Jan/2025 19:47:29] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-01-19 19:47:29,929 INFO: Card page accessed: formal_logic
+2025-01-19 19:47:29,929 INFO: Chapter 1 contains sections: {1: 'The Foundations of Logical Reasoning', 2: 'Principles of Deductive and Inductive Logic', 3: 'Logical Fallacies: Identifying Errors in Arguments', 4: 'Symbolic Logic and Its Applications', 5: 'Truth, Validity, and Soundness in Argumentation'}
+2025-01-19 19:47:29,929 INFO: Chapter 2 contains sections: {1: 'Consequence and validity', 2: 'Cases and types of validity', 3: 'Formal validity', 4: 'Sound arguments', 5: 'Inductive arguments'}
+2025-01-19 19:47:29,929 INFO: Chapter 3 contains sections: {}
+2025-01-19 19:47:29,929 INFO: Chapter 4 contains sections: {}
+2025-01-19 19:47:29,929 INFO: Chapter 5 contains sections: {}
+2025-01-19 19:47:29,929 INFO: Chapter 6 contains sections: {}
+2025-01-19 19:47:29,929 INFO: Chapter 7 contains sections: {}
+2025-01-19 19:47:29,930 INFO: 127.0.0.1 - - [19/Jan/2025 19:47:29] "GET /tutorials/formal_logic HTTP/1.1" 200 -
+2025-01-19 19:47:30,007 INFO: 127.0.0.1 - - [19/Jan/2025 19:47:30] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-19 19:47:30,007 INFO: 127.0.0.1 - - [19/Jan/2025 19:47:30] "[36mGET /static/js/katex-config.js HTTP/1.1[0m" 304 -
+2025-01-19 19:47:31,443 INFO: Chapter page accessed: formal_logic - Chapter 2
+2025-01-19 19:47:31,443 WARNING: Markdown file not found: content/formal_logic_chapter_2.md
+2025-01-19 19:47:31,443 INFO: Rendered HTML content preview: <p>Content not available yet. Stay tuned!</p>
+2025-01-19 19:47:31,443 INFO: Adding anchors for sections in chapter 2
+2025-01-19 19:47:31,443 INFO: Searching for header: <h2>2.1 Consequence and validity</h2>
+2025-01-19 19:47:31,443 WARNING: Section 'Consequence and validity' not found in HTML content for chapter 2
+2025-01-19 19:47:31,443 INFO: Searching for header: <h2>2.2 Cases and types of validity</h2>
+2025-01-19 19:47:31,443 WARNING: Section 'Cases and types of validity' not found in HTML content for chapter 2
+2025-01-19 19:47:31,443 INFO: Searching for header: <h2>2.3 Formal validity</h2>
+2025-01-19 19:47:31,443 WARNING: Section 'Formal validity' not found in HTML content for chapter 2
+2025-01-19 19:47:31,443 INFO: Searching for header: <h2>2.4 Sound arguments</h2>
+2025-01-19 19:47:31,443 WARNING: Section 'Sound arguments' not found in HTML content for chapter 2
+2025-01-19 19:47:31,443 INFO: Searching for header: <h2>2.5 Inductive arguments</h2>
+2025-01-19 19:47:31,443 WARNING: Section 'Inductive arguments' not found in HTML content for chapter 2
+2025-01-19 19:47:31,444 INFO: 127.0.0.1 - - [19/Jan/2025 19:47:31] "GET /tutorials/formal_logic/chapter/2?section=section-1 HTTP/1.1" 200 -
+2025-01-19 19:47:31,518 INFO: 127.0.0.1 - - [19/Jan/2025 19:47:31] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-19 19:47:31,520 INFO: 127.0.0.1 - - [19/Jan/2025 19:47:31] "[36mGET /static/js/katex-config.js HTTP/1.1[0m" 304 -
+2025-01-19 19:47:33,501 INFO: Chapter page accessed: formal_logic - Chapter 1
+2025-01-19 19:47:33,501 INFO: Rendering Markdown file: content/formal_logic_chapter_1.md
+2025-01-19 19:47:33,506 INFO: Rendered HTML content preview: <h1>Chapter 1: Key Notions of Logic</h1>
+<h2>1.1 The Foundations of Logical Reasoning</h2>
+<p>An argument is a set of statements, one of which is the conclusion, and the rest are premises. The premises are intended to provide support for the conclusion.</p>
+<hr />
+<ol>
+<li>Premise: All humans are mortal.</li>
+<li>Premise: Socrates is human.</li>
+<li>Conclusion: Therefore, Socrates is mortal.</li>
+</ol>
+<hr />
+<p>The goal of an argument is to establish the truth of the conclusion. In logic, argum
+2025-01-19 19:47:33,506 INFO: Adding anchors for sections in chapter 1
+2025-01-19 19:47:33,506 INFO: Searching for header: <h2>1.1 The Foundations of Logical Reasoning</h2>
+2025-01-19 19:47:33,506 INFO: Added anchor for section: 1 - The Foundations of Logical Reasoning
+2025-01-19 19:47:33,506 INFO: Searching for header: <h2>1.2 Principles of Deductive and Inductive Logic</h2>
+2025-01-19 19:47:33,506 INFO: Added anchor for section: 2 - Principles of Deductive and Inductive Logic
+2025-01-19 19:47:33,506 INFO: Searching for header: <h2>1.3 Logical Fallacies: Identifying Errors in Arguments</h2>
+2025-01-19 19:47:33,506 INFO: Added anchor for section: 3 - Logical Fallacies: Identifying Errors in Arguments
+2025-01-19 19:47:33,506 INFO: Searching for header: <h2>1.4 Symbolic Logic and Its Applications</h2>
+2025-01-19 19:47:33,506 INFO: Added anchor for section: 4 - Symbolic Logic and Its Applications
+2025-01-19 19:47:33,506 INFO: Searching for header: <h2>1.5 Truth, Validity, and Soundness in Argumentation</h2>
+2025-01-19 19:47:33,506 INFO: Added anchor for section: 5 - Truth, Validity, and Soundness in Argumentation
+2025-01-19 19:47:33,507 INFO: 127.0.0.1 - - [19/Jan/2025 19:47:33] "GET /tutorials/formal_logic/chapter/1?section=section-5 HTTP/1.1" 200 -
+2025-01-19 19:47:33,581 INFO: 127.0.0.1 - - [19/Jan/2025 19:47:33] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-19 19:47:33,582 INFO: 127.0.0.1 - - [19/Jan/2025 19:47:33] "[36mGET /static/js/katex-config.js HTTP/1.1[0m" 304 -
+2025-01-19 19:47:36,988 INFO: Chapter page accessed: formal_logic - Chapter 1
+2025-01-19 19:47:36,988 INFO: Rendering Markdown file: content/formal_logic_chapter_1.md
+2025-01-19 19:47:36,993 INFO: Rendered HTML content preview: <h1>Chapter 1: Key Notions of Logic</h1>
+<h2>1.1 The Foundations of Logical Reasoning</h2>
+<p>An argument is a set of statements, one of which is the conclusion, and the rest are premises. The premises are intended to provide support for the conclusion.</p>
+<hr />
+<ol>
+<li>Premise: All humans are mortal.</li>
+<li>Premise: Socrates is human.</li>
+<li>Conclusion: Therefore, Socrates is mortal.</li>
+</ol>
+<hr />
+<p>The goal of an argument is to establish the truth of the conclusion. In logic, argum
+2025-01-19 19:47:36,993 INFO: Adding anchors for sections in chapter 1
+2025-01-19 19:47:36,993 INFO: Searching for header: <h2>1.1 The Foundations of Logical Reasoning</h2>
+2025-01-19 19:47:36,993 INFO: Added anchor for section: 1 - The Foundations of Logical Reasoning
+2025-01-19 19:47:36,993 INFO: Searching for header: <h2>1.2 Principles of Deductive and Inductive Logic</h2>
+2025-01-19 19:47:36,993 INFO: Added anchor for section: 2 - Principles of Deductive and Inductive Logic
+2025-01-19 19:47:36,993 INFO: Searching for header: <h2>1.3 Logical Fallacies: Identifying Errors in Arguments</h2>
+2025-01-19 19:47:36,993 INFO: Added anchor for section: 3 - Logical Fallacies: Identifying Errors in Arguments
+2025-01-19 19:47:36,993 INFO: Searching for header: <h2>1.4 Symbolic Logic and Its Applications</h2>
+2025-01-19 19:47:36,993 INFO: Added anchor for section: 4 - Symbolic Logic and Its Applications
+2025-01-19 19:47:36,993 INFO: Searching for header: <h2>1.5 Truth, Validity, and Soundness in Argumentation</h2>
+2025-01-19 19:47:36,993 INFO: Added anchor for section: 5 - Truth, Validity, and Soundness in Argumentation
+2025-01-19 19:47:36,994 INFO: 127.0.0.1 - - [19/Jan/2025 19:47:36] "GET /tutorials/formal_logic/chapter/1?section=section-3 HTTP/1.1" 200 -
+2025-01-19 19:47:37,038 INFO: 127.0.0.1 - - [19/Jan/2025 19:47:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-19 19:47:37,041 INFO: 127.0.0.1 - - [19/Jan/2025 19:47:37] "[36mGET /static/js/katex-config.js HTTP/1.1[0m" 304 -
+2025-01-19 19:47:39,981 INFO: Chapter page accessed: formal_logic - Chapter 1
+2025-01-19 19:47:39,981 INFO: Rendering Markdown file: content/formal_logic_chapter_1.md
+2025-01-19 19:47:39,986 INFO: Rendered HTML content preview: <h1>Chapter 1: Key Notions of Logic</h1>
+<h2>1.1 The Foundations of Logical Reasoning</h2>
+<p>An argument is a set of statements, one of which is the conclusion, and the rest are premises. The premises are intended to provide support for the conclusion.</p>
+<hr />
+<ol>
+<li>Premise: All humans are mortal.</li>
+<li>Premise: Socrates is human.</li>
+<li>Conclusion: Therefore, Socrates is mortal.</li>
+</ol>
+<hr />
+<p>The goal of an argument is to establish the truth of the conclusion. In logic, argum
+2025-01-19 19:47:39,986 INFO: Adding anchors for sections in chapter 1
+2025-01-19 19:47:39,986 INFO: Searching for header: <h2>1.1 The Foundations of Logical Reasoning</h2>
+2025-01-19 19:47:39,986 INFO: Added anchor for section: 1 - The Foundations of Logical Reasoning
+2025-01-19 19:47:39,986 INFO: Searching for header: <h2>1.2 Principles of Deductive and Inductive Logic</h2>
+2025-01-19 19:47:39,986 INFO: Added anchor for section: 2 - Principles of Deductive and Inductive Logic
+2025-01-19 19:47:39,986 INFO: Searching for header: <h2>1.3 Logical Fallacies: Identifying Errors in Arguments</h2>
+2025-01-19 19:47:39,986 INFO: Added anchor for section: 3 - Logical Fallacies: Identifying Errors in Arguments
+2025-01-19 19:47:39,986 INFO: Searching for header: <h2>1.4 Symbolic Logic and Its Applications</h2>
+2025-01-19 19:47:39,986 INFO: Added anchor for section: 4 - Symbolic Logic and Its Applications
+2025-01-19 19:47:39,986 INFO: Searching for header: <h2>1.5 Truth, Validity, and Soundness in Argumentation</h2>
+2025-01-19 19:47:39,986 INFO: Added anchor for section: 5 - Truth, Validity, and Soundness in Argumentation
+2025-01-19 19:47:39,987 INFO: 127.0.0.1 - - [19/Jan/2025 19:47:39] "GET /tutorials/formal_logic/chapter/1?section=section-1 HTTP/1.1" 200 -
+2025-01-19 19:47:40,031 INFO: 127.0.0.1 - - [19/Jan/2025 19:47:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-19 19:47:40,043 INFO: 127.0.0.1 - - [19/Jan/2025 19:47:40] "[36mGET /static/js/katex-config.js HTTP/1.1[0m" 304 -
+2025-01-19 19:47:41,461 INFO: Chapter page accessed: formal_logic - Chapter 1
+2025-01-19 19:47:41,461 INFO: Rendering Markdown file: content/formal_logic_chapter_1.md
+2025-01-19 19:47:41,466 INFO: Rendered HTML content preview: <h1>Chapter 1: Key Notions of Logic</h1>
+<h2>1.1 The Foundations of Logical Reasoning</h2>
+<p>An argument is a set of statements, one of which is the conclusion, and the rest are premises. The premises are intended to provide support for the conclusion.</p>
+<hr />
+<ol>
+<li>Premise: All humans are mortal.</li>
+<li>Premise: Socrates is human.</li>
+<li>Conclusion: Therefore, Socrates is mortal.</li>
+</ol>
+<hr />
+<p>The goal of an argument is to establish the truth of the conclusion. In logic, argum
+2025-01-19 19:47:41,466 INFO: Adding anchors for sections in chapter 1
+2025-01-19 19:47:41,466 INFO: Searching for header: <h2>1.1 The Foundations of Logical Reasoning</h2>
+2025-01-19 19:47:41,466 INFO: Added anchor for section: 1 - The Foundations of Logical Reasoning
+2025-01-19 19:47:41,466 INFO: Searching for header: <h2>1.2 Principles of Deductive and Inductive Logic</h2>
+2025-01-19 19:47:41,466 INFO: Added anchor for section: 2 - Principles of Deductive and Inductive Logic
+2025-01-19 19:47:41,466 INFO: Searching for header: <h2>1.3 Logical Fallacies: Identifying Errors in Arguments</h2>
+2025-01-19 19:47:41,466 INFO: Added anchor for section: 3 - Logical Fallacies: Identifying Errors in Arguments
+2025-01-19 19:47:41,466 INFO: Searching for header: <h2>1.4 Symbolic Logic and Its Applications</h2>
+2025-01-19 19:47:41,466 INFO: Added anchor for section: 4 - Symbolic Logic and Its Applications
+2025-01-19 19:47:41,466 INFO: Searching for header: <h2>1.5 Truth, Validity, and Soundness in Argumentation</h2>
+2025-01-19 19:47:41,466 INFO: Added anchor for section: 5 - Truth, Validity, and Soundness in Argumentation
+2025-01-19 19:47:41,467 INFO: 127.0.0.1 - - [19/Jan/2025 19:47:41] "GET /tutorials/formal_logic/chapter/1?section=section-2 HTTP/1.1" 200 -
+2025-01-19 19:47:41,504 INFO: 127.0.0.1 - - [19/Jan/2025 19:47:41] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-01-19 19:47:41,512 INFO: 127.0.0.1 - - [19/Jan/2025 19:47:41] "[36mGET /static/js/katex-config.js HTTP/1.1[0m" 304 -

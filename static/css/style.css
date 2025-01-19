@@ -63,3 +63,9 @@
     margin-left: 6rem;
     width: 90%;
 }
+
+/* 调整锚点标题的位置 */
+[id] {
+    scroll-margin-top: calc(5.93rem + 20px); /* 导航栏高度 + 顶部额外距离 */
+}
+

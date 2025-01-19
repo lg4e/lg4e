@@ -15,53 +15,106 @@ CARDS = {
     "set_theory_and_logic": {
         "title": "Set Theory and Logic",
         "description": "This card is an introduction to Set Theory, aimed especially at ...",
-        "chapters": {
-            1: {"title": "Fundamental Concepts"},
-            2: {"title": "Functions"},
-            3: {"title": "Relations"},
-            4: {"title": "The Integers and the Real Numbers"},
-            5: {"title": "Cartesian Products"},
-            6: {"title": "Finite Sets"},
-            7: {"title": "Countable and Uncountable Sets"},
-            8: {"title": "The Principle of Recursive Definition"},
-            9: {"title": "Infinite Sets and the Axiom of Choice"},
-            10: {"title": "Well-Ordered Sets"},
+        "parts": {
+            "I": {
+                "title": "General Topology",
+                "chapters": {
+                    1: {
+                        "title": "Foundations of Set Theory",
+                        "sections": {
+                            1: "Fundamental Concepts",
+                            2: "Functions",
+                            3: "Relations",
+                        },
+                    },
+                },
+            },
+            "II": {
+                "title": "Algebraic Topology",
+                "chapters": {
+                    2: {
+                        "title": "Number Systems and Cartesian Products",
+                        "sections": {
+                            1: "The Integers and the Real Numbers",
+                            2: "Cartesian Products",
+                        },
+                    },
+                    3: {
+                        "title": "Advanced Topics in Set Theory",
+                        "sections": {
+                            1: "Finite Sets",
+                            2: "Countable and Uncountable Sets",
+                            3: "The Principle of Recursive Definition",
+                            4: "Infinite Sets and the Axiom of Choice",
+                            5: "Well-Ordered Sets",
+                        },
+                    },
+                },
+            },
         },
     },
 
-    # Formal Logic Card
-    "formal_logic": {
-        "title": "Formal Logic",
-        "description": "An Introduction to Formal Logic",
-        "chapters": {
-            1: {
-                "title": "Key notions of logic",
-                "subchapters": {
-                    1: "Arguments",
-                    2: "The scope of logic",
-                    3: "Other logical notions",
+"formal_logic": {
+    "title": "Formal Logic",
+    "description": "An Introduction to Formal Logic",
+    "parts": {
+        "I": {
+            "title": "Key notions of logic",
+            "chapters": {
+                1: {
+                    "title": "Arguments",
+                    "sections": {
+                        1: "The Foundations of Logical Reasoning",
+                        2: "Principles of Deductive and Inductive Logic",
+                        3: "Logical Fallacies: Identifying Errors in Arguments",
+                        4: "Symbolic Logic and Its Applications",
+                        5: "Truth, Validity, and Soundness in Argumentation",
+                    },
+                },
+                2: {
+                    "title": "The scope of logic",
+                    "sections": {
+                        1: "Consequence and validity",
+                        2: "Cases and types of validity",
+                        3: "Formal validity",
+                        4: "Sound arguments",
+                        5: "Inductive arguments",
+                    },
+                },
+                3: {
+                    "title": "Other logical notions",
+                    "sections": {},  # 无小节
                 },
             },
-            2: {
-                "title": "Truth-functional logic",
-                "subchapters": {
-                    1: "First steps to symbolization",
-                    2: "Connectives",
-                    3: "Sentences of TFL",
-                    4: "Ambiguity",
-                    5: "Use and mention",
+        },
+        "II": {
+            "title": "Truth-functional logic",
+            "chapters": {
+                4: {
+                    "title": "Logical Structures",
+                    "sections": {},  # 无小节
+                },
+                5: {
+                    "title": "Connectives",
+                    "sections": {},  # 无小节
+                },
+                6: {
+                    "title": "Ambiguity",
+                    "sections": {},  # 无小节
                 },
             },
-            3: {
-                "title": "Truth tables",
-                "subchapters": {
-                    1: "Characteristic truth tables",
-                    2: "Truth-functional connectives",
-                    3: "Complete truth tables",
+        },
+        "III": {
+            "title": "Truth tables",
+            "chapters": {
+                7: {
+                    "title": "Truth-functional Analysis",
+                    "sections": {},  # 无小节
                 },
             },
         },
     },
+},
 
     # Linear Algebra Card
     "linear_algebra": {

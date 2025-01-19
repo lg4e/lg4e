@@ -2,13 +2,44 @@
 
 {% block content %}
 <div class="container">
-            <!-- 显示章节标题 -->
-            <h1 class="chapter-title" style="font-weight:700;">{{ chapter_title }}</h1>
+    <!-- 显示章节标题 -->
+    <h1 class="chapter-title">{{ chapter_title }}</h1>
 
-            <!-- 显示 Markdown 渲染后的内容 -->
-            <div class="markdown-content" style="margin-top: 3rem; margin-left: 0rem">
-                {{ content|safe }}
-            </div>
+    <!-- 显示 Markdown 渲染后的内容 -->
+    <div class="markdown-content">
+        {{ content|safe }}
+    </div>
 </div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const hash = window.location.hash; // 获取当前页面的锚点
+        if (hash) {
+            scrollToSection(hash.slice(1)); // 去掉 '#' 并滚动到目标
+        }
+
+        function scrollToSection(sectionId) {
+            const target = document.getElementById(sectionId);
+            if (target) {
+                const offset = window.innerHeight / 3; // 保留顶部偏移量
+                const top = target.getBoundingClientRect().top + window.scrollY - offset;
+                window.scrollTo({
+                    top: top,
+                    behavior: "smooth" // 平滑滚动
+                });
+            }
+        }
+
+        // 监听用户点击小节链接
+        const links = document.querySelectorAll('a[href^="#section-"]');
+        links.forEach(link => {
+            link.addEventListener("click", function (event) {
+                event.preventDefault(); // 禁止默认行为
+                const targetId = this.getAttribute("href").slice(1); // 获取锚点 ID
+                scrollToSection(targetId); // 平滑滚动到目标
+            });
+        });
+    });
+</script>
 {% endblock %}
 

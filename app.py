@@ -111,8 +111,11 @@ def category(category_slug):
     books = BOOKS.get(category_slug, [])
     logging.info(f"Books under category '{category_slug}': {books}")
 
+    # 将分类标题传递给模板
+    category_title = category_data.get("title", "Category")
+
     # 渲染模板
-    return render_template('category.html', category_data=category_data, books=books)
+    return render_template('category.html', category_data=category_data, books=books, title=category_title)
 
 @app.route('/tutorials/<category_slug>/<book_slug>')
 def book(category_slug, book_slug):

@@ -64,6 +64,34 @@
     width: 90%;
 }
 
+body.category .container {
+    margin-left: 4.8rem; /* 仅对 category 页面生效 */
+}
+
+body.category .category-description {
+    margin-top: 1rem; /* 调整 Formal Logic 页面中描述与顶部的距离 */
+}
+
+
+/* Formal Logic 页面卡片组专属样式 */
+body.category .category-card-group {
+    margin-top: 0rem; /* 设置卡片组与顶部的距离 */
+}
+
+/* Formal Logic 页面右侧目录样式 */
+body.category .category-sidebar {
+    position: fixed;
+    right: 0;
+    top: 3.2rem; /* 与导航栏的高度一致 */
+    bottom: 0;
+    width: 33%;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-left: 1px solid #ccc; /* 可选，添加左侧边框 */
+}
+
+
 /* 调整锚点标题的位置 */
 [id] {
     scroll-margin-top: calc(5.93rem + 20px); /* 导航栏高度 + 顶部额外距离 */

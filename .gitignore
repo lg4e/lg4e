@@ -20,7 +20,7 @@ Session.vim
 Thumbs.db
 
 # log file
-*.log
+app.log
 
 # 雑
 zatsu/

@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, abort
 from markupsafe import Markup
 import os
 import markdown
-from markdown.extensions import fenced_code, tables
+from markdown.extensions import fenced_code, tables, attr_list
 from config import CATEGORIES, BOOKS
 import logging
 
@@ -17,12 +17,13 @@ logging.basicConfig(
 )
 
 # 全局常量
-SITE_TITLE = "(∀) LG4E - Logic For Everybody"
+SITE_TITLE = "(\u2200) LG4E - Logic For Everybody"
 DEFAULT_404_TEMPLATE = "404.html"
 DEFAULT_500_TEMPLATE = "500.html"
 MARKDOWN_EXTENSIONS = [
     fenced_code.FencedCodeExtension(),
-    tables.TableExtension()
+    tables.TableExtension(),
+    attr_list.AttrListExtension()  # 启用 attr_list 扩展，支持 {#id} 语法
 ]
 
 @app.context_processor
@@ -40,6 +41,7 @@ def render_markdown_file(file_path):
         try:
             with open(file_path, 'r', encoding='utf-8') as file:
                 md_content = file.read()
+            # 渲染 Markdown 内容，启用扩展
             return markdown.markdown(md_content, extensions=MARKDOWN_EXTENSIONS)
         except Exception as e:
             logging.error(f"Failed to render Markdown file {file_path}: {e}")

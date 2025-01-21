@@ -10,5 +10,24 @@
         {{ content|safe }}
     </div>
 </div>
+
+<!-- 添加脚本以支持跳转到指定的 section -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // 获取 URL 中的 section 参数
+        const urlParams = new URLSearchParams(window.location.search);
+        const sectionId = urlParams.get("section");
+
+        // 如果存在 section 参数，尝试滚动到对应的锚点
+        if (sectionId) {
+            const targetElement = document.getElementById(sectionId);
+            if (targetElement) {
+                targetElement.scrollIntoView({ behavior: "smooth" }); // 平滑滚动到目标
+            } else {
+                console.warn(`Section ID "${sectionId}" not found in the document.`);
+            }
+        }
+    });
+</script>
 {% endblock %}
 

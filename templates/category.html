@@ -11,7 +11,7 @@
         <div class="row g-2 category-card-group"> <!-- 添加专属类名 -->
             {% for book in books %}
             <div class="col-lg-4 col-md-6 col-sm-6"> <!-- 卡片布局 -->
-                <a href="#" class="text-decoration-none" onclick="loadBookContent('{{ book.slug }}')">
+                <a href="#" class="text-decoration-none" onclick="loadBookContent('{{ book.slug }}'); return false;">
                     <div class="card h-100">
                         <div class="card-body">
                             <h6 class="card-title" style="font-size: 1rem; font-weight: bold;">{{ loop.index }}. {{ book.title }}</h6>
@@ -48,13 +48,13 @@
                                         <ul style="padding-left: 20px;">`;
                         for (const [chapterId, chapterData] of Object.entries(partData.chapters || {})) {
                             content += `<li style="list-style: none; margin-bottom: 5px;">
-                                            <a href="#" style="text-decoration: none; color: #007bff;">
+                                            <a href="/tutorials/{{ request.view_args.category_slug }}/${bookSlug}/chapter/${chapterId}" style="text-decoration: none; color: #007bff;">
                                                 ◆ Chapter ${chapterId}: ${chapterData.title}
                                             </a>
                                             <ul style="padding-left: 20px;">`;
                             for (const [sectionId, sectionTitle] of Object.entries(chapterData.sections || {})) {
                                 content += `<li style="list-style: none; margin-bottom: 3px;">
-                                                <a href="#" style="text-decoration: none; color: #007bff;">
+                                                <a href="/tutorials/{{ request.view_args.category_slug }}/${bookSlug}/chapter/${chapterId}?section=section-${sectionId}" style="text-decoration: none; color: #007bff;">
                                                     □ ${chapterId}.${sectionId}: ${sectionTitle}
                                                 </a>
                                             </li>`;
@@ -68,7 +68,8 @@
                 }
             })
             .catch(error => {
-                document.getElementById('book-content').innerHTML = `<p class="text-danger">Failed to load book content. Please try again later.</p>`;
+                const contentDiv = document.getElementById('book-content');
+                contentDiv.innerHTML = `<p class="text-danger">Failed to load book content. Please try again later.</p>`;
                 console.error('Error fetching book content:', error);
             });
     }

@@ -10,37 +10,5 @@
         {{ content|safe }}
     </div>
 </div>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        console.log("JavaScript Loaded");
-
-        // 获取 URL 参数中的 section 值
-        const urlParams = new URLSearchParams(window.location.search);
-        const sectionId = urlParams.get("section");
-        console.log("Extracted sectionId:", sectionId);
-
-        if (sectionId) {
-            console.log("Initial section found:", sectionId);
-            scrollToSection(sectionId);
-        }
-    });
-
-    function scrollToSection(sectionId) {
-        const target = document.getElementById(sectionId);
-        if (target) {
-            const offset = window.innerHeight / 3; // 保留顶部偏移量
-            const top = target.getBoundingClientRect().top + window.scrollY - offset;
-            window.scrollTo({
-                top: top,
-                behavior: "smooth" // 平滑滚动
-            });
-            console.log("Scrolled to:", sectionId);
-        } else {
-            console.log("Section not found:", sectionId);
-        }
-    }
-</script>
-
 {% endblock %}
 

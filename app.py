@@ -105,17 +105,13 @@ def category(category_slug):
     if not category_data:
         logging.error(f"Category not found: {category_slug}")
         return render_template(DEFAULT_404_TEMPLATE, title="404 - Category Not Found"), 404
-    logging.info(f"Category data found: {category_data}")
 
     # 获取该分类下的书籍
     books = BOOKS.get(category_slug, [])
     logging.info(f"Books under category '{category_slug}': {books}")
 
-    # 将分类标题传递给模板
-    category_title = category_data.get("title", "Category")
-
     # 渲染模板
-    return render_template('category.html', category_data=category_data, books=books, title=category_title)
+    return render_template('category.html', category_data=category_data, books=books, title=category_data["title"])
 
 @app.route('/tutorials/<category_slug>/<book_slug>')
 def book(category_slug, book_slug):
@@ -148,32 +144,36 @@ def get_book_data(category_slug, book_slug):
         "parts": book_data.get("parts", {})  # 如果 parts 为空，则返回空字典
     }
 
-    # 记录调试信息
-    logging.info(f"Successfully fetched book data: {response_data}")
     return response_data, 200
-
 
 @app.route('/tutorials/<category_slug>/<book_slug>/chapter/<int:chapter_id>')
 def chapter(category_slug, book_slug, chapter_id):
-    """显示章节内容"""
+    """显示章节内容并支持小节跳转"""
     logging.info(f"Chapter page accessed: {category_slug}/{book_slug} - Chapter {chapter_id}")
     book = get_book_or_404(category_slug, book_slug)
-    chapters = book.get("chapters", {})
+    parts = book.get("parts", {})
 
-    # 查找章节数据
-    chapter_data = chapters.get(chapter_id)
+    # 遍历获取章节和小节数据
+    chapter_data = None
+    for part in parts.values():
+        chapters = part.get("chapters", {})
+        if chapter_id in chapters:
+            chapter_data = chapters[chapter_id]
+            break
+
     if not chapter_data:
         logging.warning(f"Chapter {chapter_id} not found in book {book_slug}")
         abort(404, description="Chapter not found")
 
     # 渲染 Markdown 文件
-    markdown_file = os.path.join("content", f"{book_slug}_chapter_{chapter_id}.md")
+    markdown_file = os.path.join("content", category_slug, book_slug, f"chapter_{chapter_id}.md")
     html_content = render_markdown_file(markdown_file)
 
     return render_template(
         'chapter.html',
         book_title=book["title"],
         chapter_title=chapter_data["title"],
+        sections=chapter_data.get("sections", {}),
         content=Markup(html_content),
     )
 

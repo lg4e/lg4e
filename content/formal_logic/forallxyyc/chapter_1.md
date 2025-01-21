@@ -163,3 +163,16 @@ the conclusion follows from the premises. So the first thing to do
 is to separate out the conclusion from the premises. As a guide,
 these words are often used to indicate an argument’s conclusion:
 so, therefore, hence, thus, accordingly, consequently
+
+
+## 1.4 Symbolic Logic and Its Applications
+
+When approaching an argument, we want to know whether or not
+the conclusion follows from the premises. So the first thing to do
+is to separate out the conclusion from the premises. As a guide,
+these words are often used to indicate an argument’s conclusion:
+so, therefore, hence, thus, accordingly, consequently
+
+
+
+## 1.5 Truth, Validity, and Soundness in

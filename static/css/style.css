@@ -93,7 +93,7 @@ body.category .category-sidebar {
 
 /* 对 chapter 和 book_details 页面生效 */
 body.chapter .container,
-body.book_details .container {
+body.book_preface .container {
     margin-left: 5rem;
     width: 78%;
 }

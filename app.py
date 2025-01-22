@@ -115,13 +115,6 @@ def category(category_slug):
     # 渲染模板
     return render_template('category.html', category_data=category_data, category_slug=category_slug, books=books, title=category_data["title"])
 
-@app.route('/tutorials/<category_slug>/<book_slug>')
-def book(category_slug, book_slug):
-    """显示书籍目录"""
-    logging.info(f"Book page accessed: {category_slug}/{book_slug}")
-    book = get_book_or_404(category_slug, book_slug)
-    return render_template('content_template.html', book=book)
-
 @app.route('/api/category/<category_slug>/book/<book_slug>')
 def get_book_data(category_slug, book_slug):
     """API 路由：返回书籍目录数据"""
@@ -148,10 +141,10 @@ def get_book_data(category_slug, book_slug):
 
     return response_data, 200
 
-@app.route('/tutorials/<category_slug>/<book_slug>/details')
-def book_details(category_slug, book_slug):
+@app.route('/tutorials/<category_slug>/<book_slug>/preface')
+def book_preface(category_slug, book_slug):
     """显示书籍详细信息，包括从 Markdown 文件加载内容"""
-    logging.info(f"Book details page accessed: {category_slug}/{book_slug}")
+    logging.info(f"Book preface page accessed: {category_slug}/{book_slug}")
     
     # 获取书籍信息
     book = get_book_or_404(category_slug, book_slug)
@@ -168,9 +161,9 @@ def book_details(category_slug, book_slug):
     
     # 渲染模板
     return render_template(
-        'book_details.html',
+        'book_preface.html',
         book=book,
-        title=f"{book['title']} - Details",
+        title=f"{book['title']} - Perface",
         content=Markup(html_content)  # 将 HTML 内容传递给模板
     )
 

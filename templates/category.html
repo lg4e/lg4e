@@ -18,7 +18,7 @@
                                 {{ loop.index }}. {{ book.title }}
                             </h6>
                             <!-- 添加超链接 -->
-                            <a href="{{ url_for('book_details', category_slug=category_slug, book_slug=book.slug) }}" class="text-decoration-none" style="font-size: 0.9rem; color: #007bff;">
+                            <a href="{{ url_for('book_preface', category_slug=category_slug, book_slug=book.slug) }}" class="text-decoration-none" style="font-size: 0.9rem; color: #007bff;">
                                 关于这本书...
                             </a>
                         </div>

@@ -1,10 +1,6 @@
-# Preface
+<h1 style="text-align: center;">前言</h1>
 
-This is the preface for the book. It gives an overview of the key topics covered in this book.
-
-## Objectives
-
-- Learn the fundamentals of logic.
-- Understand deductive and inductive reasoning.
-- Explore advanced topics in formal logic.
+★ 关于这本书
+<br/>
+　　这是一本关于形式逻辑的书。形式逻辑涉及对于某种语言的研究，这种语言与其他任何一种语言一样，可以用来表达事物的状态。这是一门正式的语言， 它的表达被定义的很正式。这让他变成一门 对于 非常
 

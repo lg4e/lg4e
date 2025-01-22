@@ -113,7 +113,7 @@ def category(category_slug):
     logging.info(f"Books under category '{category_slug}': {books}")
 
     # 渲染模板
-    return render_template('category.html', category_data=category_data, books=books, title=category_data["title"])
+    return render_template('category.html', category_data=category_data, category_slug=category_slug, books=books, title=category_data["title"])
 
 @app.route('/tutorials/<category_slug>/<book_slug>')
 def book(category_slug, book_slug):
@@ -148,6 +148,33 @@ def get_book_data(category_slug, book_slug):
 
     return response_data, 200
 
+@app.route('/tutorials/<category_slug>/<book_slug>/details')
+def book_details(category_slug, book_slug):
+    """显示书籍详细信息，包括从 Markdown 文件加载内容"""
+    logging.info(f"Book details page accessed: {category_slug}/{book_slug}")
+    
+    # 获取书籍信息
+    book = get_book_or_404(category_slug, book_slug)
+    
+    # 构建 Markdown 文件路径
+    markdown_file = os.path.join("content", category_slug, book_slug, "preface.md")
+    
+    # 渲染 Markdown 文件内容
+    html_content = render_markdown_file(markdown_file)
+    
+    # 如果 Markdown 文件加载失败，返回默认内容
+    if html_content.startswith("<p>Failed to load content"):
+        html_content = "<p>No preface content is available for this book.</p>"
+    
+    # 渲染模板
+    return render_template(
+        'book_details.html',
+        book=book,
+        title=f"{book['title']} - Details",
+        content=Markup(html_content)  # 将 HTML 内容传递给模板
+    )
+
+
 @app.route('/tutorials/<category_slug>/<book_slug>/chapter/<int:chapter_id>')
 def chapter(category_slug, book_slug, chapter_id):
     """显示章节内容并支持小节跳转"""
@@ -175,6 +202,7 @@ def chapter(category_slug, book_slug, chapter_id):
         'chapter.html',
         book_title=book["title"],
         chapter_title=chapter_data["title"],
+        chapter_id=chapter_id,
         sections=chapter_data.get("sections", {}),
         content=Markup(html_content),
     )

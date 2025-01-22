@@ -8,18 +8,22 @@
 
     <!-- 左侧书籍卡片部分 -->
     <div class="col-lg-8 col-md-7">
-        <div class="row g-2 category-card-group"> <!-- 添加专属类名 -->
+        <div class="row g-2 category-card-group">
             {% for book in books %}
-            <div class="col-lg-4 col-md-6 col-sm-6"> <!-- 卡片布局 -->
-                <a href="#" class="text-decoration-none" onclick="loadBookContent('{{ book.slug }}'); return false;">
-                    <div class="card h-100">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <!-- 卡片容器 -->
+                    <div class="card h-100" onclick="handleCardClick(event, '{{ book.slug }}')" style="cursor: pointer;">
                         <div class="card-body">
-                            <h6 class="card-title" style="font-size: 1rem; font-weight: bold;">{{ loop.index }}. {{ book.title }}</h6>
-                            <p class="card-text" style="font-size: 0.9rem; margin-top: 0.5rem;">Explore the chapters and topics in this book.</p>
+                            <h6 class="card-title" style="font-size: 1rem; font-weight: bold;">
+                                {{ loop.index }}. {{ book.title }}
+                            </h6>
+                            <!-- 添加超链接 -->
+                            <a href="{{ url_for('book_details', category_slug=category_slug, book_slug=book.slug) }}" class="text-decoration-none" style="font-size: 0.9rem; color: #007bff;">
+                                关于这本书...
+                            </a>
                         </div>
                     </div>
-                </a>
-            </div>
+                </div>
             {% endfor %}
         </div>
     </div>
@@ -33,6 +37,17 @@
 </div>
 
 <script>
+    function handleCardClick(event, bookSlug) {
+        // 如果点击的是超链接，不阻止默认行为
+        if (event.target.tagName === 'A') {
+            return;
+        }
+
+        // 否则阻止跳转并加载内容
+        event.preventDefault();
+        loadBookContent(bookSlug);
+    }
+
     function loadBookContent(bookSlug) {
         fetch(`/api/category/{{ request.view_args.category_slug }}/book/${bookSlug}`)
             .then(response => response.json())
@@ -41,30 +56,47 @@
                 if (data.error) {
                     contentDiv.innerHTML = `<p class="text-danger">Error: ${data.error}</p>`;
                 } else {
+                    // 构建目录内容
                     let content = `<h2>${data.title}</h2><ul>`;
                     for (const [partId, partData] of Object.entries(data.parts || {})) {
-                        content += `<li style="list-style: none; margin-bottom: 10px;">
-                                        <strong>■ Part ${partId}: ${partData.title}</strong>
-                                        <ul style="padding-left: 20px;">`;
+                        content += `
+                            <li style="list-style: none; margin-bottom: 10px;">
+                                <strong>■ Part ${partId}: ${partData.title}</strong>
+                                <ul style="padding-left: 20px;">
+                        `;
                         for (const [chapterId, chapterData] of Object.entries(partData.chapters || {})) {
-                            content += `<li style="list-style: none; margin-bottom: 5px;">
-                                            <a href="/tutorials/{{ request.view_args.category_slug }}/${bookSlug}/chapter/${chapterId}" style="text-decoration: none; color: #007bff;">
-                                                ◆ Chapter ${chapterId}: ${chapterData.title}
-                                            </a>
-                                            <ul style="padding-left: 20px;">`;
+                            content += `
+                                <li style="list-style: none; margin-bottom: 5px;">
+                                    <a href="/tutorials/{{ request.view_args.category_slug }}/${bookSlug}/chapter/${chapterId}" style="text-decoration: none; color: #007bff;">
+                                        ◆ Chapter ${chapterId}: ${chapterData.title}
+                                    </a>
+                                    <ul style="padding-left: 20px;">
+                            `;
                             for (const [sectionId, sectionTitle] of Object.entries(chapterData.sections || {})) {
-                                content += `<li style="list-style: none; margin-bottom: 3px;">
-                                                <a href="/tutorials/{{ request.view_args.category_slug }}/${bookSlug}/chapter/${chapterId}?section=section-${sectionId}" style="text-decoration: none; color: #007bff;">
-                                                    □ ${chapterId}.${sectionId}: ${sectionTitle}
-                                                </a>
-                                            </li>`;
+                                content += `
+                                    <li style="list-style: none; margin-bottom: 3px;">
+                                        <a href="/tutorials/{{ request.view_args.category_slug }}/${bookSlug}/chapter/${chapterId}?section=section-${sectionId}" style="text-decoration: none; color: #007bff;">
+                                            □ ${chapterId}.${sectionId}: ${sectionTitle}
+                                        </a>
+                                    </li>
+                                `;
                             }
                             content += `</ul></li>`;
                         }
                         content += `</ul></li>`;
                     }
                     content += `</ul>`;
+
+                    // 插入渲染后的 HTML
                     contentDiv.innerHTML = content;
+
+                    // 使用 KaTeX 渲染书名和目录中可能存在的数学公式
+                    renderMathInElement(contentDiv, {
+                        delimiters: [
+                            {left: "$$", right: "$$", display: true}, // 行间公式
+                            {left: "$", right: "$", display: false}  // 行内公式
+                        ]
+                    });
                 }
             })
             .catch(error => {
@@ -73,6 +105,7 @@
                 console.error('Error fetching book content:', error);
             });
     }
+
 </script>
 {% endblock %}
 

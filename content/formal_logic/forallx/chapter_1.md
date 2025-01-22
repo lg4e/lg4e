@@ -1,5 +1,3 @@
-# Chapter 1: Introduction to Logic
-
 ## 1.1 The Foundations of Logical Reasoning {#section-1}
 
 Logic has many uses, as mention in the preface. 

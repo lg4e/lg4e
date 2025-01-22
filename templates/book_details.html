@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <h1 class="mt-4">{{ book.title }}</h1>
+
+    <!-- 显示 Markdown 渲染后的内容 -->
+    <div class="markdown-content">
+        {{ content|safe }}
+    </div>
+</div>
+{% endblock %}
+

@@ -163,8 +163,7 @@ body.book_preface .container {
 /* 对段落生效 */
 body.chapter .container p,
 body.book_preface .container p {
-    line-height: 1.6; /* 设置行间距 */
+    line-height: 1.5; /* 设置行间距 */
     ext-align: justify; /* 文本两端对齐 */
 }
-
 

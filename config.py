@@ -20,37 +20,37 @@ CATEGORIES = {
         "title": "Formal Logic",
         "description": "An Introduction to Formal Logic",
     },
-    "linear_algebra": {
-        "title": "Linear Algebra",
-        "description": "This card explores the foundational ",
+    "Ⅲ": {
+        "title": "Ⅲ ",
+        "description": "This card ・・・",
     },
-    "calculus": {
-        "title": "Calculus",
-        "description": "This card focuses on the essential topics in calculus.",
+    "Ⅳ": {
+        "title": "Ⅳ",
+        "description": "This card ・・・",
     },
-    "discrete_math": {
-        "title": "Discrete Mathematics",
-        "description": "This card covers fundamental topics in discrete math.",
+    "Ⅴ": {
+        "title": "Ⅴ",
+        "description": "This card ・・・",
     },
-    "abstract_algebra": {
-        "title": "Abstract Algebra",
-        "description": "This card delves into groups, rings, and fields.",
+    "Ⅵ": {
+        "title": "Ⅵ",
+        "description": "This card ・・・",
     },
-    "probability_theory": {
-        "title": "Probability Theory",
-        "description": "This card introduces key concepts in probability.",
+    "Ⅶ": {
+        "title": "Ⅶ",
+        "description": "This card ・・・",
     },
-    "real_analysis": {
-        "title": "Real Analysis",
-        "description": "This card explores rigorous calculus topics.",
+    "Ⅷ": {
+        "title": "Ⅷ",
+        "description": "This card ・・・",
     },
-    "computer_science_basics": {
-        "title": "Computer Science Basics",
-        "description": "This card introduces fundamental concepts in computer science.",
+    "Ⅸ": {
+        "title": "Ⅸ",
+        "description": "This card ・・・",
     },
-    "graph_theory": {
-        "title": "Graph Theory",
-        "description": "This card dives into the structure and properties of graphs.",
+    "Ⅹ": {
+        "title": "Ⅹ",
+        "description": "This card ・・・",
     },
 }
 

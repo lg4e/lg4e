@@ -1,24 +1,24 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div id="category-container" class="row g-1">
+<div calss="category-container" >
     <!-- 页面标题 -->
-    <h1 class="text-start" style="font-weight: 700;">{{ title }}</h1>
-    <p class="category-description">这里会添加一些对于 {{ title }} 的简单描述</p>
+    <h1 class="text-start category-page-title">{{ title }}</h1>
+    <p class="mt-4 category-description">这里会添加一些对于 {{ title }} 的简单描述</p>
 
     <!-- 左侧书籍卡片部分 -->
     <div class="col-lg-8 col-md-7">
-        <div class="row g-2 category-card-group">
+        <div class="row mt-4 g-2 category-card-group">
             {% for book in books %}
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <!-- 卡片容器 -->
-                    <div class="card h-100" onclick="handleCardClick(event, '{{ book.slug }}')" style="cursor: pointer;">
+                    <div class="card card-common category-card h-100" onclick="handleCardClick(event, '{{ book.slug }}')">
                         <div class="card-body">
-                            <h6 class="card-title" style="font-size: 1rem; font-weight: bold;">
+                            <h6 class="card-title category-card-title">
                                 {{ loop.index }}. {{ book.title }}
                             </h6>
                             <!-- 添加超链接 -->
-                            <a href="{{ url_for('book_preface', category_slug=category_slug, book_slug=book.slug) }}" class="text-decoration-none" style="font-size: 0.9rem; color: #007bff;">
+                            <a href="{{ url_for('book_preface', category_slug=category_slug, book_slug=book.slug) }}" class="category-card-link">
                                 关于这本书...
                             </a>
                         </div>

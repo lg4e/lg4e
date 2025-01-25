@@ -3,7 +3,7 @@
     background-color: #1f4e78; /* 深蓝色 */
 }
 
-/* 左侧品牌样式 */
+/* 左侧Logo样式 */
 .navbar-brand {
     font-size: 1.4rem; /* 调整品牌字体大小 */
     margin-right: 20px; /* 品牌与导航链接的间距 */
@@ -48,35 +48,95 @@
     border-bottom: 1px solid #ccc; /* 可选：添加底部边框 */
 }
 
-.card {
-    border: 1px solid #ccc;
-    transition: transform 0.2s, box-shadow 0.2s;
+body.tutorials .container {
+    margin-top: 0rem;
+    margin-left: 6rem;
+    width: 90%;
 }
 
-.card:hover {
+/* tutorials页面标题样式 */
+body.tutorials .tutorials-page-title,
+body.category .category-page-title{
+    font-weight: 700;
+}
+
+/* tutorials介绍文字样式 */
+body.tutorials .tutorials-description{
+}
+
+
+body.category .category.description{
+}
+
+
+/* 通用卡片样式 */
+.card-common {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    background-color: #f8f9fa; /* 浅灰背景 */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* 卡片悬停效果（统一样式） */
+.card-common:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.container {
-    margin-top: 0rem;
-    margin-left: 6rem;
-    width: 90%;
+/* Tutorials 页面卡片样式 */
+.tutorials-card {
+    height: 120px; /* Tutorials 页面卡片高度 */
+}
+
+/* Tutorials 页面卡片标题样式 */
+.tutorials-card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Tutorials 页面卡片链接样式 */
+.tutorials-card-link {
+    text-decoration: none; /* 默认状态无下划线 */
+    transition: color 0.2s ease; /* 添加平滑过渡效果 */
+}
+
+/* Tutorials 页面卡片链接悬停样式 */
+.tutorials-card-link:hover {
+    text-decoration: none; /* 悬停时也不显示下划线 */
+}
+
+/* Category 页面卡片样式 */
+.category-card {
+    height: auto; /* Category 页面卡片高度 */
+}
+
+/* Category 页面卡片标题样式 */
+.category-card-title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+/* Category 页面卡片链接样式 */
+.category-card-link {
+    font-size: 0.9rem;
+    color: #007bff; /* 蓝色链接 */
+    text-decoration: none;
+    transition: font-size 0.2s ease, text-decoration 0.3s ease; /* 添加平滑过渡效果 */
+}
+
+/* Category 页面卡片链接悬停样式 */
+.category-card-link:hover {
+    font-size: 1.5rem;
+    text-decoration: underline; /* 悬停时显示下划线 */
 }
 
 body.category .container {
     margin-left: 4.8rem; /* 仅对 category 页面生效 */
 }
 
-body.category .category-description {
-    margin-top: 1rem; /* 调整 Formal Logic 页面中描述与顶部的距离 */
-}
-
-
-/* Formal Logic 页面卡片组专属样式 */
-body.category .category-card-group {
-    margin-top: 0rem; /* 设置卡片组与顶部的距离 */
-}
 
 /* Formal Logic 页面右侧目录样式 */
 body.category .category-sidebar {
@@ -96,5 +156,15 @@ body.chapter .container,
 body.book_preface .container {
     margin-left: 5rem;
     width: 78%;
+    line-height: 1.6; /* 设置行间距 */
+    ext-align: justify; /* 文本两端对齐 */
 }
+
+/* 对段落生效 */
+body.chapter .container p,
+body.book_preface .container p {
+    line-height: 1.6; /* 设置行间距 */
+    ext-align: justify; /* 文本两端对齐 */
+}
+
 

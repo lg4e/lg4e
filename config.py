@@ -108,7 +108,7 @@ BOOKS = {
     "formal_logic": [
         {
             "slug": "forallx",
-            "title": "$ \\forall x $",
+            "title": "$ \\forall x $ : An Introduction to ・・",
             "parts": {
                 "I": {
                     "title": "Key Notions of Logic",

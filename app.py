@@ -113,7 +113,7 @@ def category(category_slug):
     logging.info(f"Books under category '{category_slug}': {books}")
 
     # 渲染模板
-    return render_template('category.html', category_data=category_data, category_slug=category_slug, books=books, title=category_data["title"])
+    return render_template('category.html', category_data=category_data, category_slug=category_slug, books=books, title=category_data["title"], description=category_data["description"])
 
 @app.route('/api/category/<category_slug>/book/<book_slug>')
 def get_book_data(category_slug, book_slug):

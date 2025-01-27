@@ -65,7 +65,9 @@ body.tutorials .tutorials-description{
 }
 
 
-body.category .category.description{
+body.category .category-description{
+    width: 70ch; /* 行长限制为 70 个字符 */
+    text-align: justify; /* 可选，增加文本两端对齐 */
 }
 
 

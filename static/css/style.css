@@ -153,14 +153,18 @@ body.category .category-sidebar {
     border-left: 1px solid #ccc; /* 可选，添加左侧边框 */
 }
 
+body.chapter .chapter-title-container {
+    margin-left: -1.5rem;
+    white-space: nowrap;  /* 防止换行 */
+}
+
 /* 对 chapter 和 book_preface 页面生效 */
 body.chapter .chapter-content-container {
-    margin-left: 0rem;
+    margin-left: 1rem;
     width: 70%;
     line-height: 1.6; /* 设置行间距 */
     ext-align: justify; /* 文本两端对齐 */
 }
-
 
 body.book_preface .preface-content-container {
     width: 80%;
@@ -169,19 +173,16 @@ body.book_preface .preface-content-container {
     ext-align: justify; /* 文本两端对齐 */
 }
 
-
-
-body.chapter .chapter-title-container,
 body.book_preface .preface-title-container {
-    margin-left: -2rem;
-    white-space: nowrap;  /* 防止换行 */
+    display: flex;           /* 使用 flex 布局 */
+    justify-content: center; /* 水平居中 */
+    align-items: center;     /* 垂直居中（如果需要） */
+    text-align: center;      /* 确保内容文字居中 */
 }
 
-
-
 /* 对段落生效 */
-body.chapter .container p,
-body.book_preface .container p {
+body.chapter .chapter-content-container p,
+body.book_preface .preface-content-container p {
     line-height: 1.5; /* 设置行间距 */
     ext-align: justify; /* 文本两端对齐 */
 }
@@ -205,7 +206,11 @@ pre code {
     background: none;  /* 避免与 pre 冲突 */
 }
 
-
-h3 {
+h4 {
     margin-bottom: 1em;  /* 调整标题与下方内容的距离 */
+}
+
+h6 {
+    margin-top: 1.2em;  /* 调整标题与上方内容的距离 */
+    margin-bottom: 0.5em;  /* 调整标题与下方内容的距离 */
 }

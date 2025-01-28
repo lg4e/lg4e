@@ -1,9 +1,11 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="container">
-    <!-- 显示章节标题 -->
-    <h1 class="chapter-title">Chapter{{ chapter_id }}: {{ chapter_title }}</h1>
+
+<!-- 显示章节标题 -->
+<h1 class="mt-4 chapter-title-container">第 {{ chapter_id }} 章: {{ chapter_title }}</h1>
+
+<div class="chapter-content-container">
     <br/>
     <!-- 显示 Markdown 渲染后的内容 -->
     <div class="markdown-content">

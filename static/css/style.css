@@ -265,6 +265,7 @@ pre {
     border-radius: 5px;  /* 圆角 */
     overflow-x: auto;  /* 水平滚动 */
     white-space: pre-wrap;  /* 允许换行 */
+    margin-left: 1rem; /* 左侧间距 */
 }
 
 /* 代码块中的 <code> 标签 */
@@ -279,6 +280,6 @@ h4 {
 }
 
 h6 {
-    margin-top: 1.2em;  /* 调整标题与上方内容的距离 */
-    margin-bottom: 0.5em;  /* 调整标题与下方内容的距离 */
+    margin-top: 1.5em;  /* 调整标题与上方内容的距离 */
+    margin-bottom: 0.3em;  /* 调整标题与下方内容的距离 */
 }

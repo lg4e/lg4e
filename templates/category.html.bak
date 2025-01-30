@@ -13,11 +13,10 @@
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <!-- 卡片容器 -->
                     <div class="card card-common category-card h-100" onclick="handleCardClick(event, '{{ book.slug }}')">
-                        <div class="card-body">
-                            <div class="card-title category-card-title">
+                        <div class="card-body category-card-title">
                                 {{ loop.index }}. {{ book.title }}
-                            </div>
-                            <div class="card-links">
+                            <!-- 添加超链接 -->
+                            <div class="category-card-links">
                                 <a href="{{ url_for('book_preface', category_slug=category_slug, book_slug=book.slug) }}" class="category-card-preface-link">
                                     关于这本书
                                 </a>
@@ -61,27 +60,26 @@
                     contentDiv.innerHTML = `<p class="text-danger">Error: ${data.error}</p>`;
                 } else {
                     // 构建目录内容
-
-                    let content = `<h2>${data.title}</h2><ul class="book-content">`;
+                    let content = `<h2>${data.title}</h2><ul>`;
                     for (const [partId, partData] of Object.entries(data.parts || {})) {
                         content += `
-                            <li>
-                                <strong>&#9632; Part ${partId}: ${partData.title}</strong>
-                                <ul>
+                            <li style="list-style: none; margin-bottom: 10px;">
+                                <strong>■ Part ${partId}: ${partData.title}</strong>
+                                <ul style="padding-left: 20px;">
                         `;
                         for (const [chapterId, chapterData] of Object.entries(partData.chapters || {})) {
                             content += `
-                                <li>
-                                    <a href="/tutorials/{{ request.view_args.category_slug }}/${bookSlug}/chapter/${chapterId}" class="chapter-link">
-                                         <span style="font-size: 1.4rem; vertical-align: -3px;">&#x25C6</span> 第 ${chapterId} 章: ${chapterData.title}
+                                <li style="list-style: none; margin-bottom: 5px;">
+                                    <a href="/tutorials/{{ request.view_args.category_slug }}/${bookSlug}/chapter/${chapterId}" style="text-decoration: none; color: #007bff;">
+                                        ◆ 第 ${chapterId} 章: ${chapterData.title}
                                     </a>
-                                    <ul>
+                                    <ul style="padding-left: 20px;">
                             `;
                             for (const [sectionId, sectionTitle] of Object.entries(chapterData.sections || {})) {
                                 content += `
-                                    <li>
-                                        <a href="/tutorials/{{ request.view_args.category_slug }}/${bookSlug}/chapter/${chapterId}?section=section-${sectionId}" class="section-link">
-                                            &#9633; ${chapterId}.${sectionId}: ${sectionTitle}
+                                    <li style="list-style: none; margin-bottom: 3px;">
+                                        <a href="/tutorials/{{ request.view_args.category_slug }}/${bookSlug}/chapter/${chapterId}?section=section-${sectionId}" style="text-decoration: none; color: #007bff;">
+                                            □ ${chapterId}.${sectionId}: ${sectionTitle}
                                         </a>
                                     </li>
                                 `;
@@ -91,8 +89,6 @@
                         content += `</ul></li>`;
                     }
                     content += `</ul>`;
-
-                    
 
                     // 插入渲染后的 HTML
                     contentDiv.innerHTML = content;

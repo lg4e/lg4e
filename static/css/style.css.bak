@@ -106,42 +106,48 @@ body.category .category-description{
     text-decoration: none; /* 悬停时也不显示下划线 */
 }
 
-/* Category 页面卡片样式 */
-.card-body {
+/* 让 card-body 采用 flex 方式排列，确保 title 在上，link 在下 */
+.category-card .card-body {
     display: flex;
-    flex-direction: column; /* 让内容竖直排列 */
-    justify-content: flex-end; /* 让内容垂直居中 */
-    height: 100%; /* 让 card-body 充满整个 card */
+    flex-direction: column;
+    justify-content: space-between; /* 让内容在上和下均匀分布 */
+    height: 100%; /* 让内容充满整个卡片 */
+    padding: 6px 15px; /* 调整内边距 */
+    font-size: 1.0rem;
     font-weight: 600;
 }
 
-
-/* Category title不换行 */
+/* 标题固定靠上 */
 .category-card-title {
-    white-space: nowrap;       /* 禁止换行 */
-    overflow: hidden;          /* 超出部分隐藏 */
-    text-overflow: ellipsis;   /* 超出部分显示省略号 */
-    display: block;            /* 确保 `div` 作为块级元素生效 */
-    width: 98%;               /* 确保 `title` 填满整个 `card-body` */
+    margin-top: 0.3rem; /* 标题距离顶部 0.5rem */
 }
 
-/* Category让链接水平排列并等距分布 */
-.card-links {
+
+.category-card-links {
     display: flex;
-    justify-content: space-between; /* 让链接均匀对齐 */
-    padding-top: 0.2rem; /* 给上方一点间距 */
+    justify-content: space-between;  /* 两个链接分布在两侧 */
+    width: 100%; /* 让其占满 card-body */
 }
 
-/* Category统一链接样式 */
-.category-card-preface-link,
+/* Category 页面卡片链接样式 */
+.category-card-preface-link {
+    font-size: 0.9rem;
+    color: #007bff;
+    text-decoration: none;
+    transition: font-size 0.2s ease, text-decoration 0.3s ease;
+    margin-bottom: 0.3rem; /* 链接距离底部 0.5rem */
+}
+
+/* "关于作者" 的样式 */
 .category-card-author-link {
     font-size: 0.9rem;
+    color: #28a745;  /* 绿色，区分于 "关于这本书" */
     text-decoration: none;
     transition: font-size 0.2s ease, text-decoration 0.3s ease;
 }
 
 /* 悬停效果 */
-.category-card-preface-link:hover,
+.category-card-preface-link:hover, 
 .category-card-author-link:hover {
     font-size: 1.5rem;
     text-decoration: underline;
@@ -163,50 +169,6 @@ body.category .category-sidebar {
     padding: 20px;
     border-left: 1px solid #ccc; /* 可选，添加左侧边框 */
 }
-
-/* Category page目录部分整体样式 */
-.book-content {
-    padding: 10px;
-    list-style: none; /* 去除默认列表样式 */
-}
-
-/* 一级目录 (Part) */
-.book-content ul {
-    padding-left: 20px;
-    list-style: none; /* 去除默认列表样式 */
-}
-
-/* Part 标题 */
-.book-content strong {
-    font-size: 1.2rem;
-    font-weight: bold;
-    display: block;
-    margin-bottom: 7px;
-}
-
-/* 章节 (Chapter) */
-.book-content ul li {
-    margin-bottom: 5px;
-}
-
-/* 小节 (Section) */
-.book-content ul li ul li {
-    margin-bottom: 3px;
-}
-
-/* 目录链接样式 */
-.book-content a {
-    text-decoration: none;
-    color: #007bff; /* 主题色 */
-    transition: color 0.2s ease-in-out;
-}
-
-/* 悬停效果 */
-.book-content a:hover {
-    font-weight: 600;
-    text-decoration: underline;
-}
-
 
 body.chapter .chapter-title-container {
     margin-left: -1.5rem;

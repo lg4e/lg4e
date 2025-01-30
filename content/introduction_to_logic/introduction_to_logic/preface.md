@@ -1,6 +1,6 @@
 <br/>
 <!-- 如果一定要选择一本作为起点的话，那无疑是这本「Introduction to Logic」了。-->
-这是一本 "at hundreds of universities in the United States and around the world" 都在用的教科书。
+这是一本 "at hundreds of universities in the United States and around the world" 在用的教科书。
 已经有了现成的中文译本，↓↓↓↓↓↓↓↓↓↓。
 
 

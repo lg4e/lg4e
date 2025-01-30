@@ -13,13 +13,14 @@
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <!-- 卡片容器 -->
                     <div class="card card-common category-card h-100" onclick="handleCardClick(event, '{{ book.slug }}')">
-                        <div class="card-body">
-                            <h6 class="card-title category-card-title">
+                        <div class="card-body category-card-title">
                                 {{ loop.index }}. {{ book.title }}
-                            </h6>
                             <!-- 添加超链接 -->
-                            <a href="{{ url_for('book_preface', category_slug=category_slug, book_slug=book.slug) }}" class="category-card-link">
-                                关于这本书...
+                            <a href="{{ url_for('book_preface', category_slug=category_slug, book_slug=book.slug) }}" class="category-card-preface-link">
+                                关于这本书
+                            </a>
+                            <a href="{{ url_for('book_preface', category_slug=category_slug, book_slug=book.slug) }}" class="category-card-preface-link">
+                                关于作者
                             </a>
                         </div>
                     </div>

@@ -60,23 +60,17 @@ body.category .category-page-title{
     font-weight: 700;
 }
 
-/* tutorials介绍文字样式 */
-body.tutorials .tutorials-description{
-}
-
-
 body.category .category-description{
     width: 70ch; /* 行长限制为 70 个字符 */
-    text-align: justify; /* 可选，增加文本两端对齐 */
+    text-align: justify; /* 增加文本两端对齐 */
 }
-
 
 /* 通用卡片样式 */
 .card-common {
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
     background-color: #f8f9fa; /* 浅灰背景 */
-    border: 1px solid #ddd;
-    border-radius: 8px;
+    border: 1.5px solid #ddd;
+    border-radius: 9px;
     cursor: pointer;
 }
 
@@ -89,6 +83,9 @@ body.category .category-description{
 /* Tutorials 页面卡片样式 */
 .tutorials-card {
     height: 120px; /* Tutorials 页面卡片高度 */
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
 }
 
 /* Tutorials 页面卡片标题样式 */
@@ -109,28 +106,33 @@ body.category .category-description{
     text-decoration: none; /* 悬停时也不显示下划线 */
 }
 
-/* Category 页面卡片样式 */
-.category-card {
-    height: auto; /* Category 页面卡片高度 */
+/* 让 card-body 采用 flex 方式排列，确保 title 在上，link 在下 */
+.category-card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* 让内容在上和下均匀分布 */
+    height: 100%; /* 让内容充满整个卡片 */
+    padding: 6px 15px; /* 调整内边距 */
+    font-size: 1.0rem;
+    font-weight: 600;
 }
 
-/* Category 页面卡片标题样式 */
+/* 标题固定靠上 */
 .category-card-title {
-    font-size: 1rem;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
+    margin-top: 0.3rem; /* 标题距离顶部 0.5rem */
 }
 
 /* Category 页面卡片链接样式 */
-.category-card-link {
+.category-card-preface-link {
     font-size: 0.9rem;
-    color: #007bff; /* 蓝色链接 */
+    color: #007bff;
     text-decoration: none;
-    transition: font-size 0.2s ease, text-decoration 0.3s ease; /* 添加平滑过渡效果 */
+    transition: font-size 0.2s ease, text-decoration 0.3s ease;
+    margin-bottom: 0.3rem; /* 链接距离底部 0.5rem */
 }
 
 /* Category 页面卡片链接悬停样式 */
-.category-card-link:hover {
+.category-card-preface-link:hover {
     font-size: 1.5rem;
     text-decoration: underline; /* 悬停时显示下划线 */
 }
@@ -138,7 +140,6 @@ body.category .category-description{
 body.category .container {
     margin-left: 5rem; /* 仅对 category 页面生效 */
 }
-
 
 /* Formal Logic 页面右侧目录样式 */
 body.category .category-sidebar {

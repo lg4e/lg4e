@@ -125,17 +125,27 @@ body.category .category-description{
     width: 98%;               /* 确保 `title` 填满整个 `card-body` */
 }
 
-/* Category让链接水平排列并等距分布 */
+/* Category, 初始状态：隐藏链接;让链接水平排列并等距分布 */
 .card-links {
     display: flex;
     justify-content: space-between; /* 让链接均匀对齐 */
     padding-top: 0.2rem; /* 给上方一点间距 */
+    opacity: 0; /* 设置透明度为 0（不可见） */
+    visibility: hidden; /* 让元素完全隐藏，不占空间 */
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out; /* 添加平滑过渡动画 */
+}
+
+/* 当鼠标悬停在卡片上时，显示链接 */
+.category-card:hover .card-links {
+    opacity: 1; /* 透明度变为 1（完全可见） */
+    visibility: visible; /* 让元素可见 */
 }
 
 /* Category统一链接样式 */
 .category-card-preface-link,
 .category-card-author-link {
     font-size: 0.9rem;
+    color: #4169E1;
     text-decoration: none;
     transition: font-size 0.2s ease, text-decoration 0.3s ease;
 }
@@ -213,7 +223,7 @@ body.chapter .chapter-title-container {
     white-space: nowrap;  /* 防止换行 */
 }
 
-/* 对 chapter 和 book_preface 页面生效 */
+/* 对 chapter 页面生效 */
 body.chapter .chapter-content-container {
     margin-left: 1rem;
     width: 70%;
@@ -221,14 +231,16 @@ body.chapter .chapter-content-container {
     ext-align: justify; /* 文本两端对齐 */
 }
 
-body.book_preface .preface-content-container {
+body.book_preface .preface-content-container,
+body.book_author .author-content-container {
     width: 80%;
     margin: 0 auto;  /* 让容器水平居中 */
     line-height: 1.7; /* 设置行间距 */
     ext-align: justify; /* 文本两端对齐 */
 }
 
-body.book_preface .preface-title-container {
+body.book_preface .preface-title-container,
+body.book_author .author-title-container {
     display: flex;           /* 使用 flex 布局 */
     justify-content: center; /* 水平居中 */
     align-items: center;     /* 垂直居中（如果需要） */
@@ -237,7 +249,8 @@ body.book_preface .preface-title-container {
 
 /* 对段落生效 */
 body.chapter .chapter-content-container p,
-body.book_preface .preface-content-container p {
+body.book_preface .preface-content-container p,
+body.book_author .author-content-container p {
     line-height: 1.5; /* 设置行间距 */
     ext-align: justify; /* 文本两端对齐 */
 }

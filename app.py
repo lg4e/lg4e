@@ -167,6 +167,32 @@ def book_preface(category_slug, book_slug):
         content=Markup(html_content)  # 将 HTML 内容传递给模板
     )
 
+@app.route('/tutorials/<category_slug>/<book_slug>/author')
+def book_author(category_slug, book_slug):
+    """显示书籍作者信息，包括从 Markdown 文件加载内容"""
+    logging.info(f"Book preface page accessed: {category_slug}/{book_slug}")
+    
+    # 获取书籍信息
+    book = get_book_or_404(category_slug, book_slug)
+    
+    # 构建 Markdown 文件路径
+    markdown_file = os.path.join("content", category_slug, book_slug, "author.md")
+    
+    # 渲染 Markdown 文件内容
+    html_content = render_markdown_file(markdown_file)
+    
+    # 如果 Markdown 文件加载失败，返回默认内容
+    if html_content.startswith("<p>Failed to load content"):
+        html_content = "<p>No author content is available for this book.</p>"
+    
+    # 渲染模板
+    return render_template(
+        'book_author.html',
+        book=book,
+        title=f"{book['title']} - Author",
+        content=Markup(html_content)  # 将 HTML 内容传递给模板
+    )
+
 
 @app.route('/tutorials/<category_slug>/<book_slug>/chapter/<int:chapter_id>')
 def chapter(category_slug, book_slug, chapter_id):

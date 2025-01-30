@@ -17,11 +17,12 @@
                             <div class="card-title category-card-title">
                                 {{ loop.index }}. {{ book.title }}
                             </div>
+                            <!-- 这个 div 默认隐藏，鼠标悬浮时显示 -->
                             <div class="card-links">
                                 <a href="{{ url_for('book_preface', category_slug=category_slug, book_slug=book.slug) }}" class="category-card-preface-link">
                                     关于这本书
                                 </a>
-                                <a href="{{ url_for('book_preface', category_slug=category_slug, book_slug=book.slug) }}" class="category-card-author-link">
+                                <a href="{{ url_for('book_author', category_slug=category_slug, book_slug=book.slug) }}" class="category-card-author-link">
                                     关于作者
                                 </a>
                             </div>

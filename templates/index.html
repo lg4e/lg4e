@@ -1,80 +1,75 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="index-container" style="margin-top: 0rem; margin-left: 5rem;">
-   
+<div class="index-container">
     <!-- 引用1984的段落 -->
     <div class="mt-5">
         <blockquote class="text-justify">
-            <p><em>"WAR IS PEACE"</em></p>
-            <p><em>"FREEDOM IS SLAVERY"</em></p>
-            <p><em>"IGNORANCE IS STRENGTH"</em></p>
-	<p class="text-muted" style="font-size: 0.85rem; font-style: italic;">
-            —— <em>1984</em> by George Orwell, slogans from the Ministry of Truth
-            <!-- 
-            Source: <em>1984</em> by George Orwell, slogans from the Ministry of Truth
-            -->
-        </p>
-        </blockquote >
-    </div>
-    
-    <!-- 表格内容 -->
-    <h3 class="mt-5 text-start">From a contradiction, anything follows.</h3>
-    <div class="table-responsive">
-        <table class="table table-bordered text-start" style="width: 55%; table-layout: fixed; margin-left: 0;">
-            <thead class="text-center">
-                <tr>
-                    <th style="width: 8%;">Step</th>
-                    <th style="width: 20%;">Proposition</th>
-                    <th style="width: 38%;">Derivation</th>
-                    <th style="width: 34%;">Annotations</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>\(P \land \neg P\)</td>
-                    <td>Premise</td>
-                    <td>Both \(P\) and \(\neg P\) hold true.</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>\(P\)</td>
-                    <td>Conjunction Elimination (1)</td>
-                    <td>\(P \land \neg P \vdash P\)</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>\(P \lor Q\)</td>
-                    <td>Disjunction Introduction (2)</td>
-                    <td>\(P \vdash P \lor Q\)</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>\(\neg P\)</td>
-                    <td>Conjunction Elimination (1)</td>
-                    <td>\(P \land \neg P \vdash \neg P\)</td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td style="color: pink;">\(Q\)</td>
-                    <td>Disjunctive Syllogism (3,4)</td>
-                    <td>\(P \lor Q, \neg P \vdash Q\)</td>
-                </tr>
-            </tbody>
-        </table>
-	<p class="text-muted" style="font-size: 0.85rem; margin-left: 27rem; font-style: italic;">
-            —— Wikipedia, <a href="https://en.wikipedia.org/wiki/Principle_of_explosion" target="_blank">Principle of Explosion</a>
-            <!--
-            Source: Wikipedia, <a href="https://en.wikipedia.org/wiki/Principle_of_explosion" target="_blank">Principle of Explosion</a>
-            -->
-        </p>
+            <p class="mb-1"><em>"WAR IS PEACE"</em></p>
+            <p class="mb-1"><em>"FREEDOM IS SLAVERY"</em></p>
+            <p class="mb-1"><em>"IGNORANCE IS STRENGTH"</em></p>
+            <p class="text-muted small slogan-reference">
+                —— <em>1984</em> by George Orwell, slogans from the Ministry of Truth
+            </p>
+        </blockquote>
     </div>
 
+    <!-- 表格和引用容器 -->
+    <div class="table-container">
+        <h3 class="mt-5 text-start">From a contradiction, anything follows.</h3>
+        <div class="table-responsive">
+            <table class="table table-bordered text-center text-md-start logic-table">
+                <thead>
+                    <tr>
+                        <th>Step</th>
+                        <th>Proposition</th>
+                        <th>Derivation</th>
+                        <th>Annotations</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>\(P \land \neg P\)</td>
+                        <td>Premise</td>
+                        <td>Both \(P\) and \(\neg P\) hold true.</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>\(P\)</td>
+                        <td>Conjunction Elimination (1)</td>
+                        <td>\(P \land \neg P \vdash P\)</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>\(P \lor Q\)</td>
+                        <td>Disjunction Introduction (2)</td>
+                        <td>\(P \vdash P \lor Q\)</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>\(\neg P\)</td>
+                        <td>Conjunction Elimination (1)</td>
+                        <td>\(P \land \neg P \vdash \neg P\)</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td class="text-danger">\(Q\)</td>
+                        <td>Disjunctive Syllogism (3,4)</td>
+                        <td>\(P \lor Q, \neg P \vdash Q\)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Wikipedia 引用（始终对齐表格右侧） -->
+        <p class="text-muted small wiki-reference">
+            —— Wikipedia, <a href="https://en.wikipedia.org/wiki/Principle_of_explosion" target="_blank">Principle of Explosion</a>
+        </p>
+    </div>
 </div>
 
 <!-- 引入 KaTeX -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
 <script defer src="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex/dist/contrib/auto-render.min.js"
         onload="renderMathInElement(document.body);"></script>

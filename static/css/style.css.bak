@@ -106,48 +106,52 @@ body.category .category-description{
     text-decoration: none; /* 悬停时也不显示下划线 */
 }
 
-/* 让 card-body 采用 flex 方式排列，确保 title 在上，link 在下 */
-.category-card .card-body {
+/* Category 页面卡片样式 */
+.card-body {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* 让内容在上和下均匀分布 */
-    height: 100%; /* 让内容充满整个卡片 */
-    padding: 6px 15px; /* 调整内边距 */
-    font-size: 1.0rem;
+    flex-direction: column; /* 让内容竖直排列 */
+    justify-content: flex-end; /* 让内容垂直居中 */
+    height: 100%; /* 让 card-body 充满整个 card */
     font-weight: 600;
 }
 
-/* 标题固定靠上 */
+
+/* Category title不换行 */
 .category-card-title {
-    margin-top: 0.3rem; /* 标题距离顶部 0.5rem */
+    white-space: nowrap;       /* 禁止换行 */
+    overflow: hidden;          /* 超出部分隐藏 */
+    text-overflow: ellipsis;   /* 超出部分显示省略号 */
+    display: block;            /* 确保 `div` 作为块级元素生效 */
+    width: 98%;               /* 确保 `title` 填满整个 `card-body` */
 }
 
-
-.category-card-links {
+/* Category, 初始状态：隐藏链接;让链接水平排列并等距分布 */
+.card-links {
     display: flex;
-    justify-content: space-between;  /* 两个链接分布在两侧 */
-    width: 100%; /* 让其占满 card-body */
+    justify-content: space-between; /* 让链接均匀对齐 */
+    padding-top: 0.2rem; /* 给上方一点间距 */
+    opacity: 0; /* 设置透明度为 0（不可见） */
+    visibility: hidden; /* 让元素完全隐藏，不占空间 */
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out; /* 添加平滑过渡动画 */
 }
 
-/* Category 页面卡片链接样式 */
-.category-card-preface-link {
-    font-size: 0.9rem;
-    color: #007bff;
-    text-decoration: none;
-    transition: font-size 0.2s ease, text-decoration 0.3s ease;
-    margin-bottom: 0.3rem; /* 链接距离底部 0.5rem */
+/* 当鼠标悬停在卡片上时，显示链接 */
+.category-card:hover .card-links {
+    opacity: 1; /* 透明度变为 1（完全可见） */
+    visibility: visible; /* 让元素可见 */
 }
 
-/* "关于作者" 的样式 */
+/* Category统一链接样式 */
+.category-card-preface-link,
 .category-card-author-link {
     font-size: 0.9rem;
-    color: #28a745;  /* 绿色，区分于 "关于这本书" */
+    color: #4169E1;
     text-decoration: none;
     transition: font-size 0.2s ease, text-decoration 0.3s ease;
 }
 
 /* 悬停效果 */
-.category-card-preface-link:hover, 
+.category-card-preface-link:hover,
 .category-card-author-link:hover {
     font-size: 1.5rem;
     text-decoration: underline;
@@ -170,12 +174,56 @@ body.category .category-sidebar {
     border-left: 1px solid #ccc; /* 可选，添加左侧边框 */
 }
 
+/* Category page目录部分整体样式 */
+.book-content {
+    padding: 10px;
+    list-style: none; /* 去除默认列表样式 */
+}
+
+/* 一级目录 (Part) */
+.book-content ul {
+    padding-left: 20px;
+    list-style: none; /* 去除默认列表样式 */
+}
+
+/* Part 标题 */
+.book-content strong {
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 7px;
+}
+
+/* 章节 (Chapter) */
+.book-content ul li {
+    margin-bottom: 5px;
+}
+
+/* 小节 (Section) */
+.book-content ul li ul li {
+    margin-bottom: 3px;
+}
+
+/* 目录链接样式 */
+.book-content a {
+    text-decoration: none;
+    color: #007bff; /* 主题色 */
+    transition: color 0.2s ease-in-out;
+}
+
+/* 悬停效果 */
+.book-content a:hover {
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+
 body.chapter .chapter-title-container {
     margin-left: -1.5rem;
     white-space: nowrap;  /* 防止换行 */
 }
 
-/* 对 chapter 和 book_preface 页面生效 */
+/* 对 chapter 页面生效 */
 body.chapter .chapter-content-container {
     margin-left: 1rem;
     width: 70%;
@@ -183,14 +231,16 @@ body.chapter .chapter-content-container {
     ext-align: justify; /* 文本两端对齐 */
 }
 
-body.book_preface .preface-content-container {
+body.book_preface .preface-content-container,
+body.book_author .author-content-container {
     width: 80%;
     margin: 0 auto;  /* 让容器水平居中 */
     line-height: 1.7; /* 设置行间距 */
     ext-align: justify; /* 文本两端对齐 */
 }
 
-body.book_preface .preface-title-container {
+body.book_preface .preface-title-container,
+body.book_author .author-title-container {
     display: flex;           /* 使用 flex 布局 */
     justify-content: center; /* 水平居中 */
     align-items: center;     /* 垂直居中（如果需要） */
@@ -199,7 +249,8 @@ body.book_preface .preface-title-container {
 
 /* 对段落生效 */
 body.chapter .chapter-content-container p,
-body.book_preface .preface-content-container p {
+body.book_preface .preface-content-container p,
+body.book_author .author-content-container p {
     line-height: 1.5; /* 设置行间距 */
     ext-align: justify; /* 文本两端对齐 */
 }
@@ -214,6 +265,7 @@ pre {
     border-radius: 5px;  /* 圆角 */
     overflow-x: auto;  /* 水平滚动 */
     white-space: pre-wrap;  /* 允许换行 */
+    margin-left: 1rem; /* 左侧间距 */
 }
 
 /* 代码块中的 <code> 标签 */
@@ -228,6 +280,6 @@ h4 {
 }
 
 h6 {
-    margin-top: 1.2em;  /* 调整标题与上方内容的距离 */
-    margin-bottom: 0.5em;  /* 调整标题与下方内容的距离 */
+    margin-top: 1.5em;  /* 调整标题与上方内容的距离 */
+    margin-bottom: 0.3em;  /* 调整标题与下方内容的距离 */
 }

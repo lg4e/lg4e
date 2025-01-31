@@ -25,7 +25,6 @@
     color: #d1ecf1 !important;
 }
 
-
 /* 让导航菜单间距均匀 */
 .navbar-nav {
     gap: 1rem; /*  让菜单项间距一致 */
@@ -36,9 +35,20 @@
     margin-left: auto;
 }
 
+/* 让表格在小屏幕上自适应 */
+.logic-table {
+    width: 100%;
+    max-width: 53%;
+}
+
+/* 引用的样式  */
+.slogan-reference,
+.wiki-reference {
+    font-size: 0.85rem;
+    font-style: italic;
+}
+
 body.tutorials .container {
-    margin-top: 0rem;
-    margin-left: 6rem;
     width: 90%;
 }
 
@@ -145,17 +155,13 @@ body.category .category-description{
     text-decoration: underline;
 }
 
-body.category .container {
-    margin-left: 5rem; /* 仅对 category 页面生效 */
-}
-
 /* Formal Logic 页面右侧目录样式 */
 body.category .category-sidebar {
     position: fixed;
     right: 0;
     top: 3.2rem; /* 与导航栏的高度一致 */
     bottom: 0;
-    width: 33%;
+    width: 30%;
     overflow-y: auto;
     background-color: #f9f9f9;
     padding: 20px;

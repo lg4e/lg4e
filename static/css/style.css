@@ -1,51 +1,39 @@
-/* 自定义导航栏颜色 */
 .bg-custom {
-    background-color: #1f4e78; /* 深蓝色 */
+    background-color: #1f4e78;
 }
 
-/* 左侧Logo样式 */
+/*  LG4E 的字体大小 */
 .navbar-brand {
-    font-size: 1.4rem; /* 调整品牌字体大小 */
-    margin-right: 20px; /* 品牌与导航链接的间距 */
-    color: white; /* 字体颜色为白色 */
-    line-height: 1; /* 保证垂直居中 */
-    display: flex;
-    align-items: center;
+    font-size: 1.3rem;
 }
 
-/* 缩小 "4" 的样式 */
+/* 调整 `4` 的size */
 .navbar-brand sub {
-    font-size: 0.7em; /* 相对于父元素字体缩小 */
-    font-weight: normal; /* 取消加粗 */
-    position: relative;
-    bottom: -0.2em; /* 调整下沉位置，使其靠近底部 */
+    font-size: 1.1em; /*  相对于父元素的大小 */
 }
 
-/* 导航链接样式 */
-.nav-link {
-    font-size: 1rem; /* 默认字体大小 */
-    margin-right: 15px; /* 每个导航链接的间距 */
-    color: white; /* 设置字体颜色为白色 */
+/* 设置所有导航链接的默认颜色为白色 */
+.navbar-brand,
+.navbar-nav .nav-link {
+    color: white !important; /* 统一所有菜单项颜色 */
+    transition: color 0.3s ease-in-out;
 }
 
-/* 鼠标悬停时导航链接变浅 */
-.nav-link:hover {
-    color: #d1ecf1; /* 浅蓝色 */
+/* 悬停时变为浅蓝色 */
+.navbar-brand:hover,
+.navbar-nav .nav-link:hover {
+    color: #d1ecf1 !important;
 }
 
-/* 右侧链接样式 */
-.navbar .d-flex .nav-link {
-    font-size: 0.9rem; /* 字体稍小 */
-    font-weight: 500; /* 字体加粗 */
-    margin-left: 15px; /* 左侧间距 */
+
+/* 让导航菜单间距均匀 */
+.navbar-nav {
+    gap: 1rem; /*  让菜单项间距一致 */
 }
 
-/* 导航栏高度调整 */
-.navbar {
-    height: 56px; /* 确保高度一致 */
-    display: flex;
-    align-items: center; /* 垂直居中内容 */
-    border-bottom: 1px solid #ccc; /* 可选：添加底部边框 */
+/* 让汉堡菜单自动对齐左侧 */
+.navbar-toggler {
+    margin-left: auto;
 }
 
 body.tutorials .container {

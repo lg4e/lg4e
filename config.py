@@ -23,8 +23,8 @@ DEFAULT_500_TEMPLATE = "500.html"
 # 分类数据
 CATEGORIES = {
     "history_of_logic": {
-        "title": "History of Logic",
-        "description": "The history of logic・・・",
+        "title": "A Study Guide",
+        "description": "A Study Guide・・・",
     },
     "introduction_to_logic": {
         "title": "Introduction to Logic",

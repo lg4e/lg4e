@@ -16,7 +16,23 @@ Logic is the study of the methods and principles used to distinguish correct fro
 
 - 然而，与数学符号相比，自然语言更容易出现歧义、暗示和上下文依赖等问题，这使得“把前提和结论拆解得清清楚楚”并不容易。好在这本书提供了大量练习场景，让我们能在各种语境中反复演练如何辨析前提与结论，并逐渐熟练运用这些逻辑规则，从而使思考和表达更加清晰、严谨。
 
-<br/>
+**举个例子，**
+
+        如果我拥有比尔·盖茨的所有财富，那么我将是富有的
+        我不拥有比尔·盖茨的所有财富
+        所以我不是富有的。
+
+
+虽然这个论证的前提和结论都是正确的，但是总感觉逻辑上感觉有点怪怪的。
+让我们看一张图就明白了。
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![fig.1](/static/img/Ch1_001.png "fig.1")
+</br>
+
+在推论的过程中，我们忽略了蓝色的部分，所以造成的  。
+逻辑学家把这种范式称之为"否定前件"谬误。
+
+
 #### **1.2 命题（Propositions）与论证（Arguments）** {#section-2}
 
 ###### **<span style="font-size: 1.3rem; vertical-align: -3px;">&#x25C7;</span>A. 命题（Propositions）**
@@ -44,9 +60,6 @@ Logic is the study of the methods and principles used to distinguish correct fro
 
             aaaaaaaaaaaaaaaaaaaaaaaa
             aaaaaaaaaaaaaaaaaaaaaaaaa
-
-
-
 
 
 

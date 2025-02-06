@@ -250,17 +250,50 @@ body.book_author .author-content-container p {
 }
 
 
-/* 调整 reStructuredText 生成的标题大小 */
+
+.rst-content {
+    font-size: 0.95rem;
+    line-height: 1.5;  /* 适度增加行距，提升可读性 */
+}
+
+/* 调整 reStructuredText 生成的标题大小和行距 */
 .rst-content h1 {
-    font-size: 1.5rem;  /* 例如，调整 h1 的字体大小 */
+    font-weight: 600;
+    font-size: 1.3rem;
+    line-height: 1.2;  /* 适度增加行距，提升可读性 */
+    margin-bottom: 1.2rem;  /* 添加间距，避免标题过于紧密 */
+    margin-left: -1.0rem;
 }
 
 .rst-content h2 {
-    font-size: 1.25rem; /* 调整 h2 */
+    font-size: 1.05rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
 }
 
 .rst-content h3 {
-    font-size: 1.5rem; /* 调整 h3 */
+    font-weight: 600;
+    font-size: 1.05rem;
+    line-height: 1.2;
+    margin-bottom: 0.8rem;
+
+/* 代码块整体样式 */
+pre {
+    background-color: #f8f9fa;  /* 代码块背景色 */
+    padding: 10px;
+    border-radius: 6px;
+    overflow-x: auto;
+    white-space: pre-wrap; /* 允许换行 */
+    border: 1px solid #ddd;
 }
 
+/* 行内代码（去除语法高亮样式） */
+code {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    background: none;
+    padding: 2px 4px;
+    border-radius: 4px;
+    color: inherit; /* 继承正常文本颜色 */
+}
 

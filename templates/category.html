@@ -1,10 +1,10 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div calss="category-container" >
+<div class="category-container">
     <!-- 页面标题 -->
     <h1 class="text-start category-page-title">{{ title }}</h1>
-    <p class="mt-4 category-description" > {{ description }} </p> 
+    <p class="mt-4 category-description">{{ description }}</p> 
 
     <!-- 左侧书籍卡片部分 -->
     <div class="col-lg-8 col-md-7">
@@ -62,7 +62,6 @@
                     contentDiv.innerHTML = `<p class="text-danger">Error: ${data.error}</p>`;
                 } else {
                     // 构建目录内容
-
                     let content = `<h2>${data.title}</h2><ul class="book-content">`;
                     for (const [partId, partData] of Object.entries(data.parts || {})) {
                         content += `
@@ -81,7 +80,7 @@
                             for (const [sectionId, sectionTitle] of Object.entries(chapterData.sections || {})) {
                                 content += `
                                     <li>
-                                        <a href="/tutorials/{{ request.view_args.category_slug }}/${bookSlug}/chapter/${chapterId}?section=section-${sectionId}" class="section-link">
+                                        <a href="/tutorials/{{ request.view_args.category_slug }}/${bookSlug}/chapter/${chapterId}#section-${sectionId}" class="section-link">
                                             &#9633; ${chapterId}.${sectionId}: ${sectionTitle}
                                         </a>
                                     </li>
@@ -93,18 +92,8 @@
                     }
                     content += `</ul>`;
 
-                    
-
                     // 插入渲染后的 HTML
                     contentDiv.innerHTML = content;
-
-                    // 使用 KaTeX 渲染书名和目录中可能存在的数学公式
-                    renderMathInElement(contentDiv, {
-                        delimiters: [
-                            {left: "$$", right: "$$", display: true}, // 行间公式
-                            {left: "$", right: "$", display: false}  // 行内公式
-                        ]
-                    });
                 }
             })
             .catch(error => {
@@ -113,7 +102,6 @@
                 console.error('Error fetching book content:', error);
             });
     }
-
 </script>
 {% endblock %}
 

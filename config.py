@@ -1,21 +1,3 @@
-# Markdown 渲染所需扩展
-from markdown.extensions import fenced_code,  sane_lists, tables,  attr_list, smarty, codehilite, nl2br, extra
-
-MARKDOWN_EXTENSIONS = [
-    fenced_code.FencedCodeExtension(),
-    tables.TableExtension(),
-    attr_list.AttrListExtension(),  #  支持自定义属性，例如 {#id .class key=value}
-    codehilite.CodeHiliteExtension(
-        linenums=False,  # 显示行号
-        guess_lang=False,  # 禁止语言自动猜测
-        pygments_style="default"  # 使用默认代码高亮样式
-    ),
-    smarty.SmartyExtension(),  #  支持智能标点（连字符、引号等优化）
-    sane_lists.SaneListExtension(),
-    nl2br.Nl2BrExtension(),  #  将换行符保留为 HTML 的 <br> 标签
-    extra.ExtraExtension()  #  完整 Markdown 支持（列表、引用、加粗等）
-]
-
 # 默认模板文件
 DEFAULT_404_TEMPLATE = "404.html"
 DEFAULT_500_TEMPLATE = "500.html"

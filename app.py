@@ -1,9 +1,9 @@
-from flask import Flask, render_template, request, abort
+from flask import Flask, render_template, request, abort, jsonify
 from markupsafe import Markup
 import os
-import markdown
-from config import CATEGORIES, BOOKS, MARKDOWN_EXTENSIONS
 import logging
+from docutils.core import publish_parts  # 解析 reStructuredText
+from config import CATEGORIES, BOOKS  # 你的分类 & 书籍配置
 
 # 初始化 Flask 应用
 app = Flask(__name__)
@@ -28,25 +28,28 @@ def inject_globals():
         "categories": CATEGORIES,
     }
 
-def render_markdown_file(file_path):
-    """通用函数：渲染 Markdown 文件"""
+def render_rst_file(file_path):
+    """通用函数：渲染 RST 文件"""
     if os.path.exists(file_path):
-        logging.info(f"Rendering Markdown file: {file_path}")
+        logging.info(f"Rendering RST file: {file_path}")
         try:
             with open(file_path, 'r', encoding='utf-8') as file:
-                md_content = file.read()
+                rst_content = file.read()
             
-            # 使用 Markdown 解析，支持多种扩展
-            html_content = markdown.markdown(md_content, extensions=MARKDOWN_EXTENSIONS)
+            # 解析 reStructuredText 为 HTML，并支持 MathJax 渲染数学公式
+            html_content = publish_parts(
+                source=rst_content,
+                writer_name='html',
+                settings_overrides={'math_output': 'MathJax'}
+            )['html_body']
             
-            # 确保 HTML 代码不会被 Jinja2 过滤
             return Markup(html_content)
 
         except Exception as e:
-            logging.error(f"Failed to render Markdown file {file_path}: {e}")
+            logging.error(f"Failed to render RST file {file_path}: {e}")
             return Markup("<p class='text-danger'>Failed to load content. Please try again later.</p>")
     
-    logging.warning(f"Markdown file not found: {file_path}")
+    logging.warning(f"RST file not found: {file_path}")
     return Markup("<p class='text-warning'>Content not available yet. Stay tuned!</p>")
 
 def get_category_or_404(category_slug):
@@ -102,17 +105,14 @@ def category(category_slug):
     """显示特定分类下的书籍"""
     logging.info(f"Category page accessed: {category_slug}")
 
-    # 从 CATEGORIES 提取分类数据
     category_data = CATEGORIES.get(category_slug)
     if not category_data:
         logging.error(f"Category not found: {category_slug}")
         return render_template(DEFAULT_404_TEMPLATE, title="404 - Category Not Found"), 404
 
-    # 获取该分类下的书籍
     books = BOOKS.get(category_slug, [])
     logging.info(f"Books under category '{category_slug}': {books}")
 
-    # 渲染模板
     return render_template('category.html', category_data=category_data, category_slug=category_slug, books=books, title=category_data["title"], description=category_data["description"])
 
 @app.route('/api/category/<category_slug>/book/<book_slug>')
@@ -120,84 +120,62 @@ def get_book_data(category_slug, book_slug):
     """API 路由：返回书籍目录数据"""
     logging.info(f"Fetching book data for category '{category_slug}', book '{book_slug}'")
 
-    # 检查分类数据
     category_data = CATEGORIES.get(category_slug)
     if not category_data:
         logging.warning(f"Category not found: {category_slug}")
-        return {"error": "Category not found"}, 404
+        return jsonify({"error": "Category not found"}), 404
 
-    # 检查书籍数据
     books_in_category = BOOKS.get(category_slug, [])
     book_data = next((book for book in books_in_category if book['slug'] == book_slug), None)
     if not book_data:
         logging.warning(f"Book not found in category '{category_slug}': {book_slug}")
-        return {"error": "Book not found"}, 404
+        return jsonify({"error": "Book not found"}), 404
 
-    # 确保返回的数据结构一致
     response_data = {
         "title": book_data.get("title", "Untitled"),
-        "parts": book_data.get("parts", {})  # 如果 parts 为空，则返回空字典
+        "parts": book_data.get("parts", {})
     }
 
-    return response_data, 200
+    return jsonify(response_data), 200
 
 @app.route('/tutorials/<category_slug>/<book_slug>/preface')
 def book_preface(category_slug, book_slug):
-    """显示书籍详细信息，包括从 Markdown 文件加载内容"""
+    """显示书籍前言（RST 解析）"""
     logging.info(f"Book preface page accessed: {category_slug}/{book_slug}")
-    
-    # 获取书籍信息
     book = get_book_or_404(category_slug, book_slug)
-    
-    # 构建 Markdown 文件路径
-    markdown_file = os.path.join("content", category_slug, book_slug, "preface.md")
-    
-    # 渲染 Markdown 文件内容
-    html_content = render_markdown_file(markdown_file)
-    
-    # 如果 Markdown 文件加载失败，返回默认内容
-    if html_content.startswith("<p>Failed to load content"):
-        html_content = "<p>No preface content is available for this book.</p>"
-    
-    # 渲染模板
+
+    rst_file = os.path.join("content", category_slug, book_slug, "preface.rst")
+    html_content = render_rst_file(rst_file)
+
     return render_template(
         'book_preface.html',
         book=book,
-        title=f"{book['title']} - Perface",
-        content=Markup(html_content)  # 将 HTML 内容传递给模板
+        title=f"{book['title']} - Preface",
+        content=html_content
     )
 
 @app.route('/tutorials/<category_slug>/<book_slug>/author')
 def book_author(category_slug, book_slug):
-    """显示书籍作者信息，包括从 Markdown 文件加载内容"""
-    logging.info(f"Book preface page accessed: {category_slug}/{book_slug}")
-    
-    # 获取书籍信息
+    """显示书籍作者信息（RST 解析）"""
+    logging.info(f"Book author page accessed: {category_slug}/{book_slug}")
     book = get_book_or_404(category_slug, book_slug)
-    
-    # 构建 Markdown 文件路径
-    markdown_file = os.path.join("content", category_slug, book_slug, "author.md")
-    
-    # 渲染 Markdown 文件内容
-    html_content = render_markdown_file(markdown_file)
-    
-    # 如果 Markdown 文件加载失败，返回默认内容
-    if html_content.startswith("<p>Failed to load content"):
-        html_content = "<p>No author content is available for this book.</p>"
-    
-    # 渲染模板
+
+    rst_file = os.path.join("content", category_slug, book_slug, "author.rst")
+    html_content = render_rst_file(rst_file)
+
     return render_template(
         'book_author.html',
         book=book,
         title=f"{book['title']} - Author",
-        content=Markup(html_content)  # 将 HTML 内容传递给模板
+        content=html_content
     )
-
 
 @app.route('/tutorials/<category_slug>/<book_slug>/chapter/<int:chapter_id>')
 def chapter(category_slug, book_slug, chapter_id):
-    """显示章节内容并支持小节跳转"""
+    """显示章节内容（RST 解析）"""
     logging.info(f"Chapter page accessed: {category_slug}/{book_slug} - Chapter {chapter_id}")
+    
+    # 获取书籍信息
     book = get_book_or_404(category_slug, book_slug)
     parts = book.get("parts", {})
 
@@ -213,16 +191,16 @@ def chapter(category_slug, book_slug, chapter_id):
         logging.warning(f"Chapter {chapter_id} not found in book {book_slug}")
         abort(404, description="Chapter not found")
 
-    # 渲染 Markdown 文件
-    markdown_file = os.path.join("content", category_slug, book_slug, f"chapter_{chapter_id}.md")
-    html_content = render_markdown_file(markdown_file)
+    # 渲染 RST 文件（替换 Markdown 方式）
+    rst_file = os.path.join("content", category_slug, book_slug, f"chapter_{chapter_id}.rst")
+    html_content = render_rst_file(rst_file)
 
     return render_template(
         'chapter.html',
         book_title=book["title"],
-        chapter_title=chapter_data["title"],
+        chapter_title=chapter_data["title"],  # 章节标题仍然从 parts 数据获取
         chapter_id=chapter_id,
-        sections=chapter_data.get("sections", {}),
+        sections=chapter_data.get("sections", {}),  # 保持原样
         content=Markup(html_content),
     )
 

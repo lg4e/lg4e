@@ -1,12 +1,13 @@
 .figure {
     display: block;
-    margin-left: 20%;
+    margin: auto;
     width: 30%;
 }
 
 .figure img {
     display: block;
     width: 100%;
+    margin-top: 0.5em;  /* 上部に1文字分の余白を追加 */
 }
 
 .figure .caption {

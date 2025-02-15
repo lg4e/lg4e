@@ -6,7 +6,7 @@ from docutils.core import publish_parts
 from config import CATEGORIES, BOOKS
 from sphinx.application import Sphinx
 from sphinx.builders.html import StandaloneHTMLBuilder
-from functools import lru_cache  # 添加缓存装饰器
+# from functools import lru_cache  # 添加缓存装饰器
 from pathlib import Path  # 使用 Path 处理路径
 
 # 初始化 Flask 应用
@@ -42,9 +42,9 @@ def inject_globals():
         "categories": CATEGORIES,
     }
 
-@lru_cache(maxsize=100)  # 添加缓存装饰器
+#@lru_cache(maxsize=100)  # 添加缓存装饰器
 def render_rst_file(file_path: str) -> Markup:
-    """通用函数：渲染 RST 文件，添加缓存以提高性能"""
+ #   """通用函数：渲染 RST 文件，添加缓存以提高性能"""
     path = Path(file_path)
     if not path.exists():
         logging.warning(f"RST file not found: {file_path}")
@@ -55,7 +55,16 @@ def render_rst_file(file_path: str) -> Markup:
         html_content = publish_parts(
             source=content,
             writer_name='html',
-            settings_overrides={'math_output': 'MathJax'}
+            settings_overrides={
+                'math_output': 'MathJax',  # MathJax を有効化
+                'math_opts': {             # 数式レンダリングオプション
+                    'format': 'mathjax',
+                    'font_encoding': 'UTF-8'
+                },
+                'input_encoding': 'utf-8',  # 入出力エンコーディング指定
+                'output_encoding': 'utf-8',
+                'halt_level': 4            # エラー制御を厳格化
+            }
         )['html_body']
         return Markup(html_content)
     except Exception as e:

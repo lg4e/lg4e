@@ -21,8 +21,10 @@
     <!-- MathJax 配置 -->
     <script>
         MathJax = {
-            tex: { 
-                inlineMath: [['$', '$'], ['\\(', '\\)']]
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                processEscapes: true
             },
             svg: { 
                 fontCache: 'global' 

@@ -230,7 +230,6 @@ body.chapter .chapter-content-container {
     margin-left: 1rem;
     width: 70%;
     line-height: 1.6; /* 设置行间距 */
-    ext-align: justify; /* 文本两端对齐 */
 }
 
 body.book_preface .preface-content-container,
@@ -238,7 +237,6 @@ body.book_author .author-content-container {
     width: 80%;
     margin: 0 auto;  /* 让容器水平居中 */
     line-height: 1.7; /* 设置行间距 */
-    ext-align: justify; /* 文本两端对齐 */
 }
 
 body.book_preface .preface-title-container,
@@ -249,19 +247,20 @@ body.book_author .author-title-container {
     text-align: center;      /* 确保内容文字居中 */
 }
 
-/* 对段落生效 */
+/* 对段落生效 
 body.chapter .chapter-content-container p,
 body.book_preface .preface-content-container p,
 body.book_author .author-content-container p {
-    line-height: 1.5; /* 设置行间距 */
-    ext-align: justify; /* 文本两端对齐 */
-}
+    line-height: 1.5;  设置行间距 
+    ext-align: justify; /* 文本两端对齐 
+} */
 
 
 
 .rst-content {
-    font-size: 0.95rem;
-    line-height: 1.5;  /* 适度增加行距，提升可读性 */
+    font-size: 0.82rem;
+    line-height: 1.7;  /* 适度增加行距，提升可读性 */
+    text-align: justify;  /* 両端揃え */
 }
 
 /* 调整 reStructuredText 生成的标题大小和行距 */
@@ -289,6 +288,8 @@ body.book_author .author-content-container p {
 /* 代码块整体样式 */
 pre {
     background-color: #f8f9fa;  /* 代码块背景色 */
+    font-size: 0.79rem;
+    font-family: 'Fira Code', monospace;
     padding: 10px;
     border-radius: 6px;
     overflow-x: auto;
@@ -298,8 +299,6 @@ pre {
 
 /* 行内代码（去除语法高亮样式） */
 code {
-    font-family: "Open Sans", sans-serif;
-    font-size: 14px;
     background: none;
     padding: 2px 4px;
     border-radius: 4px;

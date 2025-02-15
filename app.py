@@ -2,8 +2,12 @@ from flask import Flask, render_template, request, abort, jsonify
 from markupsafe import Markup
 import os
 import logging
-from docutils.core import publish_parts  # 解析 reStructuredText
-from config import CATEGORIES, BOOKS  # 你的分类 & 书籍配置
+from docutils.core import publish_parts
+from config import CATEGORIES, BOOKS
+from sphinx.application import Sphinx
+from sphinx.builders.html import StandaloneHTMLBuilder
+from functools import lru_cache  # 添加缓存装饰器
+from pathlib import Path  # 使用 Path 处理路径
 
 # 初始化 Flask 应用
 app = Flask(__name__)
@@ -12,45 +16,51 @@ app = Flask(__name__)
 logging.basicConfig(
     filename='app.log',
     level=logging.INFO,
-    format='%(asctime)s %(levelname)s: %(message)s'
+    format='%(asctime)s %(levelname)s: %(message)s',
+    encoding='utf-8'  # 明确指定编码
 )
 
 # 全局常量
-SITE_TITLE = "(\u2200) LG4E - Logic For Everybody"
-DEFAULT_404_TEMPLATE = "404.html"
-DEFAULT_500_TEMPLATE = "500.html"
+class Config:
+    SITE_TITLE = "(\u2200) LG4E - Logic For Everybody"
+    DEFAULT_404_TEMPLATE = "404.html"
+    DEFAULT_500_TEMPLATE = "500.html"
+    CONTENT_DIR = Path(app.root_path) / 'content'  # 使用 Path 对象
+
+# Sphinx配置
+app.config.update(
+    SPHINX_PROJECT='your_project_name',
+    SPHINX_SOURCE=str(Config.CONTENT_DIR),
+    SPHINX_BUILD=str(Path(app.root_path) / '_build')
+)
 
 @app.context_processor
 def inject_globals():
     """将全局变量传递给模板"""
     return {
-        "site_title": SITE_TITLE,
+        "site_title": Config.SITE_TITLE,
         "categories": CATEGORIES,
     }
 
-def render_rst_file(file_path):
-    """通用函数：渲染 RST 文件"""
-    if os.path.exists(file_path):
-        logging.info(f"Rendering RST file: {file_path}")
-        try:
-            with open(file_path, 'r', encoding='utf-8') as file:
-                rst_content = file.read()
-            
-            # 解析 reStructuredText 为 HTML，并支持 MathJax 渲染数学公式
-            html_content = publish_parts(
-                source=rst_content,
-                writer_name='html',
-                settings_overrides={'math_output': 'MathJax'}
-            )['html_body']
-            
-            return Markup(html_content)
+@lru_cache(maxsize=100)  # 添加缓存装饰器
+def render_rst_file(file_path: str) -> Markup:
+    """通用函数：渲染 RST 文件，添加缓存以提高性能"""
+    path = Path(file_path)
+    if not path.exists():
+        logging.warning(f"RST file not found: {file_path}")
+        return Markup("<p class='text-warning'>Content not available yet. Stay tuned!</p>")
 
-        except Exception as e:
-            logging.error(f"Failed to render RST file {file_path}: {e}")
-            return Markup("<p class='text-danger'>Failed to load content. Please try again later.</p>")
-    
-    logging.warning(f"RST file not found: {file_path}")
-    return Markup("<p class='text-warning'>Content not available yet. Stay tuned!</p>")
+    try:
+        content = path.read_text(encoding='utf-8')
+        html_content = publish_parts(
+            source=content,
+            writer_name='html',
+            settings_overrides={'math_output': 'MathJax'}
+        )['html_body']
+        return Markup(html_content)
+    except Exception as e:
+        logging.error(f"Failed to render RST file {file_path}: {e}")
+        return Markup("<p class='text-danger'>Failed to load content. Please try again later.</p>")
 
 def get_category_or_404(category_slug):
     """获取分类数据或返回 404"""
@@ -79,14 +89,14 @@ def get_book_or_404(category_slug, book_slug):
 @app.errorhandler(404)
 def not_found(e):
     """自定义 404 错误页面"""
-    logging.warning(f"404 error occurred: {request.path}")
-    return render_template(DEFAULT_404_TEMPLATE, title="404 - Page Not Found"), 404
+    logging.warning(f"404 error occurred: {request.path}", exc_info=True)
+    return render_template(Config.DEFAULT_404_TEMPLATE, title="404 - Page Not Found"), 404
 
 @app.errorhandler(Exception)
 def handle_exception(e):
-    """自定义 500 错误页面"""
-    logging.error(f"500 error occurred: {str(e)}")
-    return render_template(DEFAULT_500_TEMPLATE, title="500 - Internal Server Error"), 500
+    """自定义 500 错误页面，添加更详细的错误日志"""
+    logging.error(f"500 error occurred: {str(e)}", exc_info=True)
+    return render_template(Config.DEFAULT_500_TEMPLATE, title="500 - Internal Server Error"), 500
 
 @app.route('/')
 def home():
@@ -108,7 +118,7 @@ def category(category_slug):
     category_data = CATEGORIES.get(category_slug)
     if not category_data:
         logging.error(f"Category not found: {category_slug}")
-        return render_template(DEFAULT_404_TEMPLATE, title="404 - Category Not Found"), 404
+        return render_template(Config.DEFAULT_404_TEMPLATE, title="404 - Category Not Found"), 404
 
     books = BOOKS.get(category_slug, [])
     logging.info(f"Books under category '{category_slug}': {books}")

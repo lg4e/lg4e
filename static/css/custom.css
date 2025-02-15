@@ -1,0 +1,16 @@
+.figure {
+    display: block;
+    margin-left: 20%;
+    width: 30%;
+}
+
+.figure img {
+    display: block;
+    width: 100%;
+}
+
+.figure .caption {
+    margin-top: 0.5em;
+    text-align: center;
+    font-size: 0.7em;     /* 设置字体大小为父元素的0.9倍 */
+}

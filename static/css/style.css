@@ -1,47 +1,55 @@
-.bg-custom {
-    background-color: #1f4e78;
+/* 全局变量 */
+:root {
+    --navbar-height: 5.93rem;
+    --primary-color: #1f4e78;
+    --hover-color: #d1ecf1;
 }
 
-/*  LG4E 的字体大小 */
+/* 基础样式 */
+body {
+    font-family: 'Open Sans', sans-serif;
+    padding-top: var(--navbar-height);
+}
+
+/* 导航栏样式 */
+.bg-custom {
+    background-color: var(--primary-color);
+}
+
 .navbar-brand {
     font-size: 1.3rem;
+    color: white !important;
 }
 
-/* 调整 `4` 的size */
 .navbar-brand sub {
-    font-size: 1.1em; /*  相对于父元素的大小 */
+    font-size: 1.1em;
 }
 
-/* 设置所有导航链接的默认颜色为白色 */
-.navbar-brand,
 .navbar-nav .nav-link {
-    color: white !important; /* 统一所有菜单项颜色 */
+    color: white !important;
     transition: color 0.3s ease-in-out;
 }
 
-/* 悬停时变为浅蓝色 */
 .navbar-brand:hover,
 .navbar-nav .nav-link:hover {
-    color: #d1ecf1 !important;
+    color: var(--hover-color) !important;
 }
 
-/* 让导航菜单间距均匀 */
 .navbar-nav {
-    gap: 1rem; /*  让菜单项间距一致 */
+    gap: 1rem;
 }
 
-/* 让汉堡菜单自动对齐左侧 */
 .navbar-toggler {
     margin-left: auto;
 }
 
-/* 让表格在小屏幕上自适应 */
+/* 表格样式 */
 .logic-table {
     width: 100%;
     max-width: 53%;
 }
 
-/* 引用的样式  */
+/* 引用样式 */
 .slogan-reference,
 .wiki-reference {
     font-size: 0.85rem;
@@ -276,6 +284,7 @@ body.book_author .author-content-container p {
     font-size: 1.05rem;
     line-height: 1.2;
     margin-bottom: 0.8rem;
+}
 
 /* 代码块整体样式 */
 pre {
@@ -296,4 +305,3 @@ code {
     border-radius: 4px;
     color: inherit; /* 继承正常文本颜色 */
 }
-

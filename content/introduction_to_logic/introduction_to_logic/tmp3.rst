@@ -1,0 +1,1 @@
+  $$P \\to Q, \\quad P \\quad \\therefore Q $$

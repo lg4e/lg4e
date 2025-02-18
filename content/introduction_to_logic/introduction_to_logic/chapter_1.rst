@@ -59,10 +59,8 @@
 
 .. figure:: /static/img/Ch1_002.png
    :alt: img2
-   :width: 100%
-   :align: center
+   :figwidth: 70%
    :name: fig2
-   :class: scaled-image
 
    Ch1_002.png
 

@@ -52,27 +52,21 @@
     $$P \\to Q$$
 
 
-| 　像上面这种可以写作若P则Q形式的命题，我们就称为条件命题（conditional statement）。
-| 　它是由P和Q两个命题组成的复合命题，其中$ P $称为前件（antecedent，也称假设<hypothesis>），Q称为後件（consequent，也称结论<conclusion>）。P和Q之间存在一种蕴含(imply)关系，可以把这种关系理解为集合上的 "包含于"，即 $ P \\subset Q $。
+| 　像上面这种可以写作「若 :math:`P` 则 :math:`Q` 」形式的命题，我们就称为条件命题（conditional statement）。
 
-　若p则q这个条件命题的真值(truth value)取决于P和Q的真值。如果我们把所有的真值情况都罗列出来，就会得到下面这个表格：
+- 它是由 :math:`P` 和 :math:`Q` 两个命题组成的复合命题。
+- 其中 :math:`P` 称为前件（antecedent，也称假设<hypothesis>）， :math:`Q` 称为後件（consequent，也称结论<conclusion>）。
+-  :math:`P` 和 :math:`Q` 之间存在一种蕴含(imply)关系，可以把这种关系理解为集合上的 "包含于"，即 $ P \\subset Q $。
 
-.. figure:: /static/img/Ch1_002.png
-   :alt: img2
-   :figwidth: 70%
-   :name: fig2
+| 　「若 :math:`P` 则 :math:`Q` 」意味着当P为真时，Q一定为真。它是很多逻辑推理的基础，比如肯定前件（modus ponens）和否定后件（modus tollens）。
 
-   Ch1_002.png
+- 肯定前件：若已知 𝑝→𝑞为真且 𝑝为真，则可以推出 𝑞为真。
+    - 例：我拥有比尔盖茨的所有财富，所以我是有钱人。
+- 否定后件：若已知 𝑝→𝑞为真且𝑞为假，则可以推出 𝑝为假。
+    - 例：我不是有钱人，所以我不拥有比尔盖茨的所有财富。
 
-等价形式：从逻辑上讲，条件命题 𝑝→𝑞等价于 "非p" 或 𝑞（记作 ¬𝑝∨𝑞）。
-
-
-推理规则:
-条件命题是很多逻辑推理规则的基础，如肯定前件（modus ponens）和否定后件（modus tollens）：
-
-
-
-接下来，我们把刚才的两个例子抽象成符号，像下面这样：
+| 在我们掌握了这两条规则之后，就可以分辨出哪些推论是错误的。
+| 如果我们把刚才的两个例子抽象成符号，像下面这样：
 
     .. math::
 
@@ -81,10 +75,9 @@
        ②&P \rightarrow Q, \quad \neg Q && \therefore \neg P
        \end{aligned}
 
-| 其中①的推理过程是无效的，逻辑学家们它起了一个专门的名字，叫做前件否定（Denying the antecedent）谬误。
-| 与之相对的，②是一个有效的推论，这种推理形式叫做后件否定（modus tollens）。
-| 到这里，我们就了解到了逻辑推理的一条"规则"。
+| 就会发现，其实并不存在第一条推理规则，它是一条谬误推理。逻辑学家们给它起了个专门的名字，叫做否定前件（Denying the antecedent）谬误。
 | 
+
 
 
 **1.2 命题与论证**
@@ -94,4 +87,13 @@
 
 .. raw:: html
 
-    <h3>◇逻辑学的定义</h3>
+    <h3>A. 命题（Propositions）</h3>
+
+| 命题是一个"准术语"（quasi-technical words），也就是说它在不同的学科中有着不同的定义。在逻辑学中，它用于指代：
+
+- 真值的主要承载者。（the primary bearers of truth and falsity）
+- 语句的意义。（the meanings of sentences）
+
+.. raw:: html
+
+    <h4>◇真理的主要承载者</h4>

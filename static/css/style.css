@@ -286,6 +286,15 @@ body.book_author .author-content-container p {
     margin-bottom: 0.8rem;
 }
 
+.rst-content h4 {
+    font-weight: 600;
+    font-size: 1.0rem;
+    line-height: 1.2;
+    margin-bottom: 0.8rem;
+}
+
+
+
 /* 代码块整体样式 */
 pre {
     background-color: #f8f9fa;  /* 代码块背景色 */

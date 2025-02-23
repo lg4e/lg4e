@@ -37,9 +37,7 @@ Logic is the study of the methods and principles used to distinguish correct fro
 
 ###### **<span style="font-size: 1.3rem; vertical-align: -3px;">&#x25C7;</span>A. 命题（Propositions）**
 
-- 命题是一个"准术语"（quasi-technical words），也就是说它在不同的学科中有着不同的定义。在逻辑学中，它用于指代：
-    - 真值的主要承载者。（the primary bearers of truth and falsity）
-    - 语句的意义。（the meanings of sentences）
+
 
 ****
 

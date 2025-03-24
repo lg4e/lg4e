@@ -223,6 +223,12 @@ def chapter(category_slug, book_slug, chapter_id):
         content=Markup(html_content),
     )
 
+@app.route('/about')
+def about():
+    """About 页面（静态内容）"""
+    logging.info("About page accessed")
+    return render_template('about.html', title="About LG4E")
+
 if __name__ == '__main__':
     logging.info("Starting Flask application.")
     app.run(debug=True)

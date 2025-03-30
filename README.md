@@ -1,6 +1,6 @@
  LG4E - Local Deployment Guide (Linux)
 
-This guide describes how to deploy the [LG4E](https://github.com/lg4e/lg4e/tree/master) project locally on a Linux system.
+This guide describes how to deploy the [LG4E](https://github.com/lg4e/lg4e.git) project locally on a Linux system.
 
 ---
 
